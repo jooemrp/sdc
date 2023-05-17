@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-28059208.2abef1b",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "nuxt": "^3.5.0"
+  },
+  "dependencies": {
+    "postcss-custom-properties": "^13.1.5"
+  }
+}
