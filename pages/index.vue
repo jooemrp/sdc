@@ -39,7 +39,7 @@
 				<p class="text-xl text-blue-900">Our Branding services aim to create a cohesive, compelling brand identity that sets you apart from the competition and resonates with your target audience. We'll help you to create Logo Design, Brand Design & Development, Website Design, and App Development.</p>
 			</div>
 			<div class="max-w-xl">
-			<nuxt-link to="#" aria-current-value="CTA to Capabilities Page">
+			<nuxt-link to="#" aria-label="CTA to Capabilities Page">
 				<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Learn More</button>
 			</nuxt-link>
 			</div>
@@ -96,12 +96,12 @@
 	<div class="xl:grid grid-cols-2 gap-0 bg-orange-500">
 		<div class="xl:m-auto m-5">
 			<h1 class="xl:text-7xl text-5xl text-white font-bold leading-normal max-w-sm">See How We Helped Our Clients</h1>
-			<nuxt-link to="#" aria-current-value="CTA to Our Works Page">
+			<nuxt-link to="#" aria-label="CTA to Our Works Page">
 			<p class="text-2xl font-semibold text-blue-900 max-w-xl py-5">Explore Case Studies >></p>
 			</nuxt-link>
 		</div>
 		<div class="xl:w-3/5 xl:m-auto mx-5 xl:pb-0 pb-5">
-			<nuxt-link to="#" aria-current-value="CTA to Our Works Page">
+			<nuxt-link to="#" aria-label="CTA to Our Works Page">
 				<img class="xl:my-16" src="/case.png" width="944" height="767" alt="Case studies">
 			</nuxt-link>
 		</div>
