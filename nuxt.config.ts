@@ -6,9 +6,14 @@ export default defineNuxtConfig({
   image: {
     dir: "assets/images",
   },
-
+  css: [
+    '@/assets/css/tailwind.css',
+  ],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       title: "SIPS Digital Creative",
       meta: [
         { name: "description", content: "Digital Marketing for healthcare" },

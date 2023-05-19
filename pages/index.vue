@@ -9,7 +9,7 @@
 			<div class="max-w-xl">
 			<!-- <nuxt-link to="/capabilities"> -->
 			<a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank">
-				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Get a Quote</button>
+				<button class="text-xl bg-orange-500 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Get a Quote</button>
 			</a>
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="max-w-xl">
 			<nuxt-link to="#">
-				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Learn More</button>
+				<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Learn More</button>
 			</nuxt-link>
 			</div>
 		</div>
@@ -107,7 +107,7 @@
 		</div>
 	</div>
 	<div class="xl:h-4/5 my-14">
-		<h2 class="text-orange-600 xl:text-6xl text-5xl font-bold leading-normal text-center">Clients We've Partnered With</h2>
+		<h2 class="text-orange-500 xl:text-6xl text-5xl font-bold leading-normal text-center">Clients We've Partnered With</h2>
 		<div class="xl:grid grid-cols-4 w-3/5 mx-auto justify-items-center my-16">
 			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-01.webp" alt="">
 			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-02.webp" alt="">
