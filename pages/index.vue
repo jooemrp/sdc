@@ -8,9 +8,9 @@
 			<p class="text-xl text-white max-w-xl py-10">Try our Streamlined Healthcare Marketing Solutions</p>
 			<div class="max-w-xl">
 			<!-- <nuxt-link to="/capabilities"> -->
-			<nuxt-link to="#">
+			<a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank">
 				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Get a Quote</button>
-			</nuxt-link>
+			</a>
 			</div>
 		</div>
 		<div class="m-auto">
