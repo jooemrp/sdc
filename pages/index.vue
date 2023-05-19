@@ -39,18 +39,18 @@
 				<p class="text-xl text-blue-900">Our Branding services aim to create a cohesive, compelling brand identity that sets you apart from the competition and resonates with your target audience. We'll help you to create Logo Design, Brand Design & Development, Website Design, and App Development.</p>
 			</div>
 			<div class="max-w-xl">
-			<nuxt-link to="/capabilities">
+			<nuxt-link to="#">
 				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Learn More</button>
 			</nuxt-link>
 			</div>
 		</div>
 	</div>
-	<div class="grid grid-cols-2 gap-0 bg-green-600 py-14">
-		<div class="m-auto">
-			<h2 class="text-4xl text-white font-bold leading-normal max-w-xl">Alleviating Your Pain Points Without the Overdose Solutions</h2>
-			<p class="text-2xl text-white max-w-xl py-10">Our service is a tailored package designed to solve your issues and achieve your goals. </p>
+	<div class="xl:grid grid-cols-2 gap-0 bg-green-600 py-14 text-white">
+		<div class="xl:m-auto m-5">
+			<h2 class="text-4xl font-bold leading-normal max-w-xl">Alleviating Your Pain Points Without the Overdose Solutions</h2>
+			<p class="text-2xl max-w-xl py-10">Our service is a tailored package designed to solve your issues and achieve your goals. </p>
 		</div>
-		<div class="text-2xl text-white">
+		<div class="xl:text-2xl text-xl mx-5">
 			<ul class="space-y-3">
 				<li>•&nbsp;&nbsp; Increase your online/digital presence</li>
 				<li>•&nbsp;&nbsp; Launch your new product</li>
@@ -59,7 +59,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="container mx-auto">
+	<div class="container mx-auto hidden xl:block">
 		<img class="object-none w-full" src="/bagan.webp" alt="">
 		<!-- <div class="grid grid-cols-3 gap-0 my-5">
 			<div class="mt-12">
@@ -89,27 +89,34 @@
 		</div> -->
 	</div>
 	<div class="text-center my-12">
-		<nuxt-link to="/capabilities">
+		<a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank">
 			<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Let's Discuss Your Needs</button>
-		</nuxt-link>
+		</a>
 	</div>
-	<div class="grid grid-cols-2 gap-0 bg-orange-500">
-		<div class="m-auto">
-			<h1 class="xl:text-7xl md:text-6xl text-white font-bold leading-relaxed max-w-sm">See How We Helped Our Clients</h1>
-			<nuxt-link to="/capabilities">
+	<div class="xl:grid grid-cols-2 gap-0 bg-orange-500">
+		<div class="xl:m-auto m-5">
+			<h1 class="xl:text-7xl text-5xl text-white font-bold leading-normal max-w-sm">See How We Helped Our Clients</h1>
+			<nuxt-link to="#">
 			<p class="text-2xl font-semibold text-blue-900 max-w-xl py-5">Explore Case Studies >></p>
 			</nuxt-link>
 		</div>
-		<div class="w-3/5">
-			<nuxt-link to="/capabilities">
-				<img class="my-16" src="/case.png" alt="">
+		<div class="xl:w-3/5 xl:m-auto mx-5 xl:pb-0 pb-5">
+			<nuxt-link to="#">
+				<img class="xl:my-16" src="/case.png" alt="">
 			</nuxt-link>
 		</div>
 	</div>
-	<div class="bg-rose-900 text-white">
-		<div class="">
-			<h1 class="text-5xl font-bold text-center pt-16">FAQ</h1>
+	<div class="xl:h-4/5 my-14">
+		<h2 class="text-orange-600 xl:text-6xl text-5xl font-bold leading-normal text-center">Clients We've Partnered With</h2>
+		<div class="xl:grid grid-cols-4 w-3/5 mx-auto justify-items-center my-16">
+			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-01.webp" alt="">
+			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-02.webp" alt="">
+			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-03.webp" alt="">
+			<img class="h-3/5 w-auto xl:mt-5 mt-10" src="/a-04.webp" alt="">
 		</div>
+	</div>
+	<div class="bg-rose-900 text-white">
+		<h1 class="text-5xl font-bold text-center pt-16 pb-10">FAQ</h1>
 		<div class="container mx-auto xl:w-3/5">
 			<div class="mx-5 py-5">
 				<h3 class="text-2xl font-bold">What kind of healthcare and pharmaceutical companies do you work with?</h3>
