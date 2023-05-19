@@ -2,11 +2,13 @@
 	<div>
 		<header class="shadow-sm bg-black">
 			<nav class="container mx-auto p-4 flex justify-between py-6 text-lg text-slate-100 font-semibold">
-				<NuxtLink to="/">SIPS Digital Creative</NuxtLink>
-				<ul class="flex gap-16">
-					<li><NuxtLink to="/capabilities">CAPABILITIES</NuxtLink></li>
-					<li><NuxtLink to="/work">WORK</NuxtLink></li>
-					<li><NuxtLink to="/about">ABOUT US</NuxtLink></li>
+				<NuxtLink to="/">
+					<img src="/sips-ico.png" class="w-3/4" alt="SIPS Digital Creative">
+				</NuxtLink>
+				<ul class="flex gap-16 items-center">
+					<li><NuxtLink to="#">CAPABILITIES</NuxtLink></li>
+					<li><NuxtLink to="#">WORK</NuxtLink></li>
+					<li><a href="https://sipsedutech.id/en/about" target="_blank">ABOUT US</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -14,7 +16,7 @@
 </template>
 
 <style scoped>
-    .router-link-exact-active {
+    /* .router-link-exact-active {
         color: #F36E24;
-    }
+    } */
 </style>

@@ -1,25 +1,26 @@
 <template>
 	<div id="h-50" class="flex items-center justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90%">
-		<h1 class="xl:text-7xl md:text-6xl text-white text-center font-bold xl:leading-normal mx-auto max-w-4xl">Healthcare digital marketing is complicated. We make it easy.</h1>
+		<h1 class="xl:text-7xl text-5xl text-white text-center font-bold xl:leading-normal mx-auto max-w-4xl">Healthcare digital marketing is complicated. We make it easy.</h1>
 	</div>
-	<div class="grid grid-cols-2 gap-0 bg-blue-900">
-		<div class="m-auto">
-			<h2 class="text-4xl text-white font-bold leading-normal max-w-xl">Bringing Clarity to Your Digital Marketing Efforts in Healthcare</h2>
+	<div class="xl:grid grid-cols-2 gap-0 bg-blue-900">
+		<div class="xl:m-auto p-5">
+			<h2 class="py-5 text-4xl text-white font-bold leading-normal max-w-xl">Bringing Clarity to Your Digital Marketing Efforts in Healthcare</h2>
 			<p class="text-xl text-white max-w-xl py-10">Try our Streamlined Healthcare Marketing Solutions</p>
 			<div class="max-w-xl">
-			<nuxt-link to="/capabilities">
-				<button class="text-xl bg-orange-600 rounded-xl px-5 py-3 text-white">Get a Quote</button>
+			<!-- <nuxt-link to="/capabilities"> -->
+			<nuxt-link to="#">
+				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Get a Quote</button>
 			</nuxt-link>
 			</div>
 		</div>
 		<div class="m-auto">
-			<img class="object-fill w-full" src="/img2.jpg" alt="">
+			<img class="object-fill w-full hidden xl:block" src="/img2.jpg" alt="">
 		</div>
 	</div>
 	<div class="container mx-auto mt-5">
-		<div class="grid grid-cols-2 space-y-10 my-10">
+		<div class="xl:grid grid-cols-2 space-y-10 m-5 xl:my-10">
 			<div class="row-span-5">
-				<h2 class="text-orange-500 text-5xl font-bold mt-10">Our <br> Capabilities</h2>
+				<h2 class="text-orange-500 xl:text-7xl text-5xl font-bold mt-10">Our <br> Capabilities</h2>
 			</div>
 			<div class="mx-auto">
 				<h3 class="text-orange-500 text-4xl font-bold mb-4">Digital Marketing</h3>
@@ -39,7 +40,7 @@
 			</div>
 			<div class="max-w-xl">
 			<nuxt-link to="/capabilities">
-				<button class="text-xl bg-orange-600 rounded-xl px-5 py-3 text-white">Learn More</button>
+				<button class="text-xl bg-orange-600 hover:bg-orange-700 rounded-xl px-5 py-3 text-white">Learn More</button>
 			</nuxt-link>
 			</div>
 		</div>
@@ -49,7 +50,7 @@
 			<h2 class="text-4xl text-white font-bold leading-normal max-w-xl">Alleviating Your Pain Points Without the Overdose Solutions</h2>
 			<p class="text-2xl text-white max-w-xl py-10">Our service is a tailored package designed to solve your issues and achieve your goals. </p>
 		</div>
-		<div class="m-auto text-2xl text-white">
+		<div class="text-2xl text-white">
 			<ul class="space-y-3">
 				<li>•&nbsp;&nbsp; Increase your online/digital presence</li>
 				<li>•&nbsp;&nbsp; Launch your new product</li>
@@ -59,7 +60,8 @@
 		</div>
 	</div>
 	<div class="container mx-auto">
-		<div class="grid grid-cols-3 gap-0 my-5">
+		<img class="object-none w-full" src="/bagan.webp" alt="">
+		<!-- <div class="grid grid-cols-3 gap-0 my-5">
 			<div class="mt-12">
 				<h4 class="text-3xl font-bold text-left">Share Your Issues</h4>
 				<p class="mt-2 max-w-sm text-xl">Answer our questions to help us understand your needs.</p>
@@ -84,29 +86,63 @@
 				<h4 class="text-3xl font-bold text-left">Continued Support</h4>
 				<p class="mt-2 max-w-sm text-xl">As your needs evolve, we'll adapt our strategy to match.</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<div class="text-center my-12">
 		<nuxt-link to="/capabilities">
-			<button class="text-xl bg-blue-900 rounded-xl px-5 py-3 text-white">Let's Discuss Your Needs</button>
+			<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Let's Discuss Your Needs</button>
 		</nuxt-link>
 	</div>
 	<div class="grid grid-cols-2 gap-0 bg-orange-500">
-		<div class="my-auto mx-44">
-			<h1 class="text-5xl text-white font-bold leading-normal max-w-sm">See How We Helped Our Clients</h1>
+		<div class="m-auto">
+			<h1 class="xl:text-7xl md:text-6xl text-white font-bold leading-relaxed max-w-sm">See How We Helped Our Clients</h1>
 			<nuxt-link to="/capabilities">
 			<p class="text-2xl font-semibold text-blue-900 max-w-xl py-5">Explore Case Studies >></p>
 			</nuxt-link>
 		</div>
-		<div class="m-auto">
+		<div class="w-3/5">
 			<nuxt-link to="/capabilities">
-				<img class="object-fill w-full" src="/img2.jpg" alt="">
+				<img class="my-16" src="/case.png" alt="">
 			</nuxt-link>
 		</div>
 	</div>
-	<div class="bg-rose-900" id="faq">
-		<div class="m-auto">
-			<h1 class="text-5xl text-white font-bold text-center pt-16">FAQ</h1>
+	<div class="bg-rose-900 text-white">
+		<div class="">
+			<h1 class="text-5xl font-bold text-center pt-16">FAQ</h1>
+		</div>
+		<div class="container mx-auto xl:w-3/5">
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">What kind of healthcare and pharmaceutical companies do you work with?</h3>
+				<p class="text-xl pt-2"> We work with a variety of healthcare and pharmaceutical companies, including hospitals, clinics, medical device manufacturers, biotech companies, and pharmaceutical manufacturers. Our clients are startups to large multinational corporations.</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">What type of digital marketing services do you provide?</h3>
+				<p class="text-xl pt-2"> We provide varied digital marketing services for healthcare providers, including search engine optimization (SEO), social media marketing, email marketing, pay-per-click advertising, and content marketing.</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">How can digital marketing benefit my company? </h3>
+				<p class="text-xl pt-2"> Digital marketing helps to increase your brand visibility online, attract new targeted customers, and retain current customers. It can also improve your brand's reputation, build trust with patients, and increase patient engagement.</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">How do you tailor your services to my specific healthcare brand? </h3>
+				<p class="text-xl pt-2"> We have a community of healthcare professionals (all 30,000 of them1!) and work closely with healthcare key players that trust us for informational and educational content. We are also experienced for more than 8 years in the healthcare industry, and take good care to understand your unique needs. We develop a customized digital marketing support tailored to your specific goals and needs.</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">How do you measure the success of your digital marketing efforts?</h3>
+				<p class="text-xl pt-2"> We use a variety of metrics to measure the success of our digital marketing efforts, including website and google my business traffic, engagement rates, conversion rates, and return on investment (ROI)</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">Can you provide examples of successful healthcare digital marketing campaigns you have run in the past? </h3>
+				<p class="text-xl pt-2"> Absolutely. We're proud of the work we've done for our healthcare clients and would be happy to share case studies that demonstrate our expertise and results. Click here to view case studies!</p>
+			</div>
+			<div class="mx-5 py-5">
+				<h3 class="text-2xl font-bold">What is your pricing model? </h3>
+				<p class="text-xl pt-2"> Our pricing varies depending on the specific services you need and the scope of the work. We offer customized pricing packages that are tailored to your specific budget and goals.</p>
+			</div>
+			<div class="mx-5 pt-5 pb-16">
+				<h3 class="text-2xl font-bold">How do I get started?</h3>
+				<p class="text-xl pt-2"> If you haven't, <a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank">click here to inform us about your needs.</a> We will set up an initial consultation to discuss deeply and develop a customized digital marketing strategy for you!</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -119,8 +155,5 @@
 }
 #h-25 {
 	min-height: 30vh;
-}
-#faq {
-	min-height: 100vh;
 }
 </style>
