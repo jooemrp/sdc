@@ -108,11 +108,11 @@
 	</div>
 	<div class="xl:h-4/5 my-14">
 		<h2 class="text-orange-500 xl:text-6xl text-5xl font-bold leading-normal text-center">Clients We've Partnered With</h2>
-		<div class="xl:grid grid-cols-4 w-3/5 mx-auto justify-items-center my-16">
-			<img class="xl:mt-5 mt-10" src="/a-01.webp" width="200" height="82" alt="Partner list biofarma">
-			<img class="xl:mt-5 mt-10" src="/a-02.webp" width="200" height="82" alt="Partner list evocare">
-			<img class="xl:mt-5 mt-10" src="/a-03.webp" width="200" height="82" alt="Partner list fufang">
-			<img class="xl:mt-5 mt-10" src="/a-04.webp" width="200" height="82" alt="Partner list genetics indonesia">
+		<div class="grid xl:grid-cols-4 md:grid-cols-2 gap-16 w-3/5 mx-auto justify-items-center my-16">
+			<img class="xl:mt-5" src="/a-01.webp" width="200" height="82" alt="Partner list biofarma">
+			<img class="xl:mt-5" src="/a-02.webp" width="200" height="82" alt="Partner list evocare">
+			<img class="xl:mt-5" src="/a-03.webp" width="200" height="82" alt="Partner list fufang">
+			<img class="xl:mt-5" src="/a-04.webp" width="200" height="82" alt="Partner list genetics indonesia">
 		</div>
 	</div>
 	<div class="bg-rose-900 text-white">

@@ -5,7 +5,7 @@
 			<div class="container xl:grid grid-cols-2 gap-8 xl:mx-auto m-5 justify-between">
 				<div class="my-auto">
 					<a href="https://sipsedutech.id/en/" target="_blank" aria-label="To sipsedutech.id">
-						<img class="" src="/sips-white.png" alt="">
+						<img class="" src="/sips-white.png" alt="SIPS Edutech Indonesia" width="290" height="82">
 					</a>
 				</div>
 				<div class="">
