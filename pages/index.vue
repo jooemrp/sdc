@@ -45,12 +45,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="xl:grid grid-cols-2 gap-0 bg-green-600 py-14 text-white">
+	<div class="xl:grid grid-cols-2 gap-0 bg-green-600 py-14 text-white ">
 		<div class="xl:m-auto m-5">
 			<h2 class="text-4xl font-bold leading-normal max-w-xl">Alleviating Your Pain Points Without the Overdose Solutions</h2>
 			<p class="text-2xl max-w-xl py-10">Our service is a tailored package designed to solve your issues and achieve your goals. </p>
 		</div>
-		<div class="xl:text-2xl text-xl mx-5">
+		<div class="xl:text-2xl text-xl mx-5 ">
 			<ul class="space-y-3">
 				<li>•&nbsp;&nbsp; Increase your online/digital presence</li>
 				<li>•&nbsp;&nbsp; Launch your new product</li>
@@ -88,13 +88,13 @@
 			</div>
 		</div> -->
 	</div>
-	<div class="text-center my-12">
+	<!-- <div class="text-center my-12">
 		<a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank">
 			<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Let's Discuss Your Needs</button>
 		</a>
-	</div>
-	<div class="xl:grid grid-cols-2 gap-0 bg-orange-500">
-		<div class="xl:m-auto m-5">
+	</div> -->
+	<div class="xl:grid grid-cols-2 gap-0 bg-orange-500 pb-5">
+		<div class="xl:m-auto mx-5 pt-5">
 			<h1 class="xl:text-7xl text-5xl text-white font-bold leading-normal max-w-sm">See How We Helped Our Clients</h1>
 			<nuxt-link to="#" aria-label="CTA to Our Works Page">
 			<p class="text-2xl font-semibold text-blue-900 max-w-xl py-5">Explore Case Studies >></p>
@@ -108,7 +108,7 @@
 	</div>
 	<div class="xl:h-4/5 my-14">
 		<h2 class="text-orange-500 xl:text-6xl text-5xl font-bold leading-normal text-center">Clients We've Partnered With</h2>
-		<div class="grid xl:grid-cols-4 grid-cols-2 gap-16 w-3/5 mx-auto justify-items-center my-16">
+		<div class="grid xl:grid-cols-4 grid-cols-2 xl:gap-16 gap-8 w-3/4 mx-auto justify-items-center my-16">
 			<img class="xl:mt-5" src="/a-01.webp" width="200" height="82" alt="Partner list biofarma">
 			<img class="xl:mt-5" src="/a-02.webp" width="200" height="82" alt="Partner list evocare">
 			<img class="xl:mt-5" src="/a-03.webp" width="200" height="82" alt="Partner list fufang">
