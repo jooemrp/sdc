@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="m-auto">
-			<img class="object-fill w-full hidden xl:block" src="/img2.jpg" width="960" height="474" alt="Hero image">
+			<img class="object-fill w-full hidden xl:block" src="/img2.webp" width="960" height="474" alt="Hero image">
 		</div>
 	</div>
 	<div class="container mx-auto mt-5">
@@ -102,7 +102,7 @@
 		</div>
 		<div class="xl:w-3/5 xl:m-auto mx-5 xl:pb-0 pb-5">
 			<nuxt-link to="#" aria-label="CTA to Our Works Page">
-				<img class="xl:my-16" src="/case.png" width="944" height="767" alt="Case studies">
+				<img class="xl:my-16" src="/case.webp" width="944" height="767" alt="Case studies">
 			</nuxt-link>
 		</div>
 	</div>
