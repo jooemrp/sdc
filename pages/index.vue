@@ -38,8 +38,8 @@
 				<h3 class="text-orange-500 text-4xl font-bold mb-4">Branding</h3>
 				<p class="text-xl text-blue-900">Our Branding services aim to create a cohesive, compelling brand identity that sets you apart from the competition and resonates with your target audience. We'll help you to create Logo Design, Brand Design & Development, Website Design, and App Development.</p>
 			</div>
-			<div class="max-w-xl hidden">
-			<nuxt-link to="#" aria-label="CTA to Capabilities Page">
+			<div class="max-w-xl">
+			<nuxt-link to="/capabilities" aria-label="CTA to Capabilities Page">
 				<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Learn More</button>
 			</nuxt-link>
 			</div>
