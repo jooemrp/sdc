@@ -35,7 +35,9 @@
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-orange-500 text-4xl font-bold mb-4">Keyword Research</h3>
+        <h3 class="text-orange-500 text-4xl font-bold mb-4">
+          Keyword Research
+        </h3>
         <p class="text-xl">
           Our team will conduct extensive keyword research to identify the terms
           that your target audience is using when searching for your products or
@@ -63,7 +65,9 @@
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-orange-500 text-4xl font-bold mb-4">Content Creation</h3>
+        <h3 class="text-orange-500 text-4xl font-bold mb-4">
+          Content Creation
+        </h3>
         <p class="text-xl">
           Our team will create high-quality, SEO-optimized content for your
           website. This might include blog posts, articles, infographics, and
@@ -85,13 +89,12 @@
   <div class="bg-rose-900 text-white py-14 px-5">
     <div class="container xl:grid grid-cols-2 space-y-10 mx-auto">
       <div class="mx-auto xl:block hidden">
-        <h3 class="text-4xl font-bold mb-4 mt-10">SEO Audit</h3>
+        <h3 class="text-4xl font-bold mb-4 mt-10">Strategy Development</h3>
         <p class="text-xl">
-          We'll start by performing a thorough SEO audit of your website to
-          assess your current performance, identify areas of strength, and
-          uncover opportunities for improvement. This includes evaluating your
-          website's structure, content, speed, mobile-friendliness, and overall
-          user experience.
+          We start by crafting a tailored paid advertising strategy. This
+          includes identifying the best platforms for your ads, defining your
+          target audience, setting objectives, and deciding on budget
+          allocation.
         </p>
       </div>
       <div class="row-span-6 mx-auto">
@@ -101,69 +104,49 @@
         </h2>
       </div>
       <div class="mx-auto xl:hidden block">
-        <h3 class="text-4xl font-bold mb-4 mt-10">SEO Audit</h3>
+        <h3 class="text-4xl font-bold mb-4 mt-10">Strategy Development</h3>
         <p class="text-xl">
-          We'll start by performing a thorough SEO audit of your website to
-          assess your current performance, identify areas of strength, and
-          uncover opportunities for improvement. This includes evaluating your
-          website's structure, content, speed, mobile-friendliness, and overall
-          user experience.
+          We start by crafting a tailored paid advertising strategy. This
+          includes identifying the best platforms for your ads, defining your
+          target audience, setting objectives, and deciding on budget
+          allocation.
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-4xl font-bold mb-4">Keyword Research</h3>
+        <h3 class="text-4xl font-bold mb-4">Ad Creation</h3>
         <p class="text-xl">
-          Our team will conduct extensive keyword research to identify the terms
-          that your target audience is using when searching for your products or
-          services. This involves analyzing search volume, competition, and
-          relevance to ensure we focus on the most valuable keywords for your
-          business.
+          Our team of creative professionals designs compelling ads that grab
+          attention and motivate viewers to take action. We ensure that every ad
+          aligns with your brand and resonates with your target audience.
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-4xl font-bold mb-4">On-Page SEO</h3>
+        <h3 class="text-4xl font-bold mb-4">Campaign Management</h3>
         <p class="text-xl">
-          We'll optimize your website's content and meta tags to improve your
-          rankings for the identified keywords. This includes optimizing title
-          tags, meta descriptions, headers, and URL structures, as well as
-          ensuring your content is high-quality and relevant to your audience.
+          We manage your ad campaigns from start to finish. This includes
+          setting up the campaigns, monitoring their performance, making
+          necessary adjustments, and managing bids and budgets to optimize
+          performance.
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-4xl font-bold mb-4">Local SEO</h3>
+        <h3 class="text-4xl font-bold mb-4">
+          Performance Tracking and Optimization
+        </h3>
         <p class="text-xl">
-          Our Branding services aim to create a cohesive, compelling brand
-          identity that sets you apart from the competition and resonates with
-          your target audience. We'll help you to create Logo Design, Brand
-          Design & Development, Website Design, and App Development.
+          We track key metrics like impressions, clicks, and conversions to
+          measure the effectiveness of your campaigns. Based on these insights,
+          we continuously optimize your campaigns for maximum return on ad
+          spend.
         </p>
       </div>
       <div class="mx-auto">
-        <h3 class="text-4xl font-bold mb-4">Content Creation</h3>
+        <h3 class="text-4xl font-bold mb-4">Reporting and Analysis</h3>
         <p class="text-xl">
-          Our team will create high-quality, SEO-optimized content for your
-          website. This might include blog posts, articles, infographics, and
-          videos, all designed to engage your audience, provide value, and
-          improve your search engine rankings.
+          We provide regular, detailed reports on your ad performance. This
+          includes insights on your return on ad spend, conversion rates, and
+          recommendations for future campaign improvements.
         </p>
-      </div>
-      <div class="mx-auto">
-        <h3 class="text-4xl font-bold mb-4">Link Building</h3>
-        <p class="text-xl">
-          We'll conduct a link-building campaign to increase the authority of
-          your website in the eyes of search engines. This involves earning
-          high-quality backlinks from reputable, relevant websites, which can
-          significantly improve your search engine rankings.
-        </p>
-      </div>
-      <div class="max-w-xl hidden">
-        <nuxt-link to="#" aria-label="CTA to Capabilities Page">
-          <button
-            class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white"
-          >
-            Learn More
-          </button>
-        </nuxt-link>
       </div>
     </div>
   </div>
@@ -237,7 +220,8 @@
       <div class="mx-auto xl:block hidden">
         <h3 class="text-4xl font-bold mb-4 mt-10">Logo Design</h3>
         <p class="text-xl">
-			We'll create a distinctive logo that encapsulates your brand's identity and leaves a lasting impression.
+          We'll create a distinctive logo that encapsulates your brand's
+          identity and leaves a lasting impression.
         </p>
       </div>
       <div class="row-span-6 mx-auto">
@@ -248,41 +232,47 @@
       <div class="mx-auto xl:hidden block">
         <h3 class="text-4xl font-bold mb-4 mt-10">Logo Design</h3>
         <p class="text-xl">
-			We'll create a distinctive logo that encapsulates your brand's identity and leaves a lasting impression.
+          We'll create a distinctive logo that encapsulates your brand's
+          identity and leaves a lasting impression.
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">Brand Design & Development</h3>
         <p class="text-xl">
-			Our team will develop a comprehensive brand identity, including color schemes, typography, and visual elements, that conveys your brand's personality and values.
+          Our team will develop a comprehensive brand identity, including color
+          schemes, typography, and visual elements, that conveys your brand's
+          personality and values.
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">Website Design</h3>
         <p class="text-xl">
-			We'll design a user-friendly, visually appealing website that aligns with your brand identity and serves as a powerful marketing tool.
+          We'll design a user-friendly, visually appealing website that aligns
+          with your brand identity and serves as a powerful marketing tool.
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">App Development</h3>
         <p class="text-xl">
-			If your business needs a mobile app, our team will design and develop a functional, user-friendly app that provides value to your customers and aligns with your brand.
+          If your business needs a mobile app, our team will design and develop
+          a functional, user-friendly app that provides value to your customers
+          and aligns with your brand.
         </p>
       </div>
     </div>
   </div>
   <div class="flex flex-col items-center justify-center py-14 w-full">
-        <a
-          href="https://sipsdigital.typeform.com/SIPS-DC"
-          aria-label="CTA to Typeform"
-        >
-          <button
-            class="text-xl bg-green-600 hover:bg-blue-900 rounded-xl px-5 py-3 text-white"
-          >
-            Request Your Tailored Solution
-          </button>
-        </a>
-      </div>
+    <a
+      href="https://sipsdigital.typeform.com/SIPS-DC"
+      aria-label="CTA to Typeform"
+    >
+      <button
+        class="text-xl bg-green-600 hover:bg-blue-900 rounded-xl px-5 py-3 text-white"
+      >
+        Request Your Tailored Solution
+      </button>
+    </a>
+  </div>
 </template>
 
 <script setup></script>

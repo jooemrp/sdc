@@ -40,7 +40,7 @@
 			</div>
 			<div class="max-w-xl">
 			<nuxt-link to="/capabilities" aria-label="CTA to Capabilities Page">
-				<button class="text-xl bg-blue-900 hover:bg-orange-600 rounded-xl px-5 py-3 text-white">Learn More</button>
+				<p class="text-2xl font-semibold text-blue-900 hover:text-blue-500 max-w-xl py-5">Learn more >></p>
 			</nuxt-link>
 			</div>
 		</div>
