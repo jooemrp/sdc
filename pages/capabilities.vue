@@ -1,11 +1,6 @@
 <template>
-  <div
-    id="h-50"
-    class="justify-items-center bg-gradient-to-r from-orange-700 to-orange-500 py-14 px-5"
-  >
-    <h1
-      class="xl:text-7xl text-5xl text-white font-bold xl:leading-normal leading-tight xl:mx-auto max-w-6xl"
-    >
+  <div class="justify-items-center bg-gradient-to-r from-orange-700 to-orange-500 px-5 py-20">
+    <h1 class="xl:text-7xl text-5xl text-white font-bold xl:leading-normal leading-tight xl:mx-auto max-w-6xl">
       Decoding the Complexities of Healthcare Marketing for Your Business
       Success
     </h1>
@@ -16,8 +11,8 @@
       turning them into growth opportunities for our clients.
     </p>
   </div>
-  <div class="container mx-auto mt-5">
-    <div class="xl:grid grid-cols-2 space-y-10 m-5 xl:my-10">
+  <div class="container xl:px-48 mx-auto mt-5">
+    <div class="xl:grid grid-cols-2 gap-6 space-y-10 m-5 xl:my-10">
       <div class="row-span-6">
         <h2 class="text-orange-500 xl:text-7xl text-5xl font-bold mt-10">
           SEO <br />
@@ -77,7 +72,7 @@
       </div>
       <div class="mx-auto">
         <h3 class="text-orange-500 text-4xl font-bold mb-4">Link Building</h3>
-        <p class="text-xl">
+        <p class="text-xl pb-10">
           We'll conduct a link-building campaign to increase the authority of
           your website in the eyes of search engines. This involves earning
           high-quality backlinks from reputable, relevant websites, which can
@@ -87,7 +82,7 @@
     </div>
   </div>
   <div class="bg-rose-900 text-white py-14 px-5">
-    <div class="container xl:grid grid-cols-2 space-y-10 mx-auto">
+    <div class="xl:mx-auto xl:px-48 container xl:grid grid-cols-2 gap-6 space-y-10 mx-auto">
       <div class="mx-auto xl:block hidden">
         <h3 class="text-4xl font-bold mb-4 mt-10">Strategy Development</h3>
         <p class="text-xl">
@@ -150,8 +145,8 @@
       </div>
     </div>
   </div>
-  <div class="container mx-auto mt-5">
-    <div class="xl:grid grid-cols-2 space-y-10 m-5 xl:my-10">
+  <div class="container xl:px-48 mx-auto mt-5">
+    <div class="xl:grid grid-cols-2 gap-6 space-y-10 m-5">
       <div class="row-span-6">
         <h2 class="text-rose-900 xl:text-7xl text-5xl font-bold mt-10">
           Content <br />
@@ -207,7 +202,7 @@
         <h3 class="text-rose-900 text-4xl font-bold mb-4">
           Reporting and Analysis
         </h3>
-        <p class="text-xl">
+        <p class="text-xl pb-10">
           We provide regular reports detailing your content's performance and
           the value it's providing to your business, helping to inform future
           content marketing decisions.
@@ -215,16 +210,15 @@
       </div>
     </div>
   </div>
-  <div class="bg-orange-500 text-white py-14 px-5">
-    <div class="container xl:grid grid-cols-2 space-y-10 mx-auto">
+  <div class="bg-orange-500 text-white pt-5 pb-5 px-5">
+    <div class="xl:mx-auto xl:px-48 container xl:grid grid-cols-2 gap-6 space-y-10 mx-auto">
       <div class="mx-auto xl:block hidden">
         <h3 class="text-4xl font-bold mb-4 mt-10">Logo Design</h3>
         <p class="text-xl">
-          We'll create a distinctive logo that encapsulates your brand's
-          identity and leaves a lasting impression.
+          We'll create a distinctive logo that encapsulates your brand's identity and leaves a lasting impression. 
         </p>
       </div>
-      <div class="row-span-6 mx-auto">
+      <div class="row-span-6">
         <h2 class="xl:text-7xl text-5xl font-bold xl:text-right text-left">
           Branding
         </h2>
@@ -232,31 +226,25 @@
       <div class="mx-auto xl:hidden block">
         <h3 class="text-4xl font-bold mb-4 mt-10">Logo Design</h3>
         <p class="text-xl">
-          We'll create a distinctive logo that encapsulates your brand's
-          identity and leaves a lasting impression.
+          We'll create a distinctive logo that encapsulates your brand's identity and leaves a lasting impression. 
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">Brand Design & Development</h3>
         <p class="text-xl">
-          Our team will develop a comprehensive brand identity, including color
-          schemes, typography, and visual elements, that conveys your brand's
-          personality and values.
+          Our team will develop a comprehensive brand identity, including color schemes, typography, and visual elements, that conveys your brand's personality and values. 
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">Website Design</h3>
         <p class="text-xl">
-          We'll design a user-friendly, visually appealing website that aligns
-          with your brand identity and serves as a powerful marketing tool.
+          We'll design a user-friendly, visually appealing website that aligns with your brand identity and serves as a powerful marketing tool. 
         </p>
       </div>
       <div class="mx-auto">
         <h3 class="text-4xl font-bold mb-4">App Development</h3>
-        <p class="text-xl">
-          If your business needs a mobile app, our team will design and develop
-          a functional, user-friendly app that provides value to your customers
-          and aligns with your brand.
+        <p class="text-xl pb-10">
+          If your business needs a mobile app, our team will design and develop a functional, user-friendly app that provides value to your customers and aligns with your brand. 
         </p>
       </div>
     </div>
