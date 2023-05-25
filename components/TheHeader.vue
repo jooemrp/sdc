@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<header class="shadow-sm bg-black">
-			<nav class="container mx-auto xl:px-48 flex xl:justify-between justify-center py-6 text-lg text-slate-100 font-semibold">
+			<nav class="container mx-auto flex xl:justify-between justify-center py-6 text-lg text-slate-100 font-semibold">
 				<NuxtLink to="/" aria-label="To homepage">
 					<img src="/sips-ico.png" class="w-3/4 hidden xl:block" alt="SIPS Digital Creative">
 				</NuxtLink>
