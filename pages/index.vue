@@ -1,11 +1,6 @@
 <template>
-  <div
-    id="h-50"
-    class="flex items-center justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90%"
-  >
-    <h1
-      class="xl:text-7xl text-5xl text-white text-center font-bold xl:leading-normal mx-auto max-w-4xl"
-    >
+  <div id="h-50" class="flex items-center justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90%">
+    <h1 class="xl:text-7xl text-5xl text-white text-center font-bold xl:leading-normal mx-auto max-w-4xl">
       Healthcare digital marketing is complicated. We make it easy.
     </h1>
   </div>
