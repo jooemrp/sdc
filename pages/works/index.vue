@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <h1>Services</h1>
-    </div>
+<h1>hello</h1>
 </template>
 
 <script setup>
-
+    await useFetch('')
 </script>
 
 <style scoped>

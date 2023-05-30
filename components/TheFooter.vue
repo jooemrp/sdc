@@ -8,7 +8,7 @@
 						<img class="" src="/sips-white.webp" alt="SIPS Edutech Indonesia" width="290" height="82">
 					</a>
 				</div>
-				<div class="">
+				<div class="my-auto">
 					<a href="https://goo.gl/maps/qTa2k2wj86WezweQ8" target="_blank" aria-label="To SIPS Edutech Indonesia google maps">
 						<p class="text-lg xl:py-2 py-5">Jl. Hertasning Utara II No. F28 - Makassar, Sulawesi Selatan, Indonesia.</p>
 					</a>
