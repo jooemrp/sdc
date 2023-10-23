@@ -2,11 +2,12 @@ import { Title } from "./.nuxt/components.d";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    "@nuxtjs/tailwindcss", 
+    "@nuxtjs/tailwindcss",
     "@nuxt/image-edge",
     "nuxt-simple-sitemap",
     "nuxt-simple-robots",
-    "nuxt-gtag"
+    "nuxt-gtag",
+    '@nuxtjs/tailwindcss'
   ],
   site: {
     url: 'https:/digital.sipsedutech.id',
