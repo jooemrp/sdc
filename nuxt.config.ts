@@ -1,8 +1,23 @@
 import { Title } from "./.nuxt/components.d";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
+  modules: [
+    "@nuxtjs/tailwindcss", 
+    "@nuxt/image-edge",
+    "nuxt-simple-sitemap",
+    "nuxt-simple-robots",
+    "nuxt-gtag"
+  ],
+  site: {
+    url: 'https:/digital.sipsedutech.id',
+  },
+  gtag: {
+    id: 'G-0PQMW7HK6J',
+    config: {
+      page_title: "SIPS Digital Creative"
+    }
 
+  },
   image: {
     dir: "assets/images",
   },
@@ -14,6 +29,8 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       title: "SIPS Digital Creative",
       meta: [
         { name: "description", content: "Digital Marketing for healthcare" },

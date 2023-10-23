@@ -3,13 +3,30 @@
 @tailwind utilities;
 body {
     @apply bg-gray-50;
+    @font-face {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        src: url('../fonts/Montserrat-Regular.woff') format('woff');
+      }
+      
+      @font-face {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        src: url('../fonts/Montserrat-Bold.woff') format('woff');
+      }
+      
+      @font-face {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        src: url('../fonts/Montserrat-Black.woff') format('woff');
+      }
 }
 
 @layer components {
     .btn {
-        @apply bg-[#F36E24] text-white px-3 py-2 rounded-md text-sm text-white;
+        @apply bg-[#F36E24] text-white px-3 py-2 rounded-md text-white;
     }
     .card {
-        @apply p-3 rounded-md bg-white shadow-md h-full;
+        @apply h-full px-5 py-10 bg-white rounded-md shadow-md;
     }
 }
