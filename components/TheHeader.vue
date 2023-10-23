@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<header class="bg-black shadow-sm">
-			<nav class="container flex justify-center py-6 mx-auto text-lg font-semibold xl:justify-between text-slate-100">
+			<nav class="container flex justify-between py-6 mx-auto text-lg font-semibold text-slate-100">
 				<NuxtLink to="/" aria-label="To homepage">
-					<img src="/sips-ico.png" class="w-1/3 ml-5 xl:w-2/4 md:w-2/4 xl:ml-0" alt="SIPS Digital Creative">
+					<img src="/sips-ico.png" class="w-2/4 ml-5 xl:w-3/4 md:w-2/4 xl:ml-0" alt="SIPS Digital Creative">
 				</NuxtLink>
 				<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 mr-5 text-sm text-gray-500 rounded-lg shadow xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white" aria-controls="navbar-sticky" aria-expanded="false">
 					<span class="sr-only">Open main menu</span>
