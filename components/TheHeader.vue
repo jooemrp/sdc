@@ -46,17 +46,17 @@
 					<div class="hidden w-full md:block md:w-auto" id="navbar-default">
 						<ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0 md:font-semibold md:text-slate-100 md:bg-black bg-gray-50">
 							<li>
-								<NuxtLink to="/" aria-label="Home Page" class="block py-2 pl-3 pr-4 text-white bg-sips-orange rounded md:bg-transparent md:p-0" aria-current="page">HOME</NuxtLink>
+								<NuxtLink to="/" aria-label="Home Page" class="my-link block py-2 pl-3 pr-4 md:text-white text-gray-900 rounded md:bg-transparent md:p-0" aria-current="page">HOME</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/services" aria-label="List of company services" class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">SERVICES</NuxtLink>
+								<NuxtLink to="/services" aria-label="List of company services" class="my-link block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">SERVICES</NuxtLink>
 							</li>
 							<li>
-								<a href="https://sipsedutech.id/en/about" target="_blank" aria-label="About company" class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">ABOUT</a>
+								<a href="https://sipsedutech.id/en/about" target="_blank" aria-label="About company" class="my-link block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">ABOUT</a>
 							</li>
-							<li>
+							<!-- <li>
 								<NuxtLink to="/work" class="block py-2 pl-3 pr-4 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">WORK</NuxtLink>
-							</li>
+							</li> -->
 							<!-- <li>
 								<NuxtLink to="/capabilities" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CAPABILITIES</NuxtLink>
 							</li> -->
@@ -72,9 +72,17 @@
 </template>
 
 <style scoped>
-.router-link-exact-active {
+.my-link.router-link-exact-active, .my-link.router-link-active {
 	color: #F36E24;
 }
+
+@media (max-width: 768px) {
+	.my-link.router-link-exact-active, .my-link.router-link-active {
+    color: white; 
+	background-color: #F36E24;
+  }
+}
+
 </style>
 
 <script setup>
