@@ -72,9 +72,9 @@
 </template>
 
 <style scoped>
-/* .router-link-exact-active {
-        color: #F36E24;
-    } */
+.router-link-exact-active {
+	color: #F36E24;
+}
 </style>
 
 <script setup>
