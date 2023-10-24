@@ -11,27 +11,28 @@
       turning them into growth opportunities for our clients.
     </p>
   </div>
-  <div class="container mx-auto mt-5 xl:px-40 ">
-    <div class="grid-cols-2 gap-6 m-5 space-y-5 xl:grid xl:my-10">
+
+  <div class="container mx-auto xl:my-16 xl:px-36">
+    <div class="grid-cols-2 gap-6 m-5 space-y-10 xl:grid">
       <div class="">
         <h2 class="mt-10 text-5xl font-bold text-orange-500 xl:text-7xl">
-          HCP Engagement
+         HCP Engagement
         </h2>
       </div>
       <div class="mx-auto">
-        <!-- <h3 class="mb-3 text-3xl font-bold text-orange-500">Description</h3> -->
-        <p class="mb-5 leading-loose xl:text-xl">
-          HCP Engagement is a vital service that connects pharmaceutical companies with HCP to foster collaboration, increase awareness, and gather valuable insights. 
+        <p class="mb-5 text-xl leading-relaxed">
+          HCP Engagement is a vital service that connects pharmaceutical companies with HCP to foster collaboration, increase awareness, and gather valuable insights.
         </p>
-        <p class="mb-10 leading-loose xl:text-xl">
+          <p class="mb-5 text-xl leading-relaxed">
           Our HCP program is a tailored solution designed to bridge the gap between your company and HCP. By facilitating meaningful interactions and partnerships, we enable your company to leverage the expertise and trust of HCP to build and enhance your brand recognition.
-        </p>
-        <p class="mb-3 leading-loose xl:text-xl">
+          </p>
+          <p class="mb-5 text-xl leading-relaxed">
           We craft a meaningful and effective outreach strategy to engage HCP, includes various communication channels ensuring multi-faceted approach to connect with HCP:
         </p>
-        <p class="mb-10 leading-loose xl:text-xl">- Live Webinar/CME with SKP Points
+        <p class="mb-5 text-xl leading-relaxed">- Live Webinar/CME with SKP Points
         <br>- Email & Whatsapp Marketing
-        <br>- Survey, polling and feedback generation </p>
+        <br>- Survey, polling and feedback generation
+        </p>
         <h3 class="mb-3 text-3xl font-bold text-orange-500">Case Study</h3>
         <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
           <div class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
@@ -49,35 +50,31 @@
     </div>
   </div>
 
-  <div class="flex bg-white">
-    <div class="container mx-auto mt-5 bg-white xl:px-36">
-      <div class="grid-cols-2 gap-6 m-5 space-y-10 xl:grid xl:my-10">
-        <div class="">
-          <h2 class="mt-10 text-5xl font-bold text-orange-500 xl:text-7xl">
-            Brand Awareness
-          </h2>
-        </div>
-        <div class="mx-auto">
-          <!-- <h3 class="mb-4 text-4xl font-bold text-orange-500">SEO Audit</h3> -->
-          <p class="mb-5 leading-loose xl:text-xl">
-            Our brand awareness program is a multi-faceted solution to amplify the presence of your brand across a diverse audience, including HCP and the general population.  
-          </p>
-          <p class="mb-5 leading-loose xl:text-xl">
-            This program combines and bridge interaction between HCP and general population through educating both audience, and assigning HCP to educate the general population, through:
-          </p>
-          <p class="leading-loose xl:text-xl">- Live Webinar/CME with SKP Points
-          <br>- Email & Whatsapp Marketing
-          <br>- Medical KOL Management 
-          <br>- Creation and sharing of health education content </p>
-        </div>
+  <div class="container py-16 mx-auto my-5 xl:my-16 xl:px-36">
+    <div class="grid-cols-2 gap-6 m-5 space-y-10 xl:grid">
+      <div class="">
+        <h2 class="mt-10 text-5xl font-bold text-orange-500 xl:text-7xl">
+          Brand Awareness
+        </h2>
+      </div>
+      <div class="mx-auto">
+        <p class="mb-5 text-xl leading-relaxed">
+          Our brand awareness program is a multi-faceted solution to amplify the presence of your brand across a diverse audience, including HCP and the general population. <br>
+          This program combines and bridge interaction between HCP and general population through educating both audience, and assigning HCP to educate the general population, through:
+        </p>
+        <p class="text-xl leading-relaxed">- Live Webinar/CME with SKP Points
+        <br>- Email & Whatsapp Marketing
+        <br>- Medical KOL Management
+        <br>- Creation and sharing of health education content 
+        </p>
       </div>
     </div>
   </div>
 
-  <div class="px-5 text-white bg-gradient-to-br from-orange-600 to-orange-500 py-14">
-    <div class="container grid-cols-2 gap-6 mx-auto xl:space-y-10 xl:mx-auto xl:px-36 xl:grid">
+  <div class="px-5 text-white bg-gradient-to-br from-orange-600 to-orange-500 xl:py-14">
+    <div class="container grid-cols-2 gap-6 pb-12 mx-auto xl:space-y-10 xl:mx-auto xl:px-36 xl:grid">
       <div class="pt-10 mx-auto">
-        <h2 class="mt-0 text-4xl font-bold text-white xl:mt-10 xl:inline xl:text-7xl">
+        <h2 class="mt-0 mb-12 text-4xl font-bold text-white xl:mt-10 xl:inline xl:text-7xl">
           Comprehensive Digital Marketing Support
         </h2>
       </div>
@@ -97,16 +94,11 @@
         <br>- Event Production
         </p>
       </div>
-      <!-- <div class="row-span-6 mx-auto">
-        <h2 class="hidden mt-0 text-4xl font-bold text-right text-white xl:mt-10 xl:inline xl:text-7xl">
-          Comprehensive Digital Marketing Support
-        </h2>
-      </div>       -->
     </div>
   </div>
 
-  <div class="container mx-auto mt-5 xl:px-36">
-    <div class="grid-cols-2 gap-6 m-5 space-y-10 xl:grid">
+  <div class="container py-5 mx-auto mt-5 xl:px-36">
+    <div class="grid-cols-2 gap-6 py-12 m-5 space-y-10 xl:grid">
       <div class="">
         <h2 class="mt-10 text-5xl font-bold text-rose-900 xl:text-7xl">
           Market Research
@@ -131,7 +123,7 @@
   <div class="px-5 text-white bg-gradient-to-br from-rose-900 to-rose-500 py-14">
     <div class="container grid-cols-2 gap-6 mx-auto xl:space-y-10 xl:mx-auto xl:px-36 xl:grid">
       <div class="pt-10 mx-auto">
-        <h2 class="mt-0 text-4xl font-bold text-white xl:mt-10 xl:inline xl:text-7xl">
+        <h2 class="mt-0 mb-12 text-4xl font-bold text-white xl:mt-10 xl:inline xl:text-7xl">
           Technology Enhancement & Digital Content Management
         </h2>
       </div>
