@@ -16,7 +16,11 @@ module.exports = {
 			display: ["Montserrat"],
 			body: ["Montserrat"],
 		},
-		extend: {},
+		extend: {
+			colors: {
+				"sips-orange": "#F36D25",
+			},
+		},
 	},
 	plugins: [require("flowbite/plugin")],
 };
