@@ -19,6 +19,9 @@ module.exports = {
 		extend: {
 			colors: {
 				"sips-orange": "#F36D25",
+				"sips-navy": "#1A3668",
+				"sips-green": "#2D9A47",
+				"sips-maroon": "#8F1736",
 			},
 		},
 	},
