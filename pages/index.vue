@@ -336,7 +336,7 @@
           tailored to your specific budget and goals.
         </p>
       </div>
-      <div class="pt-5 pb-16 mx-5">
+      <!-- <div class="pt-5 pb-16 mx-5">
         <h2 class="text-2xl font-bold">How do I get started?</h2>
         <p class="pt-2 text-xl">
           If you haven't,
@@ -346,7 +346,7 @@
           We will set up an initial consultation to discuss deeply and develop a
           customized digital marketing strategy for you!
         </p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -355,7 +355,7 @@
 
 <style scoped>
 #h-50 {
-  min-height: 60vh;
+  min-height: 80vh;
 }
 #h-25 {
   min-height: 30vh;

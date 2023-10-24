@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5 py-20 justify-items-center bg-gradient-to-r from-orange-700 to-orange-500">
+  <div id="h-50" class="px-5 pb-20 xl:pt-48 pt-36 justify-items-center bg-gradient-to-r from-orange-700 to-orange-500">
     <h1 class="max-w-6xl text-5xl font-bold leading-tight text-white xl:text-7xl xl:leading-normal xl:mx-auto">
       Decoding the Complexities of Healthcare Marketing for Your Business
       Success
@@ -33,7 +33,7 @@
         <br>- Email & Whatsapp Marketing
         <br>- Survey, polling and feedback generation
         </p>
-        <h3 class="mb-3 text-3xl font-bold text-orange-500">Case Study</h3>
+        <h3 class="mb-8 text-3xl font-bold text-orange-500">Case Study</h3>
         <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
           <div class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
             <NuxtLink to="/" target="_blank" aria-label="To homepage">
@@ -143,7 +143,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col items-center justify-center w-full py-14">
+  <!-- <div class="flex flex-col items-center justify-center w-full py-14">
     <a
       href="https://sipsdigital.typeform.com/SIPS-DC"
       aria-label="CTA to Typeform"
@@ -154,14 +154,14 @@
         Request Your Tailored Solution
       </button>
     </a>
-  </div>
+  </div> -->
 </template>
 
 <script setup></script>
 
 <style scoped>
 #h-50 {
-  min-height: 60vh;
+  min-height: 80vh;
 }
 #h-25 {
   min-height: 30vh;
