@@ -17,7 +17,8 @@
 </template>
 
 <script setup>
-const { data: works } = await useFetch('https://api.sipsedutech.id/api/works')
+// const { data: works } = await useFetch('https://api.sipsedutech.id/api/works')
+import { works } from "@/public/works";
 
 definePageMeta({
   layout: 'works'
