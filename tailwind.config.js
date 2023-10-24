@@ -26,4 +26,9 @@ module.exports = {
 		},
 	},
 	plugins: [require("flowbite/plugin")],
+	safelist: [
+		{
+			pattern: /(bg|text|border)-sips-(orange|navy|green|maroon)/,
+		},
+	],
 };
