@@ -1,5 +1,5 @@
 <template>
-  <div id="h-50" class="flex items-center pb-20 mt-24 bg-gradient-to-br from-blue-900 to-orange-700 pt-28">
+  <div id="h-50" class="flex items-center pb-20 mt-20 bg-gradient-to-br from-blue-900 to-orange-700 pt-28">
     <div class="container p-5 mx-auto text-white xl:p-0">
       <h1 class="max-w-4xl text-5xl font-bold xl:text-7xl">See How We Drive Success for Our Clients</h1>
       <p class="max-w-5xl py-8 xl:text-2xl xl:py-12 xl:leading-normal">Explore our success stories and see firsthand how we've helped our clients thrive. From boosting online presence to creating effective marketing strategies, we've partnered with various healthcare and pharmaceutical companies to deliver measurable results. Get inspired by their journeys and see what we can do for your business.</p>
