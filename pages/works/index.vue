@@ -8,17 +8,23 @@
 
   <div class="w-4/5 mx-auto mt-20">
     <div class="grid grid-cols-1 gap-6 my-10 lg:grid-cols-2">
-      <div v-for="w in works.data">
+      <div v-for="w in works">
         <WorkCard :work="w" />
       </div>
     </div>
   </div>
-
 </template>
 
 <script setup>
-const { data: works } = await useFetch('https://api.sipsedutech.id/api/works')
-// import { works } from "@/public/works";
+import { ref } from 'vue';
+const works = ref([]);
+
+await useFetch('https://api.sipsedutech.id/api/works').then(res => {
+  works.value = res.data.value.data
+}, error => {
+  console.log(error)
+})
+
 
 definePageMeta({
   layout: 'works'
