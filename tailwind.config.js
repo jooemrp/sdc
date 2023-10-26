@@ -23,6 +23,9 @@ module.exports = {
 				"sips-green": "#2D9A47",
 				"sips-maroon": "#8F1736",
 			},
+			backgroundImage: {
+				texture: "url('/assets/img/we-are-sips-digital.webp')",
+			  }
 		},
 	},
 	plugins: [require("flowbite/plugin")],
