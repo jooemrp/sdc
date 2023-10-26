@@ -1,5 +1,5 @@
 <template>
-    <section id="h-50" :class="`flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-52 bg-${getRandomColor()}`">
+    <section id="h-50" :class="`flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-52 ` + (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())">
         <div class="container mx-auto text-white xl:p-0 p-5">
             <h1 class="xl:text-5xl text-4xl font-bold max-w-4xl">
                 {{ work?.title }}
@@ -36,7 +36,6 @@ const work = ref(null);
 
 useFetch(`https://api.sipsedutech.id/api/works/${id}`).then(res => {
     work.value = res.data.value.data
-    console.log(work)
 }, error => {
     console.log(error)
 })
