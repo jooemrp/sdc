@@ -1,15 +1,13 @@
 <template>
-	<div>
-	<TheHeader/>
-        <div class="mx-auto">
-            <slot />
-        </div>
-	<TheFooter/>
-	</div>
+    <SharedTheHeader />
+    <div class="mx-auto">
+        <slot />
+    </div>
+    <SharedTheFooter />
 </template>
 
 <style scoped>
-    .router-link-exact-active {
-        color: #F36E24;
-    }
+.router-link-exact-active {
+    color: #F36E24;
+}
 </style>
