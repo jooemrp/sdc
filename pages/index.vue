@@ -217,7 +217,6 @@
       <img class="xl:mt-5" src="/b-09.webp" width="200" height="82" alt="Partner list siloam" />
       <img class="xl:mt-5" src="/b-10.webp" width="200" height="82" alt="Partner list st caroluse" />
     </div>
-  </div>
   
   <div class="flex justify-center py-16 my-12 text-center"> 
       <div class="container px-2 xl:px-5">
