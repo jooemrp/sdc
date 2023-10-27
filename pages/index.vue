@@ -140,10 +140,15 @@
         </div>
 
         <div class="col-span-1 md:col-span-3 p-5">
-          <div class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start">
-            <div v-for="content in contents">
-              <CardContentCard :content="content" />
+          <div v-if="contents.length > 0">
+            <div class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start">
+              <div v-for="content in contents">
+                <CardContentCard :content="content" />
+              </div>
             </div>
+          </div>
+          <div v-else>
+            <h2>No data found</h2>
           </div>
         </div>
       </div>
