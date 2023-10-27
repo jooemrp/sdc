@@ -129,7 +129,7 @@
         Enhance Your Expertise with Valuable Insights and Resources
       </h2>
 
-      <div class="grid-cols-1 md:grid-cols-4 lg:grid bg-slate-50 mx-auto">
+      <div class="grid-cols-1 md:grid-cols-4 lg:grid bg-slate-50 mx-auto shadow-lg">
 
         <div class="p-5">
 
