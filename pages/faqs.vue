@@ -5,7 +5,7 @@
         </div>
     </div>
 
-    <div class="w-4/5 mx-auto items-center">
+    <div class="container w-3/5 mx-auto items-center">
         <div class="grid grid-cols-1 gap-6 my-10">
             <div id="accordion-collapse" data-accordion="open">
                 <h2 id="accordion-collapse-heading-1">
@@ -62,6 +62,24 @@
     </div>
 </template>
   
-<script setup></script>
-  
-<style scoped></style>
+<script>
+export default {
+    head() {
+        return {
+            title: 'Frequently Asked Questions',
+            meta: [
+                {
+                    hid: 'title',
+                    name: 'title',
+                    content: 'Frequently Asked Questions',
+                },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Frequently Asked Questions',
+                },
+            ],
+        };
+    },
+};
+</script>

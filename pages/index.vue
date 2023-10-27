@@ -79,7 +79,7 @@
         </p>
         <div class="max-w-xl pt-12">
           <nuxt-link to="/services" aria-label="CTA to Capabilities Page">
-            <p class="max-w-xl py-5 text-2xl font-semibold text-blue-900 hover:text-blue-500 hover:underline">
+            <p class="max-w-xl py-5 text-2xl font-semibold text-blue-900 hover:text-blue-500">
               See All Services >>
             </p>
           </nuxt-link>
@@ -88,12 +88,120 @@
     </div>
   </div>
 
-  <div class="py-20 mx-auto mt-5 bg-sips-maroon">
-    <div class="container justify-center mx-auto text-center text-white">
-      <h2 class="text-5xl font-bold leading-normal xl:text-6xl"> Our Clients</h2>
-      <p class="my-5 text-2xl"> Meet clients who've experienced our precision marketing solutions</p>
+    <div class="py-20 mx-auto mt-5 bg-sips-maroon">
+        <div class="container justify-center mx-auto text-center text-white">
+            <h2 class="text-5xl font-bold leading-normal xl:text-6xl">
+                Our Clients
+            </h2>
+            <p class="my-5 text-2xl">
+                Meet clients who've experienced our precision marketing
+                solutions
+            </p>
+        </div>
+        <div
+            class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white justify-items-center rounded-3xl xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16"
+        >
+            <img
+                class="xl:mt-5"
+                src="/a-01.webp"
+                width="200"
+                height="82"
+                alt="Partner list biofarma"
+            />
+            <img
+                class="xl:mt-5"
+                src="/a-02.webp"
+                width="200"
+                height="82"
+                alt="Partner list evocare"
+            />
+            <img
+                class="xl:mt-5"
+                src="/a-03.webp"
+                width="200"
+                height="82"
+                alt="Partner list fufang"
+            />
+            <img
+                class="xl:mt-5"
+                src="/a-04.webp"
+                width="200"
+                height="82"
+                alt="Partner list genetics indonesia"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-01.webp"
+                width="200"
+                height="82"
+                alt="Partner list adi husada"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-02.webp"
+                width="200"
+                height="82"
+                alt="Partner list dersada"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-03.webp"
+                width="200"
+                height="82"
+                alt="Partner list jec orbita"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-04.webp"
+                width="200"
+                height="82"
+                alt="Partner list kemang medical care"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-05.webp"
+                width="200"
+                height="82"
+                alt="Partner list mayapada"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-06.webp"
+                width="200"
+                height="82"
+                alt="Partner list primaya"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-07.webp"
+                width="200"
+                height="82"
+                alt="Partner list ristra"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-08.webp"
+                width="200"
+                height="82"
+                alt="Partner list rsgm yarsi"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-09.webp"
+                width="200"
+                height="82"
+                alt="Partner list siloam"
+            />
+            <img
+                class="xl:mt-5"
+                src="/b-10.webp"
+                width="200"
+                height="82"
+                alt="Partner list st caroluse"
+            />
+        </div>
     </div>
-    <div class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white xl:container xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16 justify-items-center rounded-3xl">
+    <div class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16 justify-items-center rounded-3xl">
       <img class="xl:mt-5" src="/a-01.webp" width="200" height="82" alt="Partner list biofarma" />
       <img class="xl:mt-5" src="/a-02.webp" width="200" height="82" alt="Partner list evocare" />
       <img class="xl:mt-5" src="/a-03.webp" width="200" height="82" alt="Partner list fufang" />
@@ -123,8 +231,75 @@
   </div>
 </template>
 
-<script setup></script>
+<script>
+export default {
+    name: 'Home',
+    data() {
+        return {
+            contents: [],
+            contentItems: [
+                {
+                    name: 'Articles',
+                    title: 'article',
+                    clicked: true,
+                },
+                {
+                    name: 'Resources',
+                    title: 'resource',
+                    clicked: false,
+                },
+                {
+                    name: 'Updates',
+                    title: 'update',
+                    clicked: false,
+                },
+            ],
+            contentIsLoading: true,
+        };
+    },
+    async mounted() {
+        this.changeContent('article');
+    },
+    methods: {
+        changeContent: async function (contentType = 'article') {
+            this.contentIsLoading = true;
+            await useFetch(`https://api.sipsedutech.id/api/content`, {
+                query: {
+                    type: contentType,
+                    per_page: 5,
+                },
+            }).then(
+                (res) => {
+                    console.log(res);
+                    if (res.data.value) {
+                        this.contents = res.data.value.data;
+                    }
+                    this.contentIsLoading = false;
+                },
+                (error) => {
+                    console.log(error);
+                },
+            );
+        },
+        toggleContent(item, e) {
+            if (e.ctrlKey) {
+                item.clicked = !item.clicked;
+            } else {
+                this.contentItems.forEach(function (entry) {
+                    entry.clicked = false;
+                });
+                item.clicked = true;
+            }
+        },
+    },
+};
+</script>
 
 <style scoped>
-
+/* #h-50 {
+  min-height: 80vh;
+}
+#h-25 {
+  min-height: 30vh;
+} */
 </style>

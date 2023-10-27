@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`/works/${work.id}`">
+    <NuxtLink :to="`/works/${work.slug}`">
         <div :class="`max-w-md mx-auto rounded-md shadow-lg overflow-hidden md:max-w-2xl mb-3 ` + (work.color ? `bg-${work.color}` : 'bg-' + getRandomColor())">
             <div class="md:flex">
                 <div class="md:flex-shrink-0">

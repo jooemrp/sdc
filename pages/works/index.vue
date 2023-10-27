@@ -15,20 +15,56 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-const works = ref([]);
+<script>
+export default {
+  name: "Works",
+  head() {
+    return {
+      title: 'Works',
+      meta: [
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'Our Works',
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'See How We Drive Success for Our Clients',
+        },
+      ],
+    };
+  },
+  data() {
+    return {
+      works: []
+    };
+  },
+  async mounted() {
+    await nextTick(async () => {
+      await this.getList();
+    })
+  },
+  methods: {
+    getList: async function () {
+      await useFetch(`https://api.sipsedutech.id/api/works`).then(
+        (res) => {
+          console.log(res);
+          if (res.data.value) {
+            this.works = res.data.value.data;
+          } else {
+            console.log('a');
+          }
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    },
+  },
+};
 
-await useFetch('https://api.sipsedutech.id/api/works').then(res => {
-  works.value = res.data.value.data
-}, error => {
-  console.log(error)
-})
 
-
-definePageMeta({
-  layout: 'works'
-})
 </script>
 
 <style scoped>
