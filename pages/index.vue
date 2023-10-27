@@ -9,25 +9,25 @@
         </a>
       </div>
       <div class="col-span-1 mx-auto">
-        <img class="hidden object-fill w-full xl:block" src="/sips-digital-hero-img.webp" alt="Hero image"/>
+        <img class="hidden object-fill w-full xl:block" src="/sips-digital-hero-img.webp" alt="Hero image" />
       </div>
     </div>
   </div>
-  
-  <div class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover bg-texture bg-blend-color-burn"> 
-      <div class="container px-2 xl:px-5">
-        <h2 class="mx-auto mb-5 text-3xl font-bold text-white xl:w-2/3 xl:text-5xl xl:leading-snug">
-          Transform Your Pharmacy Marketing: Digital Strategies that Deliver
-        </h2>
-        <p class="mb-12 text-white xl:mx-10 xl:leading-loose">
-          Welcome to SIPS Digital Creative, your gateway to achieve unparalleled success in the pharmaceutical industry. Our precision-driven digital marketing strategies are designed to boost your brand's impact, maximize your potential, and deliver measurable results. As a part of the esteemed SIPS Edutech Indonesia, we bring a legacy of healthcare innovation to empower your brand in the digital age. Explore a partnership where your brand's digital aspirations become a reality, one realistic step at a time.
-        </p>
-        <a href="https://sipsedutech.id/en/about" target="_blank">
-            <button class="px-12 py-3 text-xl text-white bg-orange-500 hover:bg-orange-600 rounded-xl"> Learn More</button>
-          </a>
-      </div>
+
+  <div class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover bg-texture bg-blend-color-burn">
+    <div class="container px-2 xl:px-5">
+      <h2 class="mx-auto mb-5 text-3xl font-bold text-white xl:w-2/3 xl:text-5xl xl:leading-snug">
+        Transform Your Pharmacy Marketing: Digital Strategies that Deliver
+      </h2>
+      <p class="mb-12 text-white xl:mx-10 xl:leading-loose">
+        Welcome to SIPS Digital Creative, your gateway to achieve unparalleled success in the pharmaceutical industry. Our precision-driven digital marketing strategies are designed to boost your brand's impact, maximize your potential, and deliver measurable results. As a part of the esteemed SIPS Edutech Indonesia, we bring a legacy of healthcare innovation to empower your brand in the digital age. Explore a partnership where your brand's digital aspirations become a reality, one realistic step at a time.
+      </p>
+      <a href="https://sipsedutech.id/en/about" target="_blank">
+        <button class="px-12 py-3 text-xl text-white bg-orange-500 hover:bg-orange-600 rounded-xl"> Learn More</button>
+      </a>
+    </div>
   </div>
-  
+
   <div class="container py-12 mx-auto">
     <div class="grid-cols-2 m-5 space-y-10 xl:grid xl:my-10">
       <div class="row-span-6">
@@ -110,20 +110,93 @@
       <img class="xl:mt-5" src="/b-10.webp" width="200" height="82" alt="Partner list st caroluse" />
     </div>
   </div>
-  
-  <div class="flex justify-center py-16 my-12 text-center"> 
-      <div class="container px-2 xl:px-5">
-        <h2 class="mx-auto mb-12 text-3xl font-bold leading-normal xl:w-3/4 w:full xl:mx-auto text-sips-navy xl:text-5xl xl:leading-snug">
-          Ready for precision marketing to transform your results? Contact us today, and let's get started on your goals!
-        </h2>
-        <a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank" class="mt-12">
-            <button class="px-5 py-3 text-xl text-white bg-orange-500 xl:px-12 hover:bg-orange-600 rounded-xl"> Contact Us</button>
-          </a>
-      </div>
+
+  <div class="flex justify-center py-16 my-12 text-center">
+    <div class="container px-2 xl:px-5">
+      <h2 class="mx-auto mb-12 text-3xl font-bold leading-normal xl:w-3/4 w:full xl:mx-auto text-sips-navy xl:text-5xl xl:leading-snug">
+        Ready for precision marketing to transform your results? Contact us today, and let's get started on your goals!
+      </h2>
+      <a href="https://sipsdigital.typeform.com/SIPS-DC" target="_blank" class="mt-12">
+        <button class="px-5 py-3 text-xl text-white bg-orange-500 xl:px-12 hover:bg-orange-600 rounded-xl"> Contact Us</button>
+      </a>
+    </div>
   </div>
+
+  <section class="flex justify-center py-16 mx-auto bg-sips-orange">
+    <div class="container mx-10 md:mx-32 lg:mx-40">
+
+      <h2 class="mx-auto mb-12 text-3xl font-bold leading-normal xl:w-3/4 w:full xl:mx-auto text-white xl:text-5xl xl:leading-snug text-center">
+        Enhance Your Expertise with Valuable Insights and Resources
+      </h2>
+
+      <div class="grid-cols-1 md:grid-cols-4 lg:grid bg-slate-50 mx-auto">
+
+        <div class="p-5">
+
+          <div tabindex="0" id="content-article" @click="changeContent('article'); toggleActiveContent('article')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Articles</div>
+          <div tabindex="0" id="content-resource" @click="changeContent('resource'); toggleActiveContent('resource')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Resources</div>
+          <div tabindex="0" id="content-update" @click="changeContent('update'); toggleActiveContent('update')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Updates</div>
+
+        </div>
+
+        <div class="col-span-1 md:col-span-3 p-5">
+          <div class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start">
+            <div v-for="content in contents">
+              <CardContentCard :content="content" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <a href="#" target="_blank" class="mt-12">
+          <button class="px-5 py-3 text-xl text-white bg-sips-maroon xl:px-12 rounded-xl">Let's Talk</button>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  name: 'Home',
+  data() {
+    return {
+      contents: []
+    }
+  },
+  async mounted() {
+    this.changeContent('article');
+    this.toggleActiveContent('article')
+  },
+  methods: {
+    changeContent: async function (contentType = 'article') {
+
+      await useFetch(`https://api.sipsedutech.id/api/content`, {
+        query: {
+          type: contentType,
+          per_page: 5
+        }
+      }).then(res => {
+        console.log(res);
+        if (res.data.value) {
+          this.contents = res.data.value.data
+        }
+      }, error => {
+        console.log(error)
+      })
+    },
+    toggleActiveContent(contentType) {
+      console.log('toggleActiveContent', contentType);
+      // const activeClass = "bg-slate-100 border-r-4 border-sips-orange";
+      document.getElementsByClassName(`content-item`).classList.remove('bg-slate-100', 'border-r-4', 'border-sips-orange');
+      document.getElementById(`content-${contentType}`).classList.add('bg-slate-100', 'border-r-4', 'border-sips-orange');
+    }
+  }
+}
+</script>
 
 <style scoped>
 /* #h-50 {
