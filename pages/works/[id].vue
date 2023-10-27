@@ -32,13 +32,34 @@ import { ref } from 'vue';
 
 const route = useRoute()
 const id = route.params.id
-const work = ref(null);
+const work = ref();
+let meta_title = ref('');
+let meta_description = ref('');
 
-useFetch(`https://api.sipsedutech.id/api/works/${id}`).then(res => {
-    work.value = res.data.value.data
+useFetch(`https://api.sipsedutech.id/api/works/${id}`).then((res) => {
+    const data = res.data.value.data;
+    work.value = data
+    meta_title.value = data?.meta_title
+    meta_description.value = data?.meta_description
 }, error => {
     console.log(error)
 })
+
+useHead({
+    title: 'Works | ' + work.title,
+    meta: [
+        {
+            hid: 'title',
+            name: 'title',
+            content: meta_title,
+        },
+        {
+            hid: 'description',
+            name: 'description',
+            content: meta_description,
+        },
+    ],
+});
 
 </script>
 
