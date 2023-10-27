@@ -62,6 +62,24 @@
     </div>
 </template>
   
-<script setup></script>
-  
-<style scoped></style>
+<script>
+export default {
+    head() {
+        return {
+            title: 'Frequently Asked Questions',
+            meta: [
+                {
+                    hid: 'title',
+                    name: 'title',
+                    content: 'Frequently Asked Questions',
+                },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Frequently Asked Questions',
+                },
+            ],
+        };
+    },
+};
+</script>
