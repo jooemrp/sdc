@@ -386,7 +386,9 @@
 
             <div
                 :class="
-                    contents.length > 0 ? 'mx-10 md:mx-0 lg:mx-0' : 'mx-none'
+                    contents.length > 0
+                        ? 'md:mx-none lg:mx-none mx-10'
+                        : 'mx-none'
                 "
                 class="grid-cols-1 rounded-sm bg-slate-50 shadow-lg md:grid-cols-4 lg:grid"
             >
