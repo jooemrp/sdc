@@ -402,7 +402,7 @@
             </h2>
 
             <div
-                :class="contents.length > 0 ? 'mx-10' : 'mx-none'"
+                :class="contents.length > 0 ? 'mx-10 md:mx-0' : 'mx-none'"
                 class="grid-cols-1 rounded-sm bg-slate-50 shadow-lg md:grid-cols-4 lg:grid"
             >
                 <div class="p-5">
