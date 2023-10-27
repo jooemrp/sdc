@@ -79,7 +79,7 @@
         </p>
         <div class="max-w-xl pt-12">
           <nuxt-link to="/services" aria-label="CTA to Capabilities Page">
-            <p class="max-w-xl py-5 text-2xl font-semibold text-blue-900 hover:text-blue-500">
+            <p class="max-w-xl py-5 text-2xl font-semibold text-blue-900 hover:text-blue-500 hover:underline">
               See All Services >>
             </p>
           </nuxt-link>
@@ -93,7 +93,7 @@
       <h2 class="text-5xl font-bold leading-normal xl:text-6xl"> Our Clients</h2>
       <p class="my-5 text-2xl"> Meet clients who've experienced our precision marketing solutions</p>
     </div>
-    <div class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16 justify-items-center rounded-3xl">
+    <div class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white xl:container xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16 justify-items-center rounded-3xl">
       <img class="xl:mt-5" src="/a-01.webp" width="200" height="82" alt="Partner list biofarma" />
       <img class="xl:mt-5" src="/a-02.webp" width="200" height="82" alt="Partner list evocare" />
       <img class="xl:mt-5" src="/a-03.webp" width="200" height="82" alt="Partner list fufang" />
@@ -126,10 +126,5 @@
 <script setup></script>
 
 <style scoped>
-/* #h-50 {
-  min-height: 80vh;
-}
-#h-25 {
-  min-height: 30vh;
-} */
+
 </style>
