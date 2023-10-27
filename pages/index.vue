@@ -132,11 +132,9 @@
       <div class="grid-cols-1 md:grid-cols-4 lg:grid bg-slate-50 mx-auto shadow-lg rounded-sm">
 
         <div class="p-5">
-
-          <div tabindex="0" id="content-article" @click="changeContent('article'); toggleActiveContent('article')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Articles</div>
-          <div tabindex="0" id="content-resource" @click="changeContent('resource'); toggleActiveContent('resource')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Resources</div>
-          <div tabindex="0" id="content-update" @click="changeContent('update'); toggleActiveContent('update')" class="content-item p-4 mx-auto my-1 cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange">Updates</div>
-
+          <div v-for="item in contentItems">
+            <div tabindex="0" id="content-article" @click="changeContent(item.title); toggleContent(item, $event)" :class="{ 'contentActive': item.clicked }" class="content-item p-4 mx-auto my-1 text-black cursor-pointer hover:bg-slate-100 hover:border-r-4 hover:border-sips-orange ">{{ item.name }}</div>
+          </div>
         </div>
 
         <div class="col-span-1 md:col-span-3 p-5">
@@ -148,7 +146,7 @@
             </div>
           </div>
           <div v-else>
-            <h2>No data found</h2>
+            <h2>{{ contentIsLoading ? 'Loading...' : 'No content yet.' }}</h2>
           </div>
         </div>
       </div>
@@ -169,16 +167,33 @@ export default {
   name: 'Home',
   data() {
     return {
-      contents: []
+      contents: [],
+      contentItems: [
+        {
+          name: 'Articles',
+          title: 'article',
+          clicked: true,
+        },
+        {
+          name: 'Resources',
+          title: 'resource',
+          clicked: false
+        },
+        {
+          name: 'Updates',
+          title: 'update',
+          clicked: false
+        },
+      ],
+      contentIsLoading: true
     }
   },
   async mounted() {
     this.changeContent('article');
-    this.toggleActiveContent('article')
   },
   methods: {
     changeContent: async function (contentType = 'article') {
-
+      this.contentIsLoading = true;
       await useFetch(`https://api.sipsedutech.id/api/content`, {
         query: {
           type: contentType,
@@ -189,25 +204,30 @@ export default {
         if (res.data.value) {
           this.contents = res.data.value.data
         }
+        this.contentIsLoading = false;
       }, error => {
         console.log(error)
       })
     },
-    toggleActiveContent(contentType) {
-      console.log('toggleActiveContent', contentType);
-      // const activeClass = "bg-slate-100 border-r-4 border-sips-orange";
-      document.getElementsByClassName(`content-item`).classList.remove('bg-slate-100', 'border-r-4', 'border-sips-orange');
-      document.getElementById(`content-${contentType}`).classList.add('bg-slate-100', 'border-r-4', 'border-sips-orange');
+    toggleContent(item, e) {
+      if (e.ctrlKey) {
+        item.clicked = !item.clicked;
+      } else {
+        this.contentItems.forEach(function (entry) {
+          entry.clicked = false;
+        });
+        item.clicked = true;
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-/* #h-50 {
-  min-height: 80vh;
+.contentActive {
+  /* bg-slate-100 border-r-4 border-sips-orange */
+  background-color: rgb(241 245 249);
+  border-right-width: 4px;
+  border-color: rgb(243 109 37);
 }
-#h-25 {
-  min-height: 30vh;
-} */
 </style>
