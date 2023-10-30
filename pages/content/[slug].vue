@@ -1,28 +1,76 @@
 <template>
     <section
         id="h-50"
-        :class="`flex items-center bg-sips-orange bg-opacity-70 bg-gradient-to-br pt-28 md:pb-20 md:pt-52`"
+        :class="`flex items-center bg-opacity-70 bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% p-44 md:p-56 lg:p-48`"
         :style="`background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
-    >
-        <div class="container mx-auto p-5 text-white xl:p-0">
-            <h1 class="max-w-4xl text-4xl font-bold xl:text-5xl">
+    ></section>
+
+    <section class="m-10 mx-auto w-4/5 md:m-20" v-if="content.title">
+        <div class="container mx-auto xl:p-0">
+            <h1 class="text-2xl font-bold xl:text-4xl">
                 {{ content?.title }}
             </h1>
-            <p
-                class="max-w-5xl py-4 text-2xl capitalize md:py-8 md:text-3xl md:leading-normal"
-            >
-                {{ content?.type }}
-            </p>
-        </div>
-    </section>
 
-    <section class="m-20 mx-auto w-4/5">
-        <p class="text-sips-navy" v-html="content?.body"></p>
+            <p class="md:text-3md text-lg capitalize md:leading-normal">
+                {{ formatDate(content?.created_at) }}
+            </p>
+
+            <p class="mt-3" v-html="content?.body"></p>
+
+            <SharedSocialShareButton class="mt-5" />
+        </div>
     </section>
 </template>
 
-<script setup>
+<script>
+export default {
+    name: 'Content',
+    data() {
+        return {
+            content: {},
+        };
+    },
+    async mounted() {
+        const route = useRoute();
+        const slug = route.params.slug;
+
+        this.getData(slug);
+    },
+    methods: {
+        setMeta() {
+            useHead({
+                title: this.content.title
+                    ? `${this.content.title} | ${this.content.type}`
+                    : 'Loading...',
+                meta: [
+                    {
+                        hid: 'title',
+                        name: 'title',
+                        content: this.content?.meta_title,
+                    },
+                    {
+                        hid: 'description',
+                        name: 'description',
+                        content: this.content?.meta_description,
+                    },
+                ],
+            });
+        },
+        getData: async function (slug) {
+            await fetch(`https://api.sipsedutech.id/api/content/${slug}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    this.content = data.data;
+                    this.setMeta();
+                });
+        },
+    },
+};
+</script>
+
+<!-- <script setup>
 import { ref } from 'vue';
+import { formatDate } from '@/utils/helpers';
 
 const route = useRoute();
 const slug = route.params.slug;
@@ -58,4 +106,4 @@ useHead({
         },
     ],
 });
-</script>
+</script> -->
