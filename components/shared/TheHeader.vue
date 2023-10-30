@@ -14,7 +14,7 @@
 						</svg>
 					</button>
 					<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-						<ul class="flex flex-col p-4 mt-4 font-medium md:p-0 md:flex-row md:space-x-8 md:mt-0 md:font-semibold md:text-slate-100 md:bg-black bg-gray-50">
+						<ul class="flex flex-col p-4 mt-4 font-medium text-orange-500 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:font-semibold md:text-slate-100 md:bg-black">
 							<li>
 								<NuxtLink to="/" aria-label="Home Page" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white md:bg-transparent md:p-0" aria-current="page">HOME</NuxtLink>
 							</li>

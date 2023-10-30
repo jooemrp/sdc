@@ -1,11 +1,11 @@
 <template>
 	<footer class="bg-sips-navy">
-		<div class="w-full max-w-screen-xl p-4 mx-auto md:py-8">
+		<div class="container p-4 mx-auto md:py-8">
 			<div class="sm:flex sm:items-center sm:justify-between">
-				<a href="https://sipsedutech.id/en/" class="flex items-center mb-4 sm:mb-0">
+				<a href="https://sipsedutech.id/en/" class="flex items-center my-12 xl:my-0 xl:ml-0 sm:mb-0">
 					<img src="/sips-white.webp" class="" alt="SIPS Logo" />
 				</a>
-				<ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-50 sm:mb-0 dark:text-gray-400">
+				<ul class="flex-wrap items-center hidden mb-6 text-sm font-medium xl:flex text-gray-50 sm:mb-0 dark:text-gray-400">
 					<li class="ml-10 hover:underline">
 						<NuxtLink to="/terms" aria-label="Terms and Conditions">Terms and Conditions</NuxtLink>
 					</li>
