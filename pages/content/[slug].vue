@@ -17,9 +17,6 @@
     </section>
 
     <section class="m-20 mx-auto w-4/5">
-        <div class="container">
-            <SharedSocialShareButton />
-        </div>
         <p class="text-sips-navy" v-html="content?.body"></p>
     </section>
 </template>
