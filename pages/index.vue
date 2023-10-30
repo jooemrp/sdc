@@ -383,7 +383,9 @@ export default {
         };
     },
     async mounted() {
-        this.changeContent('article');
+        await nextTick(async () => {
+            this.changeContent('article');
+        });
     },
     methods: {
         changeContent: async function (contentType = 'article') {
