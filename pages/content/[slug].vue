@@ -47,9 +47,11 @@ export default {
     methods: {
         setMeta() {
             useHead({
-                title: this.content.title
-                    ? `${this.content.title} | ${this.content.type}`
-                    : 'Loading...',
+                titleTemplate: (titleChunk) => {
+                    return titleChunk
+                        ? `${this.content.title} - ${this.content.type} | ${titleChunk}`
+                        : `${this.content.title} - ${this.content.type}`;
+                },
                 meta: [
                     {
                         hid: 'title',

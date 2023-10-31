@@ -60,9 +60,11 @@ export default {
     methods: {
         setMeta() {
             useHead({
-                title: this.work.title
-                    ? `${this.work.title} | Our Work`
-                    : 'Loading...',
+                titleTemplate: (titleChunk) => {
+                    return titleChunk
+                        ? `${this.work.title} - Our Work | ${titleChunk}`
+                        : `${this.work.title} | Our Work`;
+                },
                 meta: [
                     {
                         hid: 'title',
