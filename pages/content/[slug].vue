@@ -17,23 +17,32 @@
 
             <p class="mt-3" v-html="content?.body"></p>
 
-            <SharedSocialShareButton class="mt-5" />
+            <SharedSocialShareButton
+                class="mt-5"
+                :url="currentURL"
+                :text="`Baca artikel`"
+            />
         </div>
     </section>
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
+
 export default {
     name: 'Content',
     data() {
         return {
             content: {},
+            currentURL: '',
         };
     },
     async mounted() {
         const route = useRoute();
         const slug = route.params.slug;
+        const currentURL = route.fullPath;
 
+        this.currentURL = `${window.location.origin}${currentURL}`;
         this.getData(slug);
     },
     methods: {

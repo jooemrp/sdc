@@ -4,7 +4,7 @@
             class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-600 bg-blue-600 p-3 text-white transition duration-200 hover:border-blue-700 hover:bg-blue-700"
             target="_blank"
             rel="noopener"
-            href="https://facebook.com/sharer/sharer.php?u="
+            :href="links.facebook"
             aria-label="Share on Facebook"
         >
             <svg
@@ -24,7 +24,7 @@
             class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-500 bg-blue-500 p-3 text-white transition duration-200 hover:border-blue-600 hover:bg-blue-600"
             target="_blank"
             rel="noopener"
-            href="https://twitter.com/intent/tweet?url=&amp;text="
+            :href="links.twitter"
             aria-label="Share on Twitter"
         >
             <svg
@@ -44,7 +44,7 @@
             class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-800 bg-blue-800 p-3 text-white transition duration-200 hover:border-blue-900 hover:bg-blue-900"
             target="_blank"
             rel="noopener"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title=&amp;summary=&amp;source="
+            :href="links.linkedin"
             aria-label="Share on Linkedin"
         >
             <svg
@@ -64,7 +64,7 @@
             class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-green-400 bg-green-400 p-3 text-white transition duration-200 hover:border-green-500 hover:bg-green-500"
             target="_blank"
             rel="noopener"
-            href="https://wa.me/?text=%20"
+            :href="links.whatsapp"
             aria-label="Share on Whatsapp"
             draggable="false"
         >
@@ -85,7 +85,7 @@
             class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-amber-500 bg-amber-500 p-3 text-white transition duration-200 hover:border-amber-600 hover:bg-amber-600"
             target="_blank"
             rel="noopener"
-            href="mailto:?subject=&amp;body="
+            :href="links.mail"
             aria-label="Share by Email"
             draggable="false"
         >
@@ -106,5 +106,21 @@
 </template>
 
 <script setup>
-const { subject, body, url } = defineProps(['subject', 'body', 'url']);
+import { useRoute } from 'vue-router';
+const route = useRoute();
+let { url, text } = defineProps(['url', 'text']);
+
+if (!url) {
+    const currentURL = route.fullPath;
+    url = `${window.location.origin}${currentURL}`;
+}
+
+let links = {
+    whatsapp: `whatsapp://send?text=${text} ${url}`,
+    telegram: `https://telegram.me/share/url?url=${url}&text=${text}`,
+    linkedin: `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
+    facebook: `http://www.facebook.com/sharer.php?u=${url}&quote=${text}`,
+    twitter: `http://twitter.com/share?url=${text} ${url}`,
+    mail: `mailto:?subject=${text}&body=${url}`,
+};
 </script>
