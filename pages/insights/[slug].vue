@@ -5,13 +5,13 @@
         v-if="content?.thumbnail"
     ></section>
 
-    <section class="m-10 mx-auto w-4/5 md:m-20" v-if="content.title">
+    <section class="w-4/5 m-10 mx-auto md:m-20" v-if="content.title">
         <div class="container mx-auto xl:p-0">
             <h1 class="text-2xl font-bold xl:text-4xl">
                 {{ content?.title }}
             </h1>
 
-            <p class="md:text-3md text-lg capitalize md:leading-normal">
+            <p class="text-lg capitalize md:text-3md md:leading-normal">
                 {{ formatDate(content?.created_at) }}
             </p>
 
@@ -63,6 +63,11 @@ export default {
                         hid: 'description',
                         name: 'description',
                         content: this.content?.meta_description,
+                    },
+                    {
+                        hid:'canonical',
+                        rel:'canonical',
+                        href:`https://digital.sipsedutech.id/${this.content.slug}`
                     },
                 ],
             });

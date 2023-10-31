@@ -5,7 +5,7 @@
             (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())
         "
     >
-        <div class="container mx-auto p-5 text-white xl:p-0">
+        <div class="container p-5 mx-auto text-white xl:p-0">
             <h1 class="max-w-4xl text-4xl font-bold xl:text-5xl">
                 {{ work?.title }}
             </h1>
@@ -17,7 +17,7 @@
         </div>
     </section>
 
-    <section class="m-20 mx-auto w-4/5">
+    <section class="w-4/5 m-20 mx-auto">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <h3 class="mb-2 text-xl font-semibold text-sips-navy md:mb-0">
                 The Challenge
@@ -25,14 +25,14 @@
             <p class="text-sips-navy">{{ work?.challenge }}</p>
 
             <h3
-                class="mb-2 mt-7 text-xl font-semibold text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 Our Approach
             </h3>
             <p class="text-sips-navy md:mt-10">{{ work?.approach }}</p>
 
             <h3
-                class="mb-2 mt-7 text-xl font-semibold text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 The Result
             </h3>
@@ -75,6 +75,11 @@ export default {
                         hid: 'description',
                         name: 'description',
                         content: this.work?.meta_description,
+                    },
+                    {
+                        hid:'canonical',
+                        rel:'canonical',
+                        href:'https://digital.sipsedutech.id/'
                     },
                 ],
             });

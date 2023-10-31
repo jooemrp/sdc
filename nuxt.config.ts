@@ -5,12 +5,16 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image-edge",
     "nuxt-simple-sitemap",
-    "nuxt-simple-robots",
     "nuxt-gtag",
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/robots'
   ],
   site: {
-    url: 'https:/digital.sipsedutech.id',
+    url: 'https://digital.sipsedutech.id',
+  },
+  robot: {
+    UserAgent: '*',
+    Disallow: ''
   },
   gtag: {
     id: 'G-0PQMW7HK6J',
@@ -34,21 +38,12 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: "SIPS Digital Creative",
       meta: [
-        { name: "description", content: "Digital Marketing for healthcare" },
         { name: "google-site-verification", content: "exnpYh7ierXa8KgWCehxk2fqgOjGsepiWrPZ5JCw24c" },
       ],
       link: [
-        // {
-        //   rel: "stylesheet",
-        //   href: "https://fonts.googleapis.com/icon?family=Material+Icons",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   href: "https://fonts.googleapis.com/css?family=Poppins",
-        // },
         {
           rel: "icon",
-          href: "/sips-ico.png",
+          href: "/sips-ico.ico",
         },
       ],
     },
