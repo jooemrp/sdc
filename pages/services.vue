@@ -59,7 +59,7 @@
                 </ul>
 
                 <h3 class="mb-8 text-3xl font-bold text-orange-500">
-                    Case Study
+                  See how we've done it with...
                 </h3>
                 <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
                     <div
@@ -75,7 +75,7 @@
                                 src="/a-04.webp"
                                 width="200"
                                 height="82"
-                                alt="Partner list genetics indonesia"
+                                alt="Partner Genetics Indonesia"
                             />
                         </NuxtLink>
                     </div>
@@ -92,7 +92,7 @@
                                 src="/a-01.webp"
                                 width="200"
                                 height="82"
-                                alt="Partner list biofarma"
+                                alt="Partner Biofarma"
                             />
                         </NuxtLink>
                     </div>
@@ -141,7 +141,7 @@
                     Comprehensive <br />Digital Marketing <br />Support
                 </h2>
                 <img
-                    class="hidden mt-36 h-1/2 xl:block"
+                    class="hidden mt-32 h-2/4 xl:block"
                     src="/sips-digital-marketing-support.webp"
                     alt="SIPS Digital Marketing Support Service"
                 />
@@ -164,9 +164,7 @@
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
                     <li>Landing page creation</li>
-                    <li>
-                        Creation of educational/product information materials
-                    </li>
+                    <li>Creation of educational/product information materials</li>
                     <li>Medical KOL Management</li>
                     <li>Social Media Marketing</li>
                     <li>Event Production</li>
@@ -200,13 +198,14 @@
                     the general population.
                 </p>
                 <p class="text-xl leading-relaxed">What we do:</p>
-                <p class="text-xl leading-relaxed">
-                    - Needs assessment and audience segmentation <br />- Surveys
-                    and questionnaires <br />- Interviews and Focus group
-                    discussion <br />- Data collection and analysis <br />-
-                    Market trends and competitor analysis <br />- Comprehensive
-                    reporting
-                </p>
+                <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+                    <li>Needs assessment and audience segmentation</li>
+                    <li>Surveys and questionnaires</li>
+                    <li>Interviews and Focus group discussion</li>
+                    <li>Data collection and analysis</li>
+                    <li>Market trends and competitor analysis</li>
+                    <li>Comprehensive reporting</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -217,17 +216,18 @@
         <h2 class="text-5xl font-bold text-orange-500 xl:text-7xl">
           Technology Enhancement & Digital Content Management
         </h2>
-        <img class="hidden mt-28 xl:block h-1/3" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
+        <img class="hidden mt-28 xl:block h-2/5" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
       </div>
       <div class="mx-auto">
         <p class="mb-5 text-xl leading-relaxed">
           We will support you in modernizing your company's online presence and ensuring you effectively communicate your company's value to key stakeholders. Either you use it for internal content management, educating your HCP stakeholders, or as a simple corporate website, we are available for your technology enhancement.
         </p>
-        <p class="text-xl leading-relaxed">- Website development for CMS, LMS, and Corporate Site
-        <br>- SEO Management
-        <br>- Content Management 
-        <br>- Creation of digitize content: videos, animations, e-books and e-brochures
-        </p>
+        <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+          <li>Website development for CMS, LMS, and Corporate Site</li>
+          <li>SEO Management</li>
+          <li>Content Management</li>
+          <li>Creation of digitize content: videos, animations, e-books and e-brochures</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -254,12 +254,12 @@ useHead({
         {
             hid: 'title',
             name: 'title',
-            content: 'Services',
+            content: 'Services | SIPS Digital Creative - Customized Solution for Pharmaceutical Marketing',
         },
         {
             hid: 'description',
             name: 'description',
-            content: 'Services',
+            content: 'Explore our comprehensive services at SIPS Digital Creative: HCPs Engagement, Brand Awareness, Market Research, Comprehensive Digital Marketing Support, Technology Enhancement, Digital Content Management',
         },
     ],
 });

@@ -44,12 +44,12 @@ export default {
                 {
                     hid: 'title',
                     name: 'title',
-                    content: 'Our Works',
+                    content: 'Pharma Marketing Case Studies | Our Works - SIPS Digital Creative ',
                 },
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'See How We Drive Success for Our Clients',
+                    content: 'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities. Explore our services for precision marketing success',
                 },
             ],
         });
