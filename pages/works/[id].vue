@@ -41,44 +41,52 @@
     </section>
 </template>
 
-<script setup>
+<script>
 import { getRandomColor } from '@/utils/helpers';
-import { ref } from 'vue';
 
-const route = useRoute();
-const id = route.params.id;
-const work = ref({});
+export default {
+    name: 'Our Work',
+    data() {
+        return {
+            work: {},
+        };
+    },
+    async mounted() {
+        const route = useRoute();
+        const id = route.params.id;
 
-await useFetch(`https://api.sipsedutech.id/api/works/${id}`).then(
-    (res) => {
-        const data = res.data.value.data;
-        work.value = data;
+        this.getData(id);
     },
-    (error) => {
-        console.log(error);
-    },
-);
-
-useHead({
-    title: 'Works Detail',
-    titleTemplate: (titleChunk) => {
-        return titleChunk
-            ? `${titleChunk} | ${work.value.title}`
-            : work.value.title;
-    },
-    meta: [
-        {
-            hid: 'title',
-            name: 'title',
-            content: work.value.meta_title,
+    methods: {
+        setMeta() {
+            useHead({
+                title: this.work.title
+                    ? `${this.work.title} | Our Work`
+                    : 'Loading...',
+                meta: [
+                    {
+                        hid: 'title',
+                        name: 'title',
+                        content: this.work?.meta_title,
+                    },
+                    {
+                        hid: 'description',
+                        name: 'description',
+                        content: this.work?.meta_description,
+                    },
+                ],
+            });
         },
-        {
-            hid: 'description',
-            name: 'description',
-            content: work.value.meta_description,
+        getData: async function (id) {
+            await fetch(`https://api.sipsedutech.id/api/works/${id}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    this.work = data.data;
+                    this.setMeta();
+                });
         },
-    ],
-});
+    },
+};
 </script>
 
 <style scoped></style>
