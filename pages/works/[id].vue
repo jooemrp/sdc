@@ -63,7 +63,7 @@ export default {
                 titleTemplate: (titleChunk) => {
                     return titleChunk
                         ? `${this.work.title} - Our Work | ${titleChunk}`
-                        : `${this.work.title} | Our Work`;
+                        : `${this.work.title} - Our Work`;
                 },
                 meta: [
                     {
