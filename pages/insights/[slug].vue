@@ -7,15 +7,19 @@
 
     <section class="m-10 mx-auto w-4/5 md:m-20" v-if="content.title">
         <div class="container mx-auto xl:p-0">
-            <h1 class="text-2xl font-bold xl:text-4xl">
+            <h1 class="text-2xl font-bold text-neutral-900 xl:text-4xl">
                 {{ content?.title }}
             </h1>
 
-            <p class="md:text-3md text-lg capitalize md:leading-normal">
+            <p
+                class="md:text-md text-lg capitalize text-neutral-700 md:leading-normal"
+            >
                 {{ formatDate(content?.created_at) }}
             </p>
 
-            <p class="mt-3" v-html="content?.body"></p>
+            <hr />
+
+            <p class="mt-3 text-neutral-900" v-html="content?.body"></p>
 
             <SharedSocialShareButton
                 class="mt-5"

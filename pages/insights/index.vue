@@ -19,8 +19,8 @@
         </div>
     </div>
 
-    <section class="mx-auto py-5 md:py-10">
-        <div class="mx-5 justify-center md:mx-24">
+    <section class="mx-5 justify-center py-5 md:mx-0 md:py-10">
+        <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-2 md:gap-4">
                 <div v-for="item in contentItems">
                     <div
@@ -30,7 +30,7 @@
                             toggleContent(item, $event);
                         "
                         :class="{ contentActive: item.clicked }"
-                        class="content-item mx-1 my-1 cursor-pointer rounded-sm border-b-4 bg-slate-100 p-2 text-center text-black hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
+                        class="content-item mx-1 my-1 max-w-md cursor-pointer rounded-sm border-b-4 bg-slate-100 p-2 text-center text-black hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
                     >
                         {{ item.name }}
                     </div>
@@ -38,7 +38,9 @@
             </div>
 
             <div v-if="contents.length > 0">
-                <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+                <div
+                    class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3"
+                >
                     <div v-for="content in contents">
                         <CardContentCard :content="content" />
                     </div>
