@@ -230,7 +230,7 @@
         </p>
       </div>
     </div>
-
+  </div>
     <!-- <div class="flex flex-col items-center justify-center w-full py-14">
     <a
       href="https://sipsdigital.typeform.com/SIPS-DC"

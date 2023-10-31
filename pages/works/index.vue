@@ -1,9 +1,9 @@
 <template>
     <div
         id="h-50"
-        class="flex items-center bg-gradient-to-br from-blue-900 to-orange-700 pb-20 pt-28"
+        class="flex items-center pb-20 bg-gradient-to-br from-blue-900 to-orange-700 pt-28"
     >
-        <div class="container mx-auto p-5 text-white xl:p-0">
+        <div class="container p-5 mx-auto text-white xl:p-0">
             <h1 class="max-w-4xl text-5xl font-bold xl:text-7xl">
                 See How We Drive Success for Our Clients
             </h1>
@@ -24,6 +24,7 @@
         <WorkCard :work="w" />
       </div>
     </div>
+</div>
 </template>
 
 <script>
