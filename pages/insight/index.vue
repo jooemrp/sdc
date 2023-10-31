@@ -21,7 +21,7 @@
 
     <section class="mx-auto py-8 md:py-10">
         <div class="mx-5 justify-center md:mx-24">
-            <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="grid grid-cols-3 gap-4">
                 <div v-for="item in contentItems">
                     <div
                         tabindex="0"
@@ -30,33 +30,32 @@
                             toggleContent(item, $event);
                         "
                         :class="{ contentActive: item.clicked }"
-                        class="content-item mx-auto my-1 cursor-pointer rounded-sm border-b-4 bg-slate-100 p-4 text-black hover:border-b-4 hover:border-sips-orange hover:bg-slate-200"
+                        class="content-item mx-1 my-1 cursor-pointer rounded-sm border-b-4 bg-slate-100 p-4 text-center text-black hover:border-b-4 hover:border-sips-orange hover:bg-slate-200"
                     >
                         {{ item.name }}
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 
-        <!-- <div class="mx-32 grid grid-cols-3 gap-4 text-center md:mx-40">
+
             <div v-if="contents.length > 0">
-                <div v-for="content in contents">
-                    <CardContentCard :content="content" />
+                <div class="mt-4 grid grid-cols-3 gap-4">
+                    <div v-for="content in contents">
+                        <CardContentCard :content="content" />
+                    </div>
                 </div>
             </div>
             <div v-else>
-                <h2>
+                <div class="mx-1 my-20 w-full text-center">
                     {{ contentIsLoading ? 'Loading...' : 'No content yet.' }}
-                </h2>
+                </div>
             </div>
-        </div> -->
-        -->
+        </div>
     </section>
 </template>
 
 <script>
 export default {
-    name: 'Home',
+    name: 'Insight',
     data() {
         return {
             contents: [],
@@ -83,19 +82,19 @@ export default {
     async mounted() {
         useHead({
             titleTemplate: (titleChunk) => {
-                return titleChunk ? `${titleChunk}` : `Home`;
+                return titleChunk ? `Insight | ${titleChunk}` : `Insight`;
             },
             meta: [
                 {
                     hid: 'title',
                     name: 'title',
-                    content: 'Home',
+                    content: 'Insight',
                 },
                 {
                     hid: 'description',
                     name: 'description',
                     content:
-                        'Experience Digital Precision in Your Pharmaceutical Marketing Strategy',
+                        'Streamline Your Decisions and Stay Ahead with Our Insightful Resources',
                 },
             ],
         });
@@ -110,7 +109,7 @@ export default {
             await useFetch(`https://api.sipsedutech.id/api/content`, {
                 query: {
                     type: contentType,
-                    per_page: 5,
+                    per_page: 9,
                 },
             }).then(
                 (res) => {
