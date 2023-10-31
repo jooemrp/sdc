@@ -5,7 +5,7 @@
         <div class="container grid xl:grid-cols-3">
             <div class="col-span-2 m-auto">
                 <h1
-                    class="mx-10 mb-5 text-3xl font-bold text-white xl:text-6xl xl:leading-snug"
+                    class="mx-10 mb-5 text-3xl font-bold text-white xl:text-6xl xl:leading-snug transition-"
                 >
                     Experience Digital Precision in Your Pharmaceutical
                     Marketing Strategy
@@ -80,6 +80,7 @@
                 >
                     Customizing Digital Solutions for Your Unique Needs
                 </h2>
+                <img class="hidden mt-28 h-1/2 xl:block" src="/what-we-do-at-sips-digital-creative.webp" alt="SIPS Digital Brand Awareness Service" />
             </div>
             <div class="mx-auto">
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
@@ -345,12 +346,12 @@
 
             <div class="flex justify-center">
                 <button
-                    class="hover:bg- mt-12 rounded-xl bg-sips-maroon px-5 py-3 text-xl text-white xl:px-12"
+                    class="px-5 py-3 mt-12 text-xl text-white hover:bg- rounded-xl bg-sips-maroon xl:px-12"
                 >
                     <NuxtLink
                         to="/insights"
                         aria-label="Home Page"
-                        class="my-link block rounded py-2 pl-3 pr-4 text-gray-900 md:bg-transparent md:p-0 md:text-white"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:bg-transparent md:p-0 md:text-white"
                         aria-current="page"
                         >View All</NuxtLink
                     >

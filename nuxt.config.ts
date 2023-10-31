@@ -35,6 +35,7 @@ export default defineNuxtConfig({
       title: "SIPS Digital Creative",
       meta: [
         { name: "description", content: "Digital Marketing for healthcare" },
+        { name: "google-site-verification", content: "exnpYh7ierXa8KgWCehxk2fqgOjGsepiWrPZ5JCw24c" },
       ],
       link: [
         // {
