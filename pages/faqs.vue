@@ -1,23 +1,23 @@
 <template>
     <div
-        class="flex items-center bg-gradient-to-br from-blue-900 to-orange-700 px-20 py-10 md:px-0 md:py-20"
+        class="flex items-center px-20 py-10 bg-gradient-to-br from-blue-900 to-orange-700 md:px-0 md:py-20"
     >
         <div
-            class="container mx-auto flex items-center justify-center p-1 text-white md:px-3"
+            class="container flex items-center justify-center p-1 mx-auto text-white md:px-3"
         >
-            <h1 class="text-center text-3xl font-bold md:text-5xl lg:text-6xl">
+            <h1 class="text-3xl font-bold text-center md:text-5xl lg:text-6xl">
                 Frequently Asked Questions
             </h1>
         </div>
     </div>
 
-    <div class="container mx-auto w-3/5 items-center">
-        <div class="my-10 grid grid-cols-1 gap-6">
+    <div class="container items-center w-3/5 mx-auto">
+        <div class="grid grid-cols-1 gap-6 my-10">
             <div id="accordion-collapse" data-accordion="open">
                 <h2 id="accordion-collapse-heading-1">
                     <button
                         type="button"
-                        class="flex w-full items-center justify-between rounded-t-xl border border-b-0 border-gray-200 p-5 text-left font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
                         data-accordion-target="#accordion-collapse-body-1"
                         aria-expanded="true"
                         aria-controls="accordion-collapse-body-1"
@@ -28,7 +28,7 @@
                         >
                         <svg
                             data-accordion-icon
-                            class="h-3 w-3 shrink-0 rotate-180"
+                            class="w-3 h-3 rotate-180 shrink-0"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -50,7 +50,7 @@
                     aria-labelledby="accordion-collapse-heading-1"
                 >
                     <div
-                        class="border border-b-0 border-gray-200 p-5 dark:border-gray-700 dark:bg-gray-900"
+                        class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
                     >
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
                             Flowbite is an open-source library of interactive
@@ -72,7 +72,7 @@
                 <h2 id="accordion-collapse-heading-2">
                     <button
                         type="button"
-                        class="flex w-full items-center justify-between border border-b-0 border-gray-200 p-5 text-left font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
                         data-accordion-target="#accordion-collapse-body-2"
                         aria-expanded="false"
                         aria-controls="accordion-collapse-body-2"
@@ -80,7 +80,7 @@
                         <span>Is there a Figma file available?</span>
                         <svg
                             data-accordion-icon
-                            class="h-3 w-3 shrink-0 rotate-180"
+                            class="w-3 h-3 rotate-180 shrink-0"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -102,7 +102,7 @@
                     aria-labelledby="accordion-collapse-heading-2"
                 >
                     <div
-                        class="border border-b-0 border-gray-200 p-5 dark:border-gray-700"
+                        class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
                     >
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
                             Flowbite is first conceptualized and designed using
@@ -124,7 +124,7 @@
                 <h2 id="accordion-collapse-heading-3">
                     <button
                         type="button"
-                        class="flex w-full items-center justify-between border border-gray-200 p-5 text-left font-medium text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+                        class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
                         data-accordion-target="#accordion-collapse-body-3"
                         aria-expanded="false"
                         aria-controls="accordion-collapse-body-3"
@@ -135,7 +135,7 @@
                         >
                         <svg
                             data-accordion-icon
-                            class="h-3 w-3 shrink-0 rotate-180"
+                            class="w-3 h-3 rotate-180 shrink-0"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -157,7 +157,7 @@
                     aria-labelledby="accordion-collapse-heading-3"
                 >
                     <div
-                        class="border border-t-0 border-gray-200 p-5 dark:border-gray-700"
+                        class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
                     >
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
                             The main difference is that the core components from
@@ -177,7 +177,7 @@
                             Learn more about these technologies:
                         </p>
                         <ul
-                            class="list-disc pl-5 text-gray-500 dark:text-gray-400"
+                            class="pl-5 text-gray-500 list-disc dark:text-gray-400"
                         >
                             <li>
                                 <a
@@ -219,6 +219,11 @@ useHead({
             hid: 'description',
             name: 'description',
             content: 'Frequenty Asked Questions',
+        },
+        {
+            hid:'canonical',
+            rel:'canonical',
+            href:'https://digital.sipsedutech.id/faqs'
         },
     ],
 });

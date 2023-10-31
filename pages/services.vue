@@ -233,7 +233,7 @@
   </div>
     <!-- <div class="flex flex-col items-center justify-center w-full py-14">
     <a
-      href="https://sipsdigital.typeform.com/SIPS-DC"
+      href="https://form.typeform.com/to/wrXbzSpp"
       aria-label="CTA to Typeform"
     >
       <button
@@ -260,6 +260,11 @@ useHead({
             hid: 'description',
             name: 'description',
             content: 'Explore our comprehensive services at SIPS Digital Creative: HCPs Engagement, Brand Awareness, Market Research, Comprehensive Digital Marketing Support, Technology Enhancement, Digital Content Management',
+        },
+        {
+            hid:'canonical',
+            rel:'canonical',
+            href:'https://digital.sipsedutech.id/services'
         },
     ],
 });

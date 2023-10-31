@@ -18,7 +18,7 @@
                     to new horizons of success.
                 </p>
                 <a
-                    href="https://sipsdigital.typeform.com/SIPS-DC"
+                    href="https://form.typeform.com/to/wrXbzSpp"
                     target="_blank"
                 >
                     <button
@@ -280,7 +280,7 @@
                 us today, and let's get started on your goals!
             </h2>
             <a
-                href="https://sipsdigital.typeform.com/SIPS-DC"
+                href="https://form.typeform.com/to/wrXbzSpp"
                 target="_blank"
                 class="mt-12"
             >
@@ -403,6 +403,11 @@ export default {
                     name: 'description',
                     content:
                         'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
+                },
+                {
+                    hid:'canonical',
+                    rel:'canonical',
+                    href:'https://digital.sipsedutech.id/'
                 },
             ],
         });
