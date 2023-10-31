@@ -1,6 +1,5 @@
 <template>
     <section
-        id="h-50"
         :class="`flex items-center bg-opacity-70 bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% p-44 md:p-56 lg:p-48`"
         :style="`background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
     ></section>
@@ -17,31 +16,42 @@
 
             <p class="mt-3" v-html="content?.body"></p>
 
-            <SharedSocialShareButton class="mt-5" />
+            <SharedSocialShareButton
+                class="mt-5"
+                :url="currentURL"
+                :text="`Baca artikel`"
+            />
         </div>
     </section>
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
+
 export default {
-    name: 'Content',
+    name: 'Content Detail',
     data() {
         return {
             content: {},
+            currentURL: '',
         };
     },
     async mounted() {
         const route = useRoute();
         const slug = route.params.slug;
+        const currentURL = route.fullPath;
 
+        this.currentURL = `${window.location.origin}${currentURL}`;
         this.getData(slug);
     },
     methods: {
         setMeta() {
             useHead({
-                title: this.content.title
-                    ? `${this.content.title} | ${this.content.type}`
-                    : 'Loading...',
+                titleTemplate: (titleChunk) => {
+                    return titleChunk
+                        ? `${this.content.title} - ${this.content.type} | ${titleChunk}`
+                        : `${this.content.title} - ${this.content.type}`;
+                },
                 meta: [
                     {
                         hid: 'title',
@@ -67,43 +77,3 @@ export default {
     },
 };
 </script>
-
-<!-- <script setup>
-import { ref } from 'vue';
-import { formatDate } from '@/utils/helpers';
-
-const route = useRoute();
-const slug = route.params.slug;
-const content = ref({});
-
-await useFetch(`https://api.sipsedutech.id/api/content/${slug}`).then(
-    (res) => {
-        const data = res.data.value.data;
-        content.value = data;
-    },
-    (error) => {
-        console.log(error);
-    },
-);
-
-useHead({
-    // title: 'Content',
-    titleTemplate: (titleChunk) => {
-        return content?.value?.title
-            ? `${content.value.title} | ${content.value.type}`
-            : 'Content';
-    },
-    meta: [
-        {
-            hid: 'title',
-            name: 'title',
-            content: content?.value.meta_title,
-        },
-        {
-            hid: 'description',
-            name: 'description',
-            content: content?.value.meta_description,
-        },
-    ],
-});
-</script> -->

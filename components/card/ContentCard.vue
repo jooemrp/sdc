@@ -1,10 +1,14 @@
 <template>
-    <NuxtLink :to="`/content/${content?.slug}`">
-        <div class="max-w-md rounded overflow-hidden shadow-md m-1 flex-none">
-            <img class="w-full min-w-[200px]" src="https://placehold.co/600x400" alt="Sunset in the mountains">
+    <NuxtLink :to="`/insight/${content?.slug}`">
+        <div class="m-1 max-w-md flex-none overflow-hidden rounded shadow-md">
+            <img
+                class="w-full min-w-[200px]"
+                src="https://placehold.co/600x400"
+                alt="Sunset in the mountains"
+            />
             <div class="px-6 py-4">
-                <div class="font-bold text-md mb-2">{{ content?.title }}</div>
-                <p class="text-gray-700 text-sm">
+                <div class="text-md mb-2 font-bold">{{ content?.title }}</div>
+                <p class="text-sm text-gray-700">
                     {{ truncateString(removeTags(content?.body), 100) }}
                 </p>
             </div>
@@ -18,8 +22,6 @@
 </template>
 
 <script setup>
-const { content } = defineProps(['content'])
-import { truncateString } from "@/utils/helpers";
-
-
+const { content } = defineProps(['content']);
+import { truncateString } from '@/utils/helpers';
 </script>
