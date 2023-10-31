@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`/insight/${content?.slug}`">
+    <NuxtLink :to="`/insights/${content?.slug}`">
         <div class="m-1 max-w-md flex-none overflow-hidden rounded shadow-md">
             <img
                 class="w-full min-w-[200px]"

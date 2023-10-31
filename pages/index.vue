@@ -344,19 +344,17 @@
             </div>
 
             <div class="flex justify-center">
-                <a href="#" target="_blank" class="mt-12">
-                    <button
-                        class="px-5 py-3 text-xl text-white hover:bg- rounded-xl bg-sips-maroon xl:px-12"
+                <button
+                    class="hover:bg- mt-12 rounded-xl bg-sips-maroon px-5 py-3 text-xl text-white xl:px-12"
+                >
+                    <NuxtLink
+                        to="/insights"
+                        aria-label="Home Page"
+                        class="my-link block rounded py-2 pl-3 pr-4 text-gray-900 md:bg-transparent md:p-0 md:text-white"
+                        aria-current="page"
+                        >View All</NuxtLink
                     >
-                        <NuxtLink
-                            to="/insights"
-                            aria-label="Home Page"
-                            class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:bg-transparent md:p-0 md:text-white"
-                            aria-current="page"
-                            >View All</NuxtLink
-                        >
-                    </button>
-                </a>
+                </button>
             </div>
         </div>
     </section>

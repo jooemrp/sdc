@@ -49,6 +49,20 @@
                     {{ contentIsLoading ? 'Loading...' : 'No content yet.' }}
                 </div>
             </div>
+
+            <div class="flex justify-center">
+                <button
+                    class="hover:bg- mt-12 rounded-xl bg-slate-500 px-5 py-3 text-xl xl:px-12"
+                >
+                    <NuxtLink
+                        to="/insights"
+                        aria-label="Home Page"
+                        class="my-link block rounded py-2 pl-3 pr-4 text-gray-900 md:bg-transparent md:p-0 md:text-white"
+                        aria-current="page"
+                        >More</NuxtLink
+                    >
+                </button>
+            </div>
         </div>
     </section>
 </template>
@@ -77,6 +91,7 @@ export default {
                 },
             ],
             contentIsLoading: true,
+            nextUrl: '',
         };
     },
     async mounted() {
@@ -106,23 +121,33 @@ export default {
     methods: {
         changeContent: async function (contentType = 'article') {
             this.contentIsLoading = true;
-            await useFetch(`https://api.sipsedutech.id/api/content`, {
-                query: {
-                    type: contentType,
-                    per_page: 9,
-                },
-            }).then(
-                (res) => {
-                    console.log(res);
-                    if (res.data.value) {
-                        this.contents = res.data.value.data;
-                    }
-                    this.contentIsLoading = false;
-                },
-                (error) => {
-                    console.log(error);
-                },
-            );
+
+            await fetch(
+                `https://api.sipsedutech.id/api/content?type=${contentType}&per_page=9`,
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    this.contents = data.data;
+                    this.nextUrl = res.data.this.contentIsLoading = false;
+                });
+
+            // await useFetch(`https://api.sipsedutech.id/api/content`, {
+            //     query: {
+            //         type: contentType,
+            //         per_page: 9,
+            //     },
+            // }).then(
+            //     (res) => {
+            //         console.log(res);
+            //         if (res.data.value) {
+            //             this.contents = res.data.value.data;
+            //         }
+            //         this.contentIsLoading = false;
+            //     },
+            //     (error) => {
+            //         console.log(error);
+            //     },
+            // );
         },
         toggleContent(item, e) {
             if (e.ctrlKey) {
@@ -133,6 +158,13 @@ export default {
                 });
                 item.clicked = true;
             }
+        },
+        moreContent: async function (nextUrl) {
+            await fetch(nextUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    this.contents = merge(this.content, data.data);
+                });
         },
     },
 };
