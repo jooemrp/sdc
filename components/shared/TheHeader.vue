@@ -27,6 +27,9 @@
 							<li>
 								<NuxtLink to="/works" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">WORKS</NuxtLink>
 							</li>
+							<li>
+								<NuxtLink to="/insights" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">INSIGHTS</NuxtLink>
+							</li>
 							<!-- <li>
 								<NuxtLink to="/capabilities" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CAPABILITIES</NuxtLink>
 							</li> -->

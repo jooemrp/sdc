@@ -6,7 +6,7 @@
     </div>
   </div>
 
-  <div class="w-4/5 mx-auto mt-20">
+  <div class="container w-4/5 mx-auto mt-20">
     <div class="grid grid-cols-1 gap-6 my-10 lg:grid-cols-2">
       <div v-for="w in works">
         <WorkCard :work="w" />

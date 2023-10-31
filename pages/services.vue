@@ -128,7 +128,7 @@
         <h2 class="text-5xl font-bold text-orange-500 xl:text-7xl">
           Technology Enhancement & Digital Content Management
         </h2>
-        <img class="hidden mt-28 xl:block h-1/2" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
+        <img class="hidden mt-28 xl:block h-1/3" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
       </div>
       <div class="mx-auto">
         <p class="mb-5 text-xl leading-relaxed">

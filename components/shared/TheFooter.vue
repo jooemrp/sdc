@@ -7,13 +7,13 @@
 				</a>
 				<ul class="flex-wrap items-center hidden mb-6 text-sm font-medium xl:flex text-gray-50 sm:mb-0 dark:text-gray-400">
 					<li class="ml-10 hover:underline">
+						<NuxtLink to="/faqs" aria-label="Frequently Asked Questions">FAQs</NuxtLink>
+					</li>
+					<li class="ml-10 hover:underline">
 						<NuxtLink to="/terms" aria-label="Terms and Conditions">Terms and Conditions</NuxtLink>
 					</li>
 					<li class="ml-10 hover:underline">
 						<NuxtLink to="/privacy" aria-label="About Privacy Policy">Privacy Policy</NuxtLink>
-					</li>
-					<li class="ml-10 hover:underline">
-						<NuxtLink to="/faqs" aria-label="Frequently Asked Questions">FAQs</NuxtLink>
 					</li>
 				</ul>
 				<form action="#">
