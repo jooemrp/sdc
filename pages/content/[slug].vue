@@ -29,7 +29,7 @@
 import { useRoute } from 'vue-router';
 
 export default {
-    name: 'Content',
+    name: 'Content Detail',
     data() {
         return {
             content: {},
