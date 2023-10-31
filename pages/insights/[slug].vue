@@ -2,6 +2,7 @@
     <section
         :class="`flex items-center bg-opacity-70 bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% p-44 md:p-56 lg:p-48`"
         :style="`background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
+        v-if="content?.thumbnail"
     ></section>
 
     <section class="m-10 mx-auto w-4/5 md:m-20" v-if="content.title">
