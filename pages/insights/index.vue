@@ -19,8 +19,8 @@
         </div>
     </div>
 
-    <section class="py-5 mx-auto md:py-10">
-        <div class="justify-center mx-5 md:mx-24">
+    <section class="justify-center py-5 mx-5 md:mx-0 md:py-10">
+        <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-2 md:gap-4">
                 <div v-for="item in contentItems">
                     <div
