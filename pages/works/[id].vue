@@ -1,8 +1,7 @@
 <template>
     <section
-        id="h-50"
         :class="
-            `flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-52 ` +
+            `flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-36 ` +
             (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())
         "
     >

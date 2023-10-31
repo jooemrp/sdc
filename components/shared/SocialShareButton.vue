@@ -21,7 +21,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-500 bg-blue-500 p-3 text-white transition duration-200 hover:border-blue-600 hover:bg-blue-600"
+            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-sky-400 bg-sky-400 p-3 text-white transition duration-200 hover:border-sky-500 hover:bg-sky-500"
             target="_blank"
             rel="noopener"
             :href="links.twitter"

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center mt-20 py-10 md:py-20 px-20 md:px-0 bg-gradient-to-br from-blue-900 to-orange-700">
+    <div class="flex items-center py-10 md:py-20 px-20 md:px-0 bg-gradient-to-br from-blue-900 to-orange-700">
         <div class="container p-1 mx-auto text-white md:px-3 justify-center flex items-center">
             <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl text-center">Frequently Asked Questions</h1>
         </div>

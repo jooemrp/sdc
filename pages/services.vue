@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center pt-24 pb-24 mx-auto mt-20 bg-gradient-to-r from-orange-700 to-orange-500">
+  <div class="flex justify-center pt-24 pb-24 mx-auto bg-gradient-to-r from-orange-700 to-orange-500">
     <div class="container text-center">
         <h1 class="mx-5 mb-5 text-5xl font-bold text-white xl:text-7xl xl:leading-snug">Achieve your pharmaceutical goals with our proven digital marketing strategy that maximizes benefits</h1>
         <p class="w-3/4 mx-auto mt-10 mb-5 text-3xl leading-relaxed text-white">Uncover the path to achieving your pharmaceutical goals with our proven digital marketing strategy, designed to maximize benefits. Explore our services below and embark on your journey to success</p>

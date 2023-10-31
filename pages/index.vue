@@ -1,6 +1,6 @@
 <template>
     <div
-        class="mx-auto mt-20 flex justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% pb-16 pt-24"
+        class="mx-auto flex justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% pb-16 pt-24"
     >
         <div class="container grid xl:grid-cols-3">
             <div class="col-span-2 m-auto">

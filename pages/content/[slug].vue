@@ -1,6 +1,5 @@
 <template>
     <section
-        id="h-50"
         :class="`flex items-center bg-opacity-70 bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% p-44 md:p-56 lg:p-48`"
         :style="`background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
     ></section>
@@ -76,43 +75,3 @@ export default {
     },
 };
 </script>
-
-<!-- <script setup>
-import { ref } from 'vue';
-import { formatDate } from '@/utils/helpers';
-
-const route = useRoute();
-const slug = route.params.slug;
-const content = ref({});
-
-await useFetch(`https://api.sipsedutech.id/api/content/${slug}`).then(
-    (res) => {
-        const data = res.data.value.data;
-        content.value = data;
-    },
-    (error) => {
-        console.log(error);
-    },
-);
-
-useHead({
-    // title: 'Content',
-    titleTemplate: (titleChunk) => {
-        return content?.value?.title
-            ? `${content.value.title} | ${content.value.type}`
-            : 'Content';
-    },
-    meta: [
-        {
-            hid: 'title',
-            name: 'title',
-            content: content?.value.meta_title,
-        },
-        {
-            hid: 'description',
-            name: 'description',
-            content: content?.value.meta_description,
-        },
-    ],
-});
-</script> -->
