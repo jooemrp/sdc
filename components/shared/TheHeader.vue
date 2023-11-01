@@ -4,7 +4,7 @@
 			<nav class="fixed top-0 left-0 z-20 w-full bg-black shadow-sm">
 				<div class="container flex flex-wrap items-center justify-between p-5 mx-auto md:font-semibold md:text-lg">
 					<NuxtLink to="/" aria-label="To homepage">
-						<img src="/sips-ico.png" class="w-2/4 ml-5 xl:w-3/4 md:w-2/4 xl:ml-0" alt="SIPS Digital Creative">
+						<img src="/sips-ico.png" class="w-2/4 ml-5 xl:w-3/4 md:w-2/4 xl:ml-0" alt="SIPS Digital Creative" data-aos="flip-left">
 						<!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SIPS Digital Creative</span> -->
 					</NuxtLink>
 					<button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-400 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-400" aria-controls="navbar-default" aria-expanded="false">
