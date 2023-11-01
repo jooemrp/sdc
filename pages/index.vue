@@ -404,12 +404,14 @@ export default {
                     content:
                         'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
                 },
+            ],
+            link: [
                 {
                     hid:'canonical',
                     rel:'canonical',
                     href:'https://digital.sipsedutech.id/'
                 },
-            ],
+            ]
         });
 
         await nextTick(async () => {

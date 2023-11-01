@@ -108,12 +108,14 @@ export default {
                     content:
                         'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
                 },
+            ],
+            link: [
                 {
                     hid:'canonical',
                     rel:'canonical',
                     href:'https://digital.sipsedutech.id/insights'
                 },
-            ],
+            ]
         });
 
         await nextTick(async () => {

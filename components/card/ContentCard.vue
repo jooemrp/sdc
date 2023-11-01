@@ -3,7 +3,7 @@
         <div class="m-1 max-w-md flex-none overflow-hidden rounded shadow-md">
             <img
                 class="w-full min-w-[200px]"
-                src="https://placehold.co/600x400"
+                :src="content?.thumbnail ?? 'https://placehold.co/600x400'"
                 alt="Sunset in the mountains"
             />
             <div class="px-6 py-4">

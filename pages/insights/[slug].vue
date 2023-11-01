@@ -5,7 +5,7 @@
         v-if="content?.thumbnail"
     ></section>
 
-    <section class="w-4/5 m-10 mx-auto md:m-20" v-if="content.title">
+    <div class="container w-4/5 m-10 md:m-20" v-if="content.title">
         <div class="container mx-auto xl:p-0">
             <h1 class="text-2xl font-bold text-neutral-900 xl:text-4xl">
                 {{ content?.title }}
@@ -45,7 +45,7 @@
                 :text="`Baca artikel`"
             />
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -86,12 +86,14 @@ export default {
                         name: 'description',
                         content: this.content?.meta_description,
                     },
+                ],
+                link: [
                     {
                         hid:'canonical',
                         rel:'canonical',
-                        href:`https://digital.sipsedutech.id/${this.content.slug}`
+                        href:`https://digital.sipsedutech.id/insights/${this.content.slug}`
                     },
-                ],
+                ]
             });
         },
         getData: async function (slug) {

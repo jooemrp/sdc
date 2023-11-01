@@ -48,4 +48,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  plugins: [
+    { src: "~/plugins/vue-toastificaton.js", mode: "client" },
+  ],
 });
