@@ -261,12 +261,14 @@ useHead({
             name: 'description',
             content: 'Explore our comprehensive services at SIPS Digital Creative: HCPs Engagement, Brand Awareness, Market Research, Comprehensive Digital Marketing Support, Technology Enhancement, Digital Content Management',
         },
+    ],
+    link: [
         {
             hid:'canonical',
             rel:'canonical',
             href:'https://digital.sipsedutech.id/services'
         },
-    ],
+    ]
 });
 </script>
 

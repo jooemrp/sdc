@@ -76,12 +76,14 @@ export default {
                         name: 'description',
                         content: this.work?.meta_description,
                     },
+                ],
+                link: [
                     {
                         hid:'canonical',
                         rel:'canonical',
-                        href:'https://digital.sipsedutech.id/'
+                        href:`https://digital.sipsedutech.id/works/${this.work.slug}`
                     },
-                ],
+                ]
             });
         },
         getData: async function (id) {

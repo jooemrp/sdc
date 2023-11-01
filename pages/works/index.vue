@@ -51,12 +51,14 @@ export default {
                     name: 'description',
                     content: 'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities. Explore our services for precision marketing success',
                 },
+            ],
+            link: [
                 {
                     hid:'canonical',
                     rel:'canonical',
                     href:'https://digital.sipsedutech.id/works'
                 },
-            ],
+            ]
         });
 
         await nextTick(async () => {

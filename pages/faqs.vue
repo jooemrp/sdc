@@ -220,11 +220,13 @@ useHead({
             name: 'description',
             content: 'Frequenty Asked Questions',
         },
+    ],
+    link: [
         {
             hid:'canonical',
             rel:'canonical',
             href:'https://digital.sipsedutech.id/faqs'
         },
-    ],
+    ]
 });
 </script>
