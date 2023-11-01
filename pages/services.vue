@@ -219,7 +219,7 @@
         <img class="hidden mt-28 xl:block h-2/5" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
       </div>
       <div class="mx-auto">
-        <p class="mb-5 text-xl leading-relaxed">
+        <p class="mt-5 mb-5 leading-relaxed xl:text-xl">
           We will support you in modernizing your company's online presence and ensuring you effectively communicate your company's value to key stakeholders. Either you use it for internal content management, educating your HCP stakeholders, or as a simple corporate website, we are available for your technology enhancement.
         </p>
         <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
@@ -231,7 +231,7 @@
       </div>
     </div>
   </div>
-    <!-- <div class="flex flex-col items-center justify-center w-full py-14">
+    <div class="flex flex-col items-center justify-center w-full py-14">
     <a
       href="https://form.typeform.com/to/wrXbzSpp"
       aria-label="CTA to Typeform"
@@ -239,10 +239,10 @@
       <button
         class="px-5 py-3 text-xl text-white bg-green-600 hover:bg-blue-900 rounded-xl"
       >
-        Request Your Tailored Solution
+        Talk to us
       </button>
     </a>
-  </div> -->
+  </div>
 </template>
 
 <script setup>

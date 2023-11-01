@@ -16,19 +16,19 @@
 					<div class="hidden w-full md:block md:w-auto" id="navbar-default">
 						<ul class="flex flex-col p-4 mt-4 font-medium text-orange-500 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:font-semibold md:text-slate-100 md:bg-black">
 							<li>
-								<NuxtLink to="/" aria-label="Home Page" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white md:bg-transparent md:p-0" aria-current="page">HOME</NuxtLink>
+								<NuxtLink to="/" aria-label="Home Page" class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:text-white md:bg-transparent md:p-0" aria-current="page">HOME</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/services" aria-label="List of company services" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">SERVICES</NuxtLink>
+								<NuxtLink to="/services" aria-label="List of company services" class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">SERVICES</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/works" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">WORKS</NuxtLink>
+								<NuxtLink to="/works" class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">WORKS</NuxtLink>
 							</li>
 							<li>
-								<NuxtLink to="/insights" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">INSIGHTS</NuxtLink>
+								<NuxtLink to="/insights" class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">INSIGHTS</NuxtLink>
 							</li>
 							<li>
-								<a href="https://sipsedutech.id/en/about" target="_blank" aria-label="About company" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">ABOUT</a>
+								<a href="https://sipsedutech.id/en/about" target="_blank" aria-label="About company" class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sips-orange md:p-0">ABOUT</a>
 							</li>
 							<!-- <li>
 								<NuxtLink to="/capabilities" class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CAPABILITIES</NuxtLink>
