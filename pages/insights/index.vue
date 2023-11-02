@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex justify-center pt-24 pb-24 mx-auto bg-gradient-to-r from-sips-green to-green-500"
+        class="mx-auto flex justify-center bg-gradient-to-r from-sips-green to-green-500 pb-24 pt-24"
     >
         <div class="container text-center">
             <h1
@@ -10,7 +10,7 @@
                 Resources
             </h1>
             <p
-                class="w-3/4 mx-auto mt-10 mb-5 text-2xl leading-relaxed text-white"
+                class="mx-auto mb-5 mt-10 w-3/4 text-2xl leading-relaxed text-white"
             >
                 Explore our valuable resources and expert perspectives to make
                 your decisions more informed and your industry insights more
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <section class="justify-center py-5 mx-5 md:mx-0 md:py-10">
+    <section class="mx-5 justify-center py-5 md:mx-0 md:py-10">
         <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-2 md:gap-4">
                 <div v-for="item in contentItems">
@@ -30,7 +30,7 @@
                             toggleContent(item, $event);
                         "
                         :class="{ contentActive: item.clicked }"
-                        class="p-2 mx-1 my-1 text-center text-black border-b-4 rounded-sm cursor-pointer content-item bg-slate-100 hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
+                        class="content-item mx-1 my-1 max-w-md cursor-pointer rounded-sm border-b-4 bg-slate-100 p-2 text-center text-black hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
                     >
                         {{ item.name }}
                     </div>
@@ -38,21 +38,21 @@
             </div>
 
             <div v-if="contents.length > 0">
-                <div class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-3">
+                <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
                     <div v-for="content in contents">
                         <CardContentCard :content="content" />
                     </div>
                 </div>
             </div>
             <div v-else>
-                <div class="w-full mx-1 my-20 text-center">
+                <div class="mx-1 my-20 w-full text-center">
                     {{ contentIsLoading ? 'Loading...' : 'No content yet.' }}
                 </div>
             </div>
 
             <div class="flex justify-center" v-if="nextUrl != null">
                 <button
-                    class="p-3 text-gray-900 rounded-full text-md mt-7 bg-slate-200 hover:bg-slate-300"
+                    class="text-md mt-7 rounded-full bg-slate-200 p-3 text-gray-900 hover:bg-slate-300"
                     @click="moreContent()"
                 >
                     {{ showMoreIsLoading ? 'Loading...' : 'Show more' }}
@@ -111,11 +111,11 @@ export default {
             ],
             link: [
                 {
-                    hid:'canonical',
-                    rel:'canonical',
-                    href:'https://digital.sipsedutech.id/insights'
+                    hid: 'canonical',
+                    rel: 'canonical',
+                    href: 'https://digital.sipsedutech.id/insights',
                 },
-            ]
+            ],
         });
 
         await nextTick(async () => {
