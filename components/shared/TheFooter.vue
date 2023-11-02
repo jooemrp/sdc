@@ -2,16 +2,18 @@
     <footer class="bg-sips-navy">
         <div class="container mx-auto p-4 md:py-8">
             <div class="grid grid-cols-1 md:grid-cols-3">
-                <div>
+                <div
+                    class="my-6 flex items-center justify-center sm:justify-start md:my-0"
+                >
                     <a
                         href="https://sipsedutech.id/en/"
-                        class="my-12 flex items-center sm:mb-0 xl:my-0 xl:ml-0"
+                        class="flex items-center sm:mb-0 xl:my-0 xl:ml-0"
                     >
                         <img src="/sips-white.webp" class="" alt="SIPS Logo" />
                     </a>
                 </div>
 
-                <div>
+                <div class="flex items-center sm:hidden lg:flex">
                     <ul
                         class="mb-6 hidden flex-wrap items-center text-sm font-medium text-gray-50 dark:text-gray-400 sm:mb-0 xl:flex"
                     >
@@ -39,8 +41,10 @@
                     </ul>
                 </div>
 
-                <div class="w-full justify-self-end">
-                    <div class="mb-3 flex w-full space-y-0 md:w-2/3">
+                <div
+                    class="flex items-center justify-center sm:justify-end md:col-span-2 lg:col-span-1"
+                >
+                    <div class="flex space-y-0 md:w-8/12 lg:w-10/12">
                         <div class="relative w-full">
                             <label
                                 for="email"
@@ -48,7 +52,7 @@
                                 >Email address</label
                             >
                             <div
-                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+                                class="pointer-events-none absolute inset-y-0 left-0 top-3 pl-3"
                             >
                                 <svg
                                     class="h-5 w-5 text-gray-500"
