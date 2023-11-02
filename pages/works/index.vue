@@ -7,12 +7,14 @@
             <h1
                 class="max-w-4xl text-5xl font-bold xl:text-7xl"
                 data-aos="zoom-in-right"
+                data-aos-duration="2000"
             >
                 See How We Drive Success for Our Clients
             </h1>
             <p
                 class="max-w-5xl py-8 xl:py-12 xl:text-2xl xl:leading-normal"
-                data-aos="fade-up"
+                data-aos="fade-down-right"
+                data-aos-duration="2000"
             >
                 Explore our success stories and see firsthand how we've helped
                 our clients thrive. From boosting online presence to creating
