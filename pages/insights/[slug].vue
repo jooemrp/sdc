@@ -1,7 +1,7 @@
 <template>
     <section class="flex justify-center">
         <div
-            class="container w-full max-w-5xl xl:mt-5 xl:rounded-xl xl:pt-5"
+            class="container w-full md:w-5/6 md:rounded-xl lg:w-5/6 lg:xl:mt-5 xl:pt-5"
             :style="`height: 65vh; background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
             v-if="content?.thumbnail"
         ></div>
@@ -9,7 +9,7 @@
 
     <section class="flex justify-center" v-if="content.title">
         <div
-            class="-mt-32 rounded-t-3xl bg-white px-10 py-10 xl:mx-8 xl:w-4/6 xl:py-10"
+            class="-mt-32 rounded-t-3xl bg-white px-10 py-10 md:w-4/6 xl:mx-8 xl:w-4/6 xl:py-10"
         >
             <div class="container mx-auto xl:p-0">
                 <h1
