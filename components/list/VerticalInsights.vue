@@ -13,7 +13,7 @@
                         toggleContent(item, $event);
                     "
                     :class="{ contentActive: item.clicked }"
-                    class="content-item mx-auto my-1 cursor-pointer rounded-sm p-4 text-black hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
+                    class="content-item mx-auto my-1 cursor-pointer snap-start rounded-sm p-4 text-black hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
                 >
                     {{ item.name }}
                 </div>
@@ -22,8 +22,10 @@
 
         <div class="col-span-1 p-5 md:col-span-3">
             <div v-if="contents.length > 0">
-                <div class="whitespace-no-wrap flex w-full overflow-x-auto">
-                    <div v-for="content in contents">
+                <div
+                    class="whitespace-no-wrap flex w-full snap-x overflow-x-auto scroll-smooth"
+                >
+                    <div v-for="content in contents" class="snap-start">
                         <CardContentCard :content="content" />
                     </div>
                 </div>
