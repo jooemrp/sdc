@@ -3,7 +3,7 @@
         class="mx-auto flex justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% pb-16 pt-24"
     >
         <div class="container grid xl:grid-cols-3">
-            <div class="col-span-2 m-auto" data-aos="fade-right">
+            <div class="col-span-2 m-auto" data-aos="fade-right" data-aos-duration="2000">
                 <h1
                     class="transition- mx-10 mb-5 text-3xl font-bold text-white xl:text-6xl xl:leading-snug"
                 >
@@ -25,7 +25,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-span-1 mx-auto" data-aos="fade-left">
+            <div class="col-span-1 mx-auto" data-aos="fade-left" data-aos-duration="2000">
                 <img
                     class="hidden w-full object-fill xl:block"
                     src="/sips-digital-hero-img.webp"

@@ -5,12 +5,14 @@
         <div class="container text-center">
             <h1
                 class="mx-5 mb-5 text-5xl font-bold text-white xl:text-6xl xl:leading-snug"
+                data-aos="flip-up"
             >
                 Streamline Your Decisions and Stay Ahead with Our Insightful
                 Resources
             </h1>
             <p
                 class="mx-auto mb-5 mt-10 w-3/4 text-2xl leading-relaxed text-white"
+                data-aos="fade-down"
             >
                 Explore our valuable resources and expert perspectives to make
                 your decisions more informed and your industry insights more
