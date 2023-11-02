@@ -12,6 +12,8 @@
             class="-mt-32 rounded-t-3xl bg-white px-10 py-10 md:w-4/6 xl:mx-8 xl:w-4/6 xl:py-10"
         >
             <div class="container mx-auto xl:p-0">
+                <SharedBreadcrumbs class="mb-2" :items="breadcrumbItems" />
+
                 <h1
                     class="mb-5 text-2xl font-bold text-neutral-900 xl:text-4xl"
                 >
@@ -73,6 +75,7 @@ export default {
         return {
             content: {},
             currentURL: '',
+            breadcrumbItems: [],
         };
     },
     async mounted() {
@@ -118,6 +121,11 @@ export default {
                 .then((data) => {
                     this.content = data.data;
                     this.setMeta();
+
+                    this.breadcrumbItems = [
+                        { title: 'Insights', url: null },
+                        { title: data.data.title, url: null },
+                    ];
                 });
         },
     },
