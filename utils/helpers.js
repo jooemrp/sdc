@@ -60,7 +60,7 @@ export function formatDate(inputDate) {
     const year = date.getUTCFullYear();
 
     // Assemble the formatted date string
-    const formattedDate = `${dayName}, ${monthName} ${day} ${year}`;
+    const formattedDate = `${dayName}, ${day} ${monthName} ${year}`;
 
     return formattedDate;
 }
