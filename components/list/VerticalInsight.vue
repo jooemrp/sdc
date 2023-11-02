@@ -39,7 +39,7 @@
 
 <script>
 export default {
-    name: 'Home',
+    name: 'VerticalInsights',
     data() {
         return {
             contents: [],
