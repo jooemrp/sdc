@@ -5,7 +5,7 @@
         <div class="container grid xl:grid-cols-3">
             <div class="col-span-2 m-auto" data-aos="fade-right">
                 <h1
-                    class="transition- mx-10 mb-5 text-3xl font-bold text-white xl:text-6xl xl:leading-snug"
+                    class="mx-10 mb-5 text-3xl font-bold text-white transition- xl:text-6xl xl:leading-snug"
                 >
                     Experience Digital Precision in Your Pharmaceutical
                     Marketing Strategy
@@ -19,7 +19,7 @@
                 </p>
                 <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank">
                     <button
-                        class="mx-10 mt-5 rounded-xl bg-orange-500 px-5 py-3 text-xl text-white hover:bg-orange-600 xl:px-12"
+                        class="px-5 py-3 mx-10 mt-5 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12"
                     >
                         Contact Us
                     </button>
@@ -27,7 +27,7 @@
             </div>
             <div class="col-span-1 mx-auto" data-aos="fade-left">
                 <img
-                    class="hidden w-full object-fill xl:block"
+                    class="hidden object-fill w-full xl:block"
                     src="/sips-digital-hero-img.webp"
                     alt="Hero image"
                 />
@@ -36,7 +36,7 @@
     </div>
 
     <div
-        class="flex justify-center bg-blue-900 bg-texture bg-cover bg-center py-20 text-center bg-blend-color-burn"
+        class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover bg-texture bg-blend-color-burn"
     >
         <div class="container px-2 xl:px-5">
             <h2
@@ -58,7 +58,7 @@
             </p>
             <a href="https://sipsedutech.id/en/about" target="_blank">
                 <button
-                    class="rounded-xl bg-orange-500 px-12 py-3 text-xl text-white hover:bg-orange-600"
+                    class="px-12 py-3 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600"
                 >
                     Learn More
                 </button>
@@ -66,8 +66,8 @@
         </div>
     </div>
 
-    <div class="container mx-auto py-12">
-        <div class="m-5 grid-cols-2 space-y-10 xl:my-10 xl:grid">
+    <div class="container py-12 mx-auto">
+        <div class="grid-cols-2 m-5 space-y-10 xl:my-10 xl:grid">
             <div class="row-span-6">
                 <p class="mt-12 text-2xl font-bold text-gray-600">
                     OUR SERVICES
@@ -78,7 +78,7 @@
                     Customizing Digital Solutions for Your Unique Needs
                 </h2>
                 <img
-                    class="mt-28 hidden h-1/2 xl:block"
+                    class="hidden mt-28 h-1/2 xl:block"
                     src="/what-we-do-at-sips-digital-creative.webp"
                     alt="SIPS Digital Brand Awareness Service"
                 />
@@ -158,8 +158,8 @@
         </div>
     </div>
 
-    <div class="mx-auto mt-5 bg-sips-maroon py-20">
-        <div class="container mx-auto justify-center text-center text-white">
+    <div class="py-20 mx-auto mt-5 bg-sips-maroon">
+        <div class="container justify-center mx-auto text-center text-white">
             <h2 class="text-5xl font-bold leading-normal xl:text-6xl">
                 Our Clients
             </h2>
@@ -169,7 +169,7 @@
             </p>
         </div>
         <div
-            class="mx-5 my-16 mb-10 grid grid-cols-2 justify-items-center gap-8 rounded-2xl bg-white px-5 py-10 shadow-lg xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16"
+            class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white shadow-lg xl:container justify-items-center rounded-2xl xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16"
         >
             <img
                 class="xl:mt-5"
@@ -272,10 +272,10 @@
         </div>
     </div>
 
-    <div class="my-12 flex justify-center py-16 text-center">
+    <div class="flex justify-center py-16 my-12 text-center">
         <div class="container px-2 xl:px-5">
             <h2
-                class="w:full mx-auto mb-12 text-3xl font-bold leading-normal text-sips-navy xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
+                class="mx-auto mb-12 text-3xl font-bold leading-normal w:full text-sips-navy xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
             >
                 Ready for precision marketing to transform your results? Contact
                 us today, and let's get started on your goals!
@@ -286,7 +286,7 @@
                 class="mt-12"
             >
                 <button
-                    class="rounded-xl bg-orange-500 px-5 py-3 text-xl text-white hover:bg-orange-600 xl:px-12"
+                    class="px-5 py-3 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12"
                 >
                     Contact Us
                 </button>
@@ -294,17 +294,17 @@
         </div>
     </div>
 
-    <section class="mx-auto flex justify-center bg-sips-orange py-16">
+    <section class="flex justify-center py-16 mx-auto bg-sips-orange">
         <div class="container mx-10 md:mx-32 lg:mx-40">
             <h2
-                class="w:full mx-auto mb-12 text-center text-3xl font-bold leading-normal text-white xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
+                class="mx-auto mb-12 text-3xl font-bold leading-normal text-center text-white w:full xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
             >
                 Enhance Your Expertise with Valuable Insights and Resources
             </h2>
 
             <div
                 :class="contents.length > 0 ? 'mx-10 md:mx-0' : 'mx-none'"
-                class="grid-cols-1 rounded-2xl bg-slate-50 shadow-lg md:grid-cols-4 lg:grid"
+                class="grid-cols-1 shadow-lg rounded-2xl bg-slate-50 md:grid-cols-4 lg:grid"
             >
                 <div class="p-5">
                     <div v-for="item in contentItems">
@@ -316,7 +316,7 @@
                                 toggleContent(item, $event);
                             "
                             :class="{ contentActive: item.clicked }"
-                            class="content-item mx-auto my-1 cursor-pointer rounded-sm p-4 text-black hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
+                            class="p-4 mx-auto my-1 text-black rounded-sm cursor-pointer content-item hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
                         >
                             {{ item.name }}
                         </div>
@@ -326,7 +326,7 @@
                 <div class="col-span-1 p-5 md:col-span-3">
                     <div v-if="contents.length > 0">
                         <div
-                            class="whitespace-no-wrap flex w-full overflow-x-auto"
+                            class="flex w-full overflow-x-auto whitespace-no-wrap"
                         >
                             <div v-for="content in contents">
                                 <CardContentCard :content="content" />
@@ -347,12 +347,12 @@
 
             <div class="flex justify-center">
                 <button
-                    class="hover:bg- mt-12 rounded-xl bg-sips-maroon px-5 py-3 text-xl text-white xl:px-12"
+                    class="px-5 py-3 mt-12 text-xl text-white hover:bg- rounded-xl bg-sips-maroon xl:px-12"
                 >
                     <NuxtLink
                         to="/insights"
                         aria-label="Home Page"
-                        class="my-link block rounded py-2 pl-3 pr-4 text-gray-900 md:bg-transparent md:p-0 md:text-white"
+                        class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:bg-transparent md:p-0 md:text-white"
                         aria-current="page"
                         >View All</NuxtLink
                     >

@@ -4,13 +4,13 @@
     >
         <div class="container text-center">
             <h1
-                class="mx-5 mb-5 text-5xl font-bold text-white xl:text-7xl xl:leading-snug"
+                class="mx-5 mb-5 text-3xl font-bold text-white xl:text-7xl xl:leading-snug"
             >
                 Achieve your pharmaceutical goals with our proven digital
                 marketing strategy that maximizes benefits
             </h1>
             <p
-                class="w-3/4 mx-auto mt-10 mb-5 text-3xl leading-relaxed text-white"
+                class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-3xl"
             >
                 Uncover the path to achieving your pharmaceutical goals with our
                 proven digital marketing strategy, designed to maximize
@@ -20,11 +20,11 @@
         </div>
     </div>
 
-    <div class="flex justify-center xl:my-10 xl:px-36">
-        <div class="container grid-cols-2 gap-6 m-5 space-y-10 xl:grid">
-            <div class="">
+    <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
+        <div class="container grid-cols-2 gap-6 mx-5 xl:grid">
+            <div class="mb-8">
                 <h2
-                    class="mt-10 text-5xl font-bold text-orange-500 xl:text-6xl"
+                    class="text-4xl font-bold text-orange-500 xl:text-6xl"
                 >
                     HCP <br />Engagement
                 </h2>
@@ -35,30 +35,30 @@
                 />
             </div>
             <div class="mx-auto">
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     HCP Engagement is a vital service that connects
                     pharmaceutical companies with HCP to foster collaboration,
                     increase awareness, and gather valuable insights.
                 </p>
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     Our HCP program is a tailored solution designed to bridge
                     the gap between your company and HCP. By facilitating
                     meaningful interactions and partnerships, we enable your
                     company to leverage the expertise and trust of HCP to build
                     and enhance your brand recognition.
                 </p>
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     We craft a meaningful and effective outreach strategy to
                     engage HCP, includes various communication channels ensuring
                     multi-faceted approach to connect with HCP:
                 </p>
-                <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+                <ul class="mb-10 leading-relaxed list-disc list-inside xl:text-xl">
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
                     <li>Survey, polling and feedback generation</li>
                 </ul>
 
-                <h3 class="mb-8 text-3xl font-bold text-orange-500">
+                <h3 class="mb-8 text-2xl font-bold text-orange-500 xl:text-3xl">
                   See how we've done it with...
                 </h3>
                 <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
@@ -83,8 +83,7 @@
                         class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
                     >
                         <NuxtLink
-                            to="/"
-                            target="_blank"
+                            to="/works/biofarma"
                             aria-label="To homepage"
                         >
                             <img
@@ -99,22 +98,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="flex justify-center bg-sips-maroon">
-        <div class="container grid-cols-2 gap-6 m-5 text-white mt-36 xl:grid">
-            <div class="">
-                <h2 class="text-5xl font-bold xl:text-7xl">
+    <section class="flex justify-center pt-12 bg-sips-maroon xl:px-36">
+        <div class="container grid-cols-2 gap-6 mx-5 text-white xl:mt-16 xl:grid">
+            <div class="mb-8 xl:mb-0">
+                <h2 class="mb-12 text-4xl font-bold xl:text-6xl">
                     Brand <br />Awareness
                 </h2>
                 <img
-                    class="hidden mt-28 h-1/2 xl:block"
+                    class="hidden h-3/5 xl:block"
                     src="/sips-digital-brand-awareness.webp"
                     alt="SIPS Digital Brand Awareness Service"
                 />
             </div>
             <div class="mx-auto">
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     Our brand awareness program is a multi-faceted solution to
                     amplify the presence of your brand across a diverse
                     audience, including HCP and the general population. <br />
@@ -122,7 +121,7 @@
                     general population through educating both audience, and
                     assigning HCP to educate the general population, through:
                 </p>
-                <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+                <ul class="mb-10 leading-relaxed list-disc list-inside xl:text-xl">
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
                     <li>Medical KOL Management</li>
@@ -130,14 +129,12 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="flex justify-center xl:my-10 xl:px-36">
-        <div class="container grid-cols-2 gap-6 m-5 space-y-10 xl:grid">
-            <div class="">
-                <h2
-                    class="mt-10 text-5xl font-bold text-orange-500 xl:text-6xl"
-                >
+    <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
+        <div class="container grid-cols-2 gap-6 mx-5 xl:grid">
+            <div class="mb-8 xl:mb-0">
+                <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     Comprehensive <br />Digital Marketing <br />Support
                 </h2>
                 <img
@@ -147,20 +144,20 @@
                 />
             </div>
             <div class="mx-auto">
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     Our comprehensive digital marketing support is a tailored
                     solution designed to empower our clients with a 360-degree
                     digital strategy. It is suitable for new product launches,
                     go-to-market activation, targeting diverse audience,
                     including HCP and the general population.
                 </p>
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     This program incorporates a multi-channel approach,
                     leveraging the strength of various digital platforms,
                     including marketing campaigns for HCP and the general
                     population, including:
                 </p>
-                <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+                <ul class="mb-10 leading-relaxed list-disc list-inside xl:text-xl">
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
                     <li>Landing page creation</li>
@@ -171,12 +168,12 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="flex justify-center bg-sips-orange">
-        <div class="container grid-cols-2 gap-6 m-5 text-white mt-36 xl:grid">
-            <div class="">
-                <h2 class="text-5xl font-bold xl:text-7xl">
+    <section class="flex justify-center pt-12 xl:mt-10 xl:px-36 bg-sips-orange">
+        <div class="container grid-cols-2 gap-6 mx-5 text-white xl:mt-16 xl:grid">
+            <div class="mb-8 xl:mb-0">
+                <h2 class="text-4xl font-bold xl:text-6xl">
                     Market <br />
                     Research
                 </h2>
@@ -187,7 +184,7 @@
                 />
             </div>
             <div class="mx-auto">
-                <p class="mb-5 text-xl leading-relaxed">
+                <p class="mb-5 leading-relaxed xl:text-xl">
                     Our market research program is a comprehensive and adaptable
                     solution designed to help your brand gain a deep
                     understanding of your target audience, market trends, and
@@ -197,8 +194,8 @@
                     enhance market strategies, all while reaching both HCP and
                     the general population.
                 </p>
-                <p class="text-xl leading-relaxed">What we do:</p>
-                <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+                <p class="leading-relaxed xl:text-xl">What we do:</p>
+                <ul class="mb-10 leading-relaxed list-disc list-inside xl:text-xl">
                     <li>Needs assessment and audience segmentation</li>
                     <li>Surveys and questionnaires</li>
                     <li>Interviews and Focus group discussion</li>
@@ -208,21 +205,21 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-  <div class="flex justify-center">
-    <div class="container grid-cols-2 gap-6 m-5 xl:grid mt-36">
-      <div class="">
-        <h2 class="text-5xl font-bold text-orange-500 xl:text-7xl">
+  <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
+    <div class="container grid-cols-2 gap-6 mx-5 xl:grid">
+      <div class="h-auto mb-8 xl:mb-0">
+        <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
           Technology Enhancement & Digital Content Management
         </h2>
         <img class="hidden mt-28 xl:block h-2/5" src="/sips-digital-technology-digital-enhancement.webp" alt="SIPS Digital Technology Enhancement & Digital Content Management Service"/>
       </div>
-      <div class="mx-auto">
+      <div class="h-auto mx-auto">
         <p class="mt-5 mb-5 leading-relaxed xl:text-xl">
           We will support you in modernizing your company's online presence and ensuring you effectively communicate your company's value to key stakeholders. Either you use it for internal content management, educating your HCP stakeholders, or as a simple corporate website, we are available for your technology enhancement.
         </p>
-        <ul class="mb-10 text-xl leading-relaxed list-disc list-inside">
+        <ul class="mb-10 leading-relaxed list-disc list-inside xl:text-xl">
           <li>Website development for CMS, LMS, and Corporate Site</li>
           <li>SEO Management</li>
           <li>Content Management</li>
@@ -230,8 +227,8 @@
         </ul>
       </div>
     </div>
-  </div>
-    <div class="flex flex-col items-center justify-center w-full py-14">
+  </section>
+    <div class="flex flex-col items-center justify-center w-full pb-8 mb-8">
     <a
       href="https://form.typeform.com/to/wrXbzSpp"
       aria-label="CTA to Typeform"
