@@ -87,7 +87,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     HCPs Engagement
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:xl:text-xl">
                     Elevate your engagement with healthcare professionals (HCPs)
                     through precision strategies that foster meaningful
                     connections and collaborations.
@@ -97,7 +97,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Brand Awareness
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Boost your brand's visibility and recognition through
                     data-driven campaigns that resonate with your target
                     audience.
@@ -107,7 +107,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Market Research
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Gain a competitive edge with in-depth market research
                     insights, enabling data-driven decision-making and strategic
                     planning.
@@ -117,7 +117,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Comprehensive Digital Marketing Support
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Harness the power of data and digital marketing expertise to
                     drive campaigns, content, and community-building efforts to
                     new heights.
@@ -127,7 +127,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Technology Enhancement
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Stay ahead with technology solutions that enhance your
                     digital presence and streamline operations, ensuring
                     long-term success.
@@ -137,7 +137,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Digital Content Management
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Captivate your audience with compelling multimedia content,
                     thought leadership, and educational platforms tailored for
                     healthcare audiences.
@@ -295,7 +295,7 @@
     </div>
 
     <section class="flex justify-center py-16 mx-auto bg-sips-orange">
-        <div class="container mx-10 md:mx-32 lg:mx-40">
+        <div class="container md:mx-32 lg:mx-40">
             <h2
                 class="mx-auto mb-12 text-3xl font-bold leading-normal text-center text-white w:full xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
             >
@@ -306,12 +306,12 @@
 
             <div class="flex justify-center">
                 <button
-                    class="px-5 py-3 mt-12 text-xl text-white hover:bg- rounded-xl bg-sips-maroon xl:px-12"
+                    class="px-5 py-3 mt-12 text-xl text-white bg-sips-maroon rounded-xl hover:bg-sips-green xl:px-12"
                 >
                     <NuxtLink
                         to="/insights"
                         aria-label="Home Page"
-                        class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:bg-transparent md:p-0 md:text-white"
+                        class="py-2 pl-3 pr-4 text-white rounded my-link md:bg-transparent md:p-0"
                         aria-current="page"
                         >View All</NuxtLink
                     >
