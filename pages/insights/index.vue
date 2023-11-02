@@ -4,13 +4,17 @@
     >
         <div class="container text-center">
             <h1
-                class="mx-5 mb-5 text-5xl font-bold text-white xl:text-6xl xl:leading-snug"
+                class="mx-5 mb-5 text-4xl font-bold text-white xl:text-6xl xl:leading-snug"
+                data-aos="flip-up"
+                data-aos-duration="2000"
             >
                 Streamline Your Decisions and Stay Ahead with Our Insightful
                 Resources
             </h1>
             <p
-                class="w-3/4 mx-auto mt-10 mb-5 text-2xl leading-relaxed text-white"
+                class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-2xl"
+                data-aos="fade-down"
+                data-aos-duration="2000"
             >
                 Explore our valuable resources and expert perspectives to make
                 your decisions more informed and your industry insights more
@@ -19,7 +23,7 @@
         </div>
     </div>
 
-    <section class="justify-center py-5 mx-5 md:mx-0 md:py-10">
+    <section class="justify-center py-10 mx-5 md:mx-0 md:py-10">
         <div class="container mx-auto">
             <div class="grid grid-cols-3 gap-2 md:gap-4">
                 <div v-for="item in contentItems">
@@ -30,7 +34,7 @@
                             toggleContent(item, $event);
                         "
                         :class="{ contentActive: item.clicked }"
-                        class="p-2 mx-1 my-1 text-center text-black border-b-4 rounded-sm cursor-pointer content-item bg-slate-100 hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
+                        class="max-w-md p-2 mx-1 my-1 text-center text-black border-b-4 rounded-sm cursor-pointer content-item bg-slate-100 hover:border-b-4 hover:border-sips-orange hover:bg-slate-200 md:p-4"
                     >
                         {{ item.name }}
                     </div>
@@ -111,11 +115,11 @@ export default {
             ],
             link: [
                 {
-                    hid:'canonical',
-                    rel:'canonical',
-                    href:'https://digital.sipsedutech.id/insights'
+                    hid: 'canonical',
+                    rel: 'canonical',
+                    href: 'https://digital.sipsedutech.id/insights',
                 },
-            ]
+            ],
         });
 
         await nextTick(async () => {

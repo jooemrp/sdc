@@ -1,7 +1,7 @@
 <template>
     <div class="sharing-buttons flex flex-wrap">
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-600 bg-blue-600 p-3 text-white transition duration-200 hover:border-blue-700 hover:bg-blue-700"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-blue-600 bg-blue-600 p-3 text-white transition duration-200 hover:border-blue-700 hover:bg-blue-700"
             target="_blank"
             rel="noopener"
             :href="links.facebook"
@@ -21,7 +21,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-sky-400 bg-sky-400 p-3 text-white transition duration-200 hover:border-sky-500 hover:bg-sky-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-sky-400 bg-sky-400 p-3 text-white transition duration-200 hover:border-sky-500 hover:bg-sky-500"
             target="_blank"
             rel="noopener"
             :href="links.twitter"
@@ -41,7 +41,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-blue-800 bg-blue-800 p-3 text-white transition duration-200 hover:border-blue-900 hover:bg-blue-900"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-blue-800 bg-blue-800 p-3 text-white transition duration-200 hover:border-blue-900 hover:bg-blue-900"
             target="_blank"
             rel="noopener"
             :href="links.linkedin"
@@ -61,7 +61,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-green-400 bg-green-400 p-3 text-white transition duration-200 hover:border-green-500 hover:bg-green-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-green-400 bg-green-400 p-3 text-white transition duration-200 hover:border-green-500 hover:bg-green-500"
             target="_blank"
             rel="noopener"
             :href="links.whatsapp"
@@ -82,7 +82,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-cyan-400 bg-cyan-400 p-3 text-white transition duration-200 hover:border-cyan-500 hover:bg-cyan-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-cyan-400 bg-cyan-400 p-3 text-white transition duration-200 hover:border-cyan-500 hover:bg-cyan-500"
             target="_blank"
             rel="noopener"
             :href="links.telegram"
@@ -121,7 +121,7 @@
             </svg>
         </a>
         <a
-            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-amber-500 bg-amber-500 p-3 text-white transition duration-200 hover:border-amber-600 hover:bg-amber-600"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-amber-500 bg-amber-500 p-3 text-white transition duration-200 hover:border-amber-600 hover:bg-amber-600"
             target="_blank"
             rel="noopener"
             :href="links.mail"
@@ -173,8 +173,11 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
+import { useToast } from 'vue-toastification';
+
 const route = useRoute();
 let { url, text } = defineProps(['url', 'text']);
+const Toast = useToast();
 
 if (!url) {
     const currentURL = route.fullPath;
@@ -187,7 +190,7 @@ let links = {
     linkedin: `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
     facebook: `http://www.facebook.com/sharer.php?u=${url}&quote=${text}`,
     twitter: `http://twitter.com/share?url=${text} ${url}`,
-    mail: `mailto:?subject=${text}&body=${url}`,
+    mail: `mailto:?subject=${text}&body=${text} ${url}`,
 };
 
 function copyLinkToClipboard() {
@@ -199,7 +202,6 @@ function copyLinkToClipboard() {
     document.execCommand('copy');
     document.body.removeChild(input);
 
-    // You can add a message or notify the user that the link is copied
-    // Example: this.$toast.success('Link copied to clipboard');
+    Toast.success('Link copied to clipboard');
 }
 </script>

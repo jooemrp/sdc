@@ -3,9 +3,9 @@
         class="mx-auto flex justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% pb-16 pt-24"
     >
         <div class="container grid xl:grid-cols-3">
-            <div class="col-span-2 m-auto">
+            <div class="col-span-2 m-auto" data-aos="fade-right" data-aos-duration="2000">
                 <h1
-                    class="mx-10 mb-5 text-3xl font-bold text-white xl:text-6xl xl:leading-snug transition-"
+                    class="mx-10 mb-5 text-3xl font-bold text-white transition- xl:text-6xl xl:leading-snug"
                 >
                     Experience Digital Precision in Your Pharmaceutical
                     Marketing Strategy
@@ -17,10 +17,7 @@
                     optimize your pharmaceutical marketing strategy and lead you
                     to new horizons of success.
                 </p>
-                <a
-                    href="https://form.typeform.com/to/wrXbzSpp"
-                    target="_blank"
-                >
+                <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank">
                     <button
                         class="px-5 py-3 mx-10 mt-5 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12"
                     >
@@ -28,7 +25,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-span-1 mx-auto">
+            <div class="col-span-1 mx-auto" data-aos="fade-left" data-aos-duration="2000">
                 <img
                     class="hidden object-fill w-full xl:block"
                     src="/sips-digital-hero-img.webp"
@@ -80,13 +77,17 @@
                 >
                     Customizing Digital Solutions for Your Unique Needs
                 </h2>
-                <img class="hidden mt-28 h-1/2 xl:block" src="/what-we-do-at-sips-digital-creative.webp" alt="SIPS Digital Brand Awareness Service" />
+                <img
+                    class="hidden mt-28 h-1/2 xl:block"
+                    src="/what-we-do-at-sips-digital-creative.webp"
+                    alt="SIPS Digital Brand Awareness Service"
+                />
             </div>
             <div class="mx-auto">
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     HCPs Engagement
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:xl:text-xl">
                     Elevate your engagement with healthcare professionals (HCPs)
                     through precision strategies that foster meaningful
                     connections and collaborations.
@@ -96,7 +97,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Brand Awareness
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Boost your brand's visibility and recognition through
                     data-driven campaigns that resonate with your target
                     audience.
@@ -106,7 +107,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Market Research
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Gain a competitive edge with in-depth market research
                     insights, enabling data-driven decision-making and strategic
                     planning.
@@ -116,7 +117,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Comprehensive Digital Marketing Support
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Harness the power of data and digital marketing expertise to
                     drive campaigns, content, and community-building efforts to
                     new heights.
@@ -126,7 +127,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Technology Enhancement
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Stay ahead with technology solutions that enhance your
                     digital presence and streamline operations, ensuring
                     long-term success.
@@ -136,7 +137,7 @@
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Digital Content Management
                 </h3>
-                <p class="text-xl text-blue-900">
+                <p class="text-blue-900 xl:text-xl">
                     Captivate your audience with compelling multimedia content,
                     thought leadership, and educational platforms tailored for
                     healthcare audiences.
@@ -168,7 +169,7 @@
             </p>
         </div>
         <div
-            class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white shadow-lg justify-items-center rounded-2xl xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16"
+            class="grid grid-cols-2 gap-8 px-5 py-10 mx-5 my-16 mb-10 bg-white shadow-lg xl:container justify-items-center rounded-2xl xl:mx-auto xl:w-3/4 xl:grid-cols-4 xl:gap-16"
         >
             <img
                 class="xl:mt-5"
@@ -294,64 +295,23 @@
     </div>
 
     <section class="flex justify-center py-16 mx-auto bg-sips-orange">
-        <div class="container mx-10 md:mx-32 lg:mx-40">
+        <div class="container md:mx-32 lg:mx-40">
             <h2
                 class="mx-auto mb-12 text-3xl font-bold leading-normal text-center text-white w:full xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
             >
                 Enhance Your Expertise with Valuable Insights and Resources
             </h2>
 
-            <div
-                :class="contents.length > 0 ? 'mx-10 md:mx-0' : 'mx-none'"
-                class="grid-cols-1 shadow-lg rounded-2xl bg-slate-50 md:grid-cols-4 lg:grid"
-            >
-                <div class="p-5">
-                    <div v-for="item in contentItems">
-                        <div
-                            tabindex="0"
-                            id="content-article"
-                            @click="
-                                changeContent(item.title);
-                                toggleContent(item, $event);
-                            "
-                            :class="{ contentActive: item.clicked }"
-                            class="p-4 mx-auto my-1 text-black rounded-sm cursor-pointer content-item hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
-                        >
-                            {{ item.name }}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-span-1 p-5 md:col-span-3">
-                    <div v-if="contents.length > 0">
-                        <div
-                            class="flex w-full overflow-x-auto whitespace-no-wrap"
-                        >
-                            <div v-for="content in contents">
-                                <CardContentCard :content="content" />
-                            </div>
-                        </div>
-                    </div>
-                    <div v-else>
-                        <h2>
-                            {{
-                                contentIsLoading
-                                    ? 'Loading...'
-                                    : 'No content yet.'
-                            }}
-                        </h2>
-                    </div>
-                </div>
-            </div>
+            <LazyListVerticalInsights />
 
             <div class="flex justify-center">
                 <button
-                    class="px-5 py-3 mt-12 text-xl text-white hover:bg- rounded-xl bg-sips-maroon xl:px-12"
+                    class="px-5 py-3 mt-12 text-xl text-white bg-sips-maroon rounded-xl hover:bg-sips-green xl:px-12"
                 >
                     <NuxtLink
                         to="/insights"
                         aria-label="Home Page"
-                        class="block py-2 pl-3 pr-4 text-gray-900 rounded my-link md:bg-transparent md:p-0 md:text-white"
+                        class="py-2 pl-3 pr-4 text-white rounded my-link md:bg-transparent md:p-0"
                         aria-current="page"
                         >View All</NuxtLink
                     >
@@ -364,29 +324,6 @@
 <script>
 export default {
     name: 'Home',
-    data() {
-        return {
-            contents: [],
-            contentItems: [
-                {
-                    name: 'Articles',
-                    title: 'article',
-                    clicked: true,
-                },
-                {
-                    name: 'Resources',
-                    title: 'resource',
-                    clicked: false,
-                },
-                {
-                    name: 'Updates',
-                    title: 'update',
-                    clicked: false,
-                },
-            ],
-            contentIsLoading: true,
-        };
-    },
     async mounted() {
         useHead({
             titleTemplate: (titleChunk) => {
@@ -396,7 +333,8 @@ export default {
                 {
                     hid: 'title',
                     name: 'title',
-                    content: 'Pharmaceutical Marketing Agency | SIPS Digital Creative',
+                    content:
+                        'Pharmaceutical Marketing Agency | SIPS Digital Creative',
                 },
                 {
                     hid: 'description',
@@ -407,48 +345,12 @@ export default {
             ],
             link: [
                 {
-                    hid:'canonical',
-                    rel:'canonical',
-                    href:'https://digital.sipsedutech.id/'
+                    hid: 'canonical',
+                    rel: 'canonical',
+                    href: 'https://digital.sipsedutech.id/',
                 },
-            ]
+            ],
         });
-
-        await nextTick(async () => {
-            this.changeContent('article');
-        });
-    },
-    methods: {
-        changeContent: async function (contentType = 'article') {
-            this.contentIsLoading = true;
-            await useFetch(`https://api.sipsedutech.id/api/content`, {
-                query: {
-                    type: contentType,
-                    per_page: 5,
-                },
-            }).then(
-                (res) => {
-                    console.log(res);
-                    if (res.data.value) {
-                        this.contents = res.data.value.data;
-                    }
-                    this.contentIsLoading = false;
-                },
-                (error) => {
-                    console.log(error);
-                },
-            );
-        },
-        toggleContent(item, e) {
-            if (e.ctrlKey) {
-                item.clicked = !item.clicked;
-            } else {
-                this.contentItems.forEach(function (entry) {
-                    entry.clicked = false;
-                });
-                item.clicked = true;
-            }
-        },
     },
 };
 </script>
@@ -460,10 +362,4 @@ export default {
 #h-25 {
   min-height: 30vh;
 } */
-.contentActive {
-    /* bg-slate-100 border-r-4 border-sips-orange */
-    background-color: rgb(241 245 249);
-    border-right-width: 4px;
-    border-color: rgb(243 109 37);
-}
 </style>
