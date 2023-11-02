@@ -1,6 +1,7 @@
 <template>
-    <div class="flex flex-wrap sharing-buttons">
-        <a class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 bg-blue-600 border-2 border-blue-600 rounded-full ease hover:border-blue-700 hover:bg-blue-700"
+    <div class="sharing-buttons flex flex-wrap">
+        <a
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-blue-600 bg-blue-600 p-3 text-white transition duration-200 hover:border-blue-700 hover:bg-blue-700"
             target="_blank"
             rel="noopener"
             :href="links.facebook"
@@ -11,7 +12,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-4 h-4"
+                class="h-4 w-4"
             >
                 <title>Facebook</title>
                 <path
@@ -20,7 +21,7 @@
             </svg>
         </a>
         <a
-            class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 border-2 rounded-full ease border-sky-400 bg-sky-400 hover:border-sky-500 hover:bg-sky-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-sky-400 bg-sky-400 p-3 text-white transition duration-200 hover:border-sky-500 hover:bg-sky-500"
             target="_blank"
             rel="noopener"
             :href="links.twitter"
@@ -31,7 +32,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-4 h-4"
+                class="h-4 w-4"
             >
                 <title>Twitter</title>
                 <path
@@ -40,7 +41,7 @@
             </svg>
         </a>
         <a
-            class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 bg-blue-800 border-2 border-blue-800 rounded-full ease hover:border-blue-900 hover:bg-blue-900"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-blue-800 bg-blue-800 p-3 text-white transition duration-200 hover:border-blue-900 hover:bg-blue-900"
             target="_blank"
             rel="noopener"
             :href="links.linkedin"
@@ -51,7 +52,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-4 h-4"
+                class="h-4 w-4"
             >
                 <title>Linkedin</title>
                 <path
@@ -60,7 +61,7 @@
             </svg>
         </a>
         <a
-            class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 bg-green-400 border-2 border-green-400 rounded-full ease hover:border-green-500 hover:bg-green-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-green-400 bg-green-400 p-3 text-white transition duration-200 hover:border-green-500 hover:bg-green-500"
             target="_blank"
             rel="noopener"
             :href="links.whatsapp"
@@ -72,7 +73,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-4 h-4"
+                class="h-4 w-4"
             >
                 <title>Whatsapp</title>
                 <path
@@ -81,7 +82,7 @@
             </svg>
         </a>
         <a
-            class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 border-2 rounded-full ease border-cyan-400 bg-cyan-400 hover:border-cyan-500 hover:bg-cyan-500"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-cyan-400 bg-cyan-400 p-3 text-white transition duration-200 hover:border-cyan-500 hover:bg-cyan-500"
             target="_blank"
             rel="noopener"
             :href="links.telegram"
@@ -92,7 +93,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                class="w-4 h-4"
+                class="h-4 w-4"
                 viewBox="0,0,256,256"
             >
                 <g
@@ -120,7 +121,7 @@
             </svg>
         </a>
         <a
-            class="inline-flex items-center p-3 mb-1 mr-2 text-white transition duration-200 border-2 rounded-full ease border-amber-500 bg-amber-500 hover:border-amber-600 hover:bg-amber-600"
+            class="ease mb-1 mr-2 inline-flex items-center rounded-full border-2 border-amber-500 bg-amber-500 p-3 text-white transition duration-200 hover:border-amber-600 hover:bg-amber-600"
             target="_blank"
             rel="noopener"
             :href="links.mail"
@@ -132,7 +133,7 @@
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                class="w-4 h-4"
+                class="h-4 w-4"
             >
                 <title>Email</title>
                 <path
@@ -143,12 +144,12 @@
 
         <button
             @click="copyLinkToClipboard"
-            class="inline-flex items-center p-3 mb-1 mr-1 text-white transition duration-200 bg-gray-500 border-2 border-gray-500 rounded-full ease hover:border-gray-600 hover:bg-gray-600"
+            class="ease mb-1 mr-1 inline-flex items-center rounded-full border-2 border-gray-500 bg-gray-500 p-3 text-white transition duration-200 hover:border-gray-600 hover:bg-gray-600"
             aria-label="Copy Link to Clipboard"
         >
             <svg
                 style="color: white"
-                class="w-4 h-4"
+                class="h-4 w-4"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,8 +173,11 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
+import { useToast } from 'vue-toastification';
+
 const route = useRoute();
 let { url, text } = defineProps(['url', 'text']);
+const Toast = useToast();
 
 if (!url) {
     const currentURL = route.fullPath;
@@ -186,7 +190,7 @@ let links = {
     linkedin: `http://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`,
     facebook: `http://www.facebook.com/sharer.php?u=${url}&quote=${text}`,
     twitter: `http://twitter.com/share?url=${text} ${url}`,
-    mail: `mailto:?subject=${text}&body=${url}`,
+    mail: `mailto:?subject=${text}&body=${text} ${url}`,
 };
 
 function copyLinkToClipboard() {
@@ -198,7 +202,6 @@ function copyLinkToClipboard() {
     document.execCommand('copy');
     document.body.removeChild(input);
 
-    // You can add a message or notify the user that the link is copied
-    // Example: this.$toast.success('Link copied to clipboard');
+    Toast.success('Link copied to clipboard');
 }
 </script>
