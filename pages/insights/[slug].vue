@@ -64,6 +64,10 @@
             </div>
         </div>
     </section>
+
+    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
+        <SharedLoader />
+    </section>
 </template>
 
 <script>
