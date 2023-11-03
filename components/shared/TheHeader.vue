@@ -125,6 +125,9 @@ function closeNavbar() {
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-    initFlowbite();
+    setTimeout(() => {
+        initFlowbite();
+        console.log('initFlowbite');
+    }, 3000);
 });
 </script>
