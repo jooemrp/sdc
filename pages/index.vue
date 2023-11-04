@@ -3,7 +3,7 @@
         class="mx-auto flex justify-center bg-gradient-to-r from-sky-800 via-10% to-emerald-500 to-90% pb-16 pt-24"
     >
         <div class="container grid xl:grid-cols-3">
-            <div class="col-span-2 m-auto" data-aos="fade-right" data-aos-duration="2000">
+            <div class="col-span-2 m-auto" data-aos="fade-right" data-aos-duration="1500">
                 <h1
                     class="mx-10 mb-5 text-3xl font-bold text-white transition- xl:text-6xl xl:leading-snug"
                 >
@@ -20,12 +20,15 @@
                 <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank">
                     <button
                         class="px-5 py-3 mx-10 mt-5 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000"
                     >
                         Contact Us
                     </button>
                 </a>
             </div>
-            <div class="col-span-1 mx-auto" data-aos="fade-left" data-aos-duration="2000">
+            <div class="col-span-1 mx-auto" data-aos="fade-left" data-aos-duration="1500">
                 <img
                     class="hidden object-fill w-full xl:block"
                     src="/sips-digital-hero-img.webp"

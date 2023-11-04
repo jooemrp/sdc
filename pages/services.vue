@@ -1,6 +1,6 @@
 <template>
     <div
-        class="mx-auto flex justify-center bg-gradient-to-r from-orange-700 to-orange-500 pb-24 pt-24"
+        class="flex justify-center pt-24 pb-24 mx-auto bg-gradient-to-r from-orange-700 to-orange-500"
     >
         <div class="container text-center">
             <h1
@@ -12,10 +12,10 @@
                 marketing strategy that maximizes benefits
             </h1>
             <p
-                class="mx-auto mb-5 mt-10 w-3/4 leading-relaxed text-white xl:text-3xl"
+                class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-3xl"
                 data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-delay="200"
             >
                 Uncover the path to achieving your pharmaceutical goals with our
                 proven digital marketing strategy, designed to maximize
@@ -26,13 +26,16 @@
     </div>
 
     <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
-        <div class="container mx-5 grid-cols-2 gap-6 xl:grid">
+        <div class="container grid-cols-2 gap-6 mx-5 xl:grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400">
             <div class="mb-8">
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     HCP <br />Engagement
                 </h2>
                 <img
-                    class="mt-36 hidden h-1/2 xl:block"
+                    class="hidden mt-36 h-1/2 xl:block"
                     src="/sips-digital-hcp.webp"
                     alt="SIPS Digital HCP Service"
                 />
@@ -56,7 +59,7 @@
                     multi-faceted approach to connect with HCP:
                 </p>
                 <ul
-                    class="mb-10 list-inside list-disc leading-relaxed xl:text-xl"
+                    class="mb-10 leading-relaxed list-disc list-inside xl:text-xl"
                 >
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
@@ -66,9 +69,9 @@
                 <h3 class="mb-8 text-2xl font-bold text-orange-500 xl:text-3xl">
                     See how we've done it with...
                 </h3>
-                <div class="mx-auto grid grid-cols-2 justify-around gap-5">
+                <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
                     <div
-                        class="transform rounded-lg bg-white p-5 shadow-md transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                        class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
                     >
                         <NuxtLink
                             to="/"
@@ -85,7 +88,7 @@
                         </NuxtLink>
                     </div>
                     <div
-                        class="transform rounded-lg bg-white p-5 shadow-md transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                        class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
                     >
                         <NuxtLink to="/works/biofarma" aria-label="To homepage">
                             <img
@@ -102,10 +105,11 @@
         </div>
     </section>
 
-    <section class="flex justify-center bg-sips-maroon pt-12 xl:px-36">
-        <div
-            class="container mx-5 grid-cols-2 gap-6 text-white xl:mt-16 xl:grid"
-        >
+    <section class="flex justify-center pt-12 bg-sips-maroon xl:px-36">
+        <div class="container grid-cols-2 gap-6 mx-5 text-white xl:mt-16 xl:grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300">
             <div class="mb-8 xl:mb-0">
                 <h2 class="mb-12 text-4xl font-bold xl:text-6xl">
                     Brand <br />Awareness
@@ -114,6 +118,9 @@
                     class="hidden h-3/5 xl:block"
                     src="/sips-digital-brand-awareness.webp"
                     alt="SIPS Digital Brand Awareness Service"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                 />
             </div>
             <div class="mx-auto">
@@ -126,7 +133,7 @@
                     assigning HCP to educate the general population, through:
                 </p>
                 <ul
-                    class="mb-10 list-inside list-disc leading-relaxed xl:text-xl"
+                    class="mb-10 leading-relaxed list-disc list-inside xl:text-xl"
                 >
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
@@ -138,15 +145,22 @@
     </section>
 
     <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
-        <div class="container mx-5 grid-cols-2 gap-6 xl:grid">
+        <div class="container grid-cols-2 gap-6 mx-5 xl:grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            >  
             <div class="mb-8 xl:mb-0">
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     Comprehensive <br />Digital Marketing <br />Support
                 </h2>
                 <img
-                    class="mt-32 hidden h-2/4 xl:block"
+                    class="hidden mt-32 h-2/4 xl:block"
                     src="/sips-digital-marketing-support.webp"
                     alt="SIPS Digital Marketing Support Service"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
                 />
             </div>
             <div class="mx-auto">
@@ -164,7 +178,7 @@
                     population, including:
                 </p>
                 <ul
-                    class="mb-10 list-inside list-disc leading-relaxed xl:text-xl"
+                    class="mb-10 leading-relaxed list-disc list-inside xl:text-xl"
                 >
                     <li>Live Webinar/CME with SKP Points</li>
                     <li>Email & Whatsapp Marketing</li>
@@ -180,9 +194,12 @@
         </div>
     </section>
 
-    <section class="flex justify-center bg-sips-orange pt-12 xl:mt-10 xl:px-36">
+    <section class="flex justify-center pt-12 bg-sips-orange xl:mt-10 xl:px-36">
         <div
-            class="container mx-5 grid-cols-2 gap-6 text-white xl:mt-16 xl:grid"
+            class="container grid-cols-2 gap-6 mx-5 text-white xl:mt-16 xl:grid"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
         >
             <div class="mb-8 xl:mb-0">
                 <h2 class="text-4xl font-bold xl:text-6xl">
@@ -190,9 +207,12 @@
                     Research
                 </h2>
                 <img
-                    class="mt-28 hidden h-1/2 xl:block"
+                    class="hidden mt-28 h-1/2 xl:block"
                     src="/sips-digital-market-research.webp"
                     alt="SIPS Digital Market Research Service"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
                 />
             </div>
             <div class="mx-auto">
@@ -208,7 +228,7 @@
                 </p>
                 <p class="leading-relaxed xl:text-xl">What we do:</p>
                 <ul
-                    class="mb-10 list-inside list-disc leading-relaxed xl:text-xl"
+                    class="mb-10 leading-relaxed list-disc list-inside xl:text-xl"
                 >
                     <li>Needs assessment and audience segmentation</li>
                     <li>Surveys and questionnaires</li>
@@ -222,19 +242,26 @@
     </section>
 
     <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
-        <div class="container mx-5 grid-cols-2 gap-6 xl:grid">
-            <div class="mb-8 h-auto xl:mb-0">
+        <div class="container grid-cols-2 gap-6 mx-5 xl:grid"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+                    >
+            <div class="h-auto mb-8 xl:mb-0">
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     Technology Enhancement & Digital Content Management
                 </h2>
                 <img
-                    class="mt-28 hidden h-2/5 xl:block"
+                    class="hidden mt-28 h-2/5 xl:block"
                     src="/sips-digital-technology-digital-enhancement.webp"
                     alt="SIPS Digital Technology Enhancement & Digital Content Management Service"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                 />
             </div>
-            <div class="mx-auto h-auto">
-                <p class="mb-5 mt-5 leading-relaxed xl:text-xl">
+            <div class="h-auto mx-auto">
+                <p class="mt-5 mb-5 leading-relaxed xl:text-xl">
                     We will support you in modernizing your company's online
                     presence and ensuring you effectively communicate your
                     company's value to key stakeholders. Either you use it for
@@ -243,7 +270,7 @@
                     available for your technology enhancement.
                 </p>
                 <ul
-                    class="mb-10 list-inside list-disc leading-relaxed xl:text-xl"
+                    class="mb-10 leading-relaxed list-disc list-inside xl:text-xl"
                 >
                     <li>
                         Website development for CMS, LMS, and Corporate Site
@@ -258,13 +285,13 @@
             </div>
         </div>
     </section>
-    <div class="mb-8 flex w-full flex-col items-center justify-center pb-8">
+    <div class="flex flex-col items-center justify-center w-full pb-8 mb-8">
         <a
             href="https://form.typeform.com/to/wrXbzSpp"
             aria-label="CTA to Typeform"
         >
             <button
-                class="rounded-xl bg-green-600 px-5 py-3 text-xl text-white hover:bg-blue-900"
+                class="px-5 py-3 text-xl text-white bg-green-600 rounded-xl hover:bg-blue-900"
             >
                 Talk to us
             </button>
