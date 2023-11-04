@@ -1,20 +1,21 @@
 <template>
     <div
         id="h-50"
-        class="flex items-center bg-gradient-to-br from-blue-900 to-orange-700 pb-20 pt-28"
+        class="flex items-center pb-20 bg-gradient-to-br from-blue-900 to-orange-700 pt-28"
     >
-        <div class="container mx-auto p-5 text-white xl:p-0">
+        <div class="container p-5 mx-auto text-white xl:p-0">
             <h1
                 class="max-w-4xl text-5xl font-bold xl:text-7xl"
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
             >
                 See How We Drive Success for Our Clients
             </h1>
             <p
                 class="max-w-5xl py-8 xl:py-12 xl:text-2xl xl:leading-normal"
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
+                data-aos-delay="300"
             >
                 Explore our success stories and see firsthand how we've helped
                 our clients thrive. From boosting online presence to creating
@@ -26,8 +27,8 @@
         </div>
     </div>
 
-    <div class="container mx-auto mt-20 w-4/5">
-        <div class="my-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div class="container w-4/5 mx-auto mt-20">
+        <div class="grid grid-cols-1 gap-6 my-10 lg:grid-cols-2">
             <div v-for="w in works">
                 <WorkCard :work="w" />
             </div>

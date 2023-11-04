@@ -71,7 +71,10 @@
 
     <div class="container py-12 mx-auto">
         <div class="grid-cols-2 m-5 space-y-10 xl:my-10 xl:grid">
-            <div class="row-span-6">
+            <div class="row-span-6"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="100">
                 <p class="mt-12 text-2xl font-bold text-gray-600">
                     OUR SERVICES
                 </p>
@@ -84,9 +87,16 @@
                     class="hidden mt-28 h-1/2 xl:block"
                     src="/what-we-do-at-sips-digital-creative.webp"
                     alt="SIPS Digital Brand Awareness Service"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                 />
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     HCPs Engagement
                 </h3>
@@ -96,7 +106,11 @@
                     connections and collaborations.
                 </p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Brand Awareness
                 </h3>
@@ -106,7 +120,11 @@
                     audience.
                 </p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Market Research
                 </h3>
@@ -116,7 +134,11 @@
                     planning.
                 </p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Comprehensive Digital Marketing Support
                 </h3>
@@ -126,7 +148,11 @@
                     new heights.
                 </p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Technology Enhancement
                 </h3>
@@ -136,7 +162,11 @@
                     long-term success.
                 </p>
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+            >
                 <h3 class="mb-4 text-4xl font-bold text-orange-500">
                     Digital Content Management
                 </h3>

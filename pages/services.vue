@@ -15,7 +15,7 @@
                 class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-3xl"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="200"
+                data-aos-delay="300"
             >
                 Uncover the path to achieving your pharmaceutical goals with our
                 proven digital marketing strategy, designed to maximize
@@ -29,7 +29,7 @@
         <div class="container grid-cols-2 gap-6 mx-5 xl:grid"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="400">
+            data-aos-delay="300">
             <div class="mb-8">
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     HCP <br />Engagement
@@ -40,7 +40,10 @@
                     alt="SIPS Digital HCP Service"
                 />
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400">
                 <p class="mb-5 leading-relaxed xl:text-xl">
                     HCP Engagement is a vital service that connects
                     pharmaceutical companies with HCP to foster collaboration,
@@ -109,7 +112,7 @@
         <div class="container grid-cols-2 gap-6 mx-5 text-white xl:mt-16 xl:grid"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="300">
+            data-aos-delay="200">
             <div class="mb-8 xl:mb-0">
                 <h2 class="mb-12 text-4xl font-bold xl:text-6xl">
                     Brand <br />Awareness
@@ -123,7 +126,10 @@
                     data-aos-delay="300"
                 />
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300">
                 <p class="mb-5 leading-relaxed xl:text-xl">
                     Our brand awareness program is a multi-faceted solution to
                     amplify the presence of your brand across a diverse
@@ -163,7 +169,10 @@
                     data-aos-delay="200"
                 />
             </div>
-            <div class="mx-auto">
+            <div class="mx-auto"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200">
                 <p class="mb-5 leading-relaxed xl:text-xl">
                     Our comprehensive digital marketing support is a tailored
                     solution designed to empower our clients with a 360-degree
@@ -243,12 +252,13 @@
 
     <section class="flex justify-center pt-12 xl:mt-10 xl:px-36">
         <div class="container grid-cols-2 gap-6 mx-5 xl:grid"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-delay="300"
+
                     >
             <div class="h-auto mb-8 xl:mb-0">
-                <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
+                <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl"
+                data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="300">
                     Technology Enhancement & Digital Content Management
                 </h2>
                 <img
@@ -257,10 +267,12 @@
                     alt="SIPS Digital Technology Enhancement & Digital Content Management Service"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="300"
                 />
             </div>
-            <div class="h-auto mx-auto">
+            <div class="h-auto mx-auto"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="300">
                 <p class="mt-5 mb-5 leading-relaxed xl:text-xl">
                     We will support you in modernizing your company's online
                     presence and ensuring you effectively communicate your
