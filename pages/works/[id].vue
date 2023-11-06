@@ -76,13 +76,13 @@
                     />
                 </div>
                 <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img
                         src="https://digital.sipsedutech.id/what-we-do-at-sips-digital-creative.webp"
                         class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                         alt="..."
                     />
-                </div>
+                </div> -->
             </div>
             <!-- Slider indicators -->
             <div
@@ -96,13 +96,13 @@
                     :aria-label="`Slide ${index + 1}`"
                     :data-carousel-slide-to="index"
                 ></button>
-                <button
+                <!-- <button
                     type="button"
                     class="h-3 w-3 rounded-full"
                     aria-current="false"
                     aria-label="Slide 2"
                     data-carousel-slide-to="1"
-                ></button>
+                ></button> -->
             </div>
             <!-- Slider controls -->
             <button
