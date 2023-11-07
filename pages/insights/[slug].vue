@@ -52,10 +52,10 @@
                         />
                     </div>
                 </div>
-                <p
+                <div
                     class="my-5 text-neutral-900 md:my-5 lg:my-7"
                     v-html="content?.body"
-                ></p>
+                ></div>
                 <SharedSocialShareButton
                     class="my-12"
                     :url="currentURL"
@@ -63,6 +63,10 @@
                 />
             </div>
         </div>
+    </section>
+
+    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
+        <SharedLoader />
     </section>
 </template>
 
@@ -123,8 +127,8 @@ export default {
                     this.setMeta();
 
                     this.breadcrumbItems = [
-                        { title: 'Insights', url: null },
-                        { title: data.data.title, url: null },
+                        { title: 'Insights', path: '/insights' },
+                        { title: data.data.title, path: null },
                     ];
                 });
         },

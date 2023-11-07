@@ -7,14 +7,11 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "nuxt-gtag",
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtseo/module'
   ],
   site: {
     url: 'https://digital.sipsedutech.id',
-  },
-  robot: {
-    UserAgent: '*',
-    Disallow: ''
   },
   gtag: {
     id: 'G-0PQMW7HK6J',
