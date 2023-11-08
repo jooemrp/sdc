@@ -609,20 +609,6 @@
 </template>
 
 <script>
-// /a-01.webp
-// /a-02.webp
-// /a-03.webp
-// /a-04.webp
-// /b-01.webp
-// /b-02.webp
-// /b-03.webp
-// /b-04.webp
-// /b-05.webp
-// /b-06.webp
-// /b-07.webp
-// /b-08.webp
-// /b-09.webp
-// /b-10.webp
 export default {
     name: 'Home',
     data() {
