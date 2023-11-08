@@ -225,7 +225,7 @@
                 class="inline-flex w-full flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
             >
                 <ul
-                    class="animate-infinite-scroll flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+                    class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
                 >
                     <li>
                         <img
@@ -325,9 +325,72 @@
                             alt="Partner list st caroluse"
                         />
                     </li>
+                    <li>
+                        <img
+                            src="/clients/Berdaya-Bareng.webp"
+                            class="h-16"
+                            alt="Partner list Berdaya Bareng"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/carenow.webp"
+                            class="h-16"
+                            alt="Partner list carenow"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/IABI.webp"
+                            class="h-16"
+                            alt="Partner list IABI"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/Jasa-Raharja.webp"
+                            class="h-16"
+                            alt="Partner list Jasa Raharja"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/MSU.webp"
+                            class="h-16"
+                            alt="Partner list MSU"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/PABI.webp"
+                            class="h-16"
+                            alt="Partner list PABI"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/RSOJ-Pertamina.webp"
+                            class="h-16"
+                            alt="Partner list RSOJ Pertamina"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/Unhas.webp"
+                            class="h-16"
+                            alt="Partner list Universitas Hasanuddin"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/zafyre.webp"
+                            class="h-16"
+                            alt="Partner list zafyre"
+                        />
+                    </li>
                 </ul>
                 <ul
-                    class="animate-infinite-scroll flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
+                    class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
                     aria-hidden="true"
                 >
                     <li>
@@ -426,6 +489,69 @@
                             src="/b-10.webp"
                             class="h-16"
                             alt="Partner list st caroluse"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/Berdaya-Bareng.webp"
+                            class="h-16"
+                            alt="Partner list Berdaya Bareng"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/carenow.webp"
+                            class="h-16"
+                            alt="Partner list carenow"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/IABI.webp"
+                            class="h-16"
+                            alt="Partner list IABI"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/Jasa-Raharja.webp"
+                            class="h-16"
+                            alt="Partner list Jasa Raharja"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/MSU.webp"
+                            class="h-16"
+                            alt="Partner list MSU"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/PABI.webp"
+                            class="h-16"
+                            alt="Partner list PABI"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/RSOJ-Pertamina.webp"
+                            class="h-16"
+                            alt="Partner list RSOJ Pertamina"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/Unhas.webp"
+                            class="h-16"
+                            alt="Partner list Universitas Hasanuddin"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/clients/zafyre.webp"
+                            class="h-16"
+                            alt="Partner list zafyre"
                         />
                     </li>
                 </ul>

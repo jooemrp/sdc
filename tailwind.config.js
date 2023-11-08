@@ -27,7 +27,7 @@ module.exports = {
                 texture: "url('/assets/img/we-are-sips-digital.webp')",
             },
             animation: {
-                'infinite-scroll': 'infinite-scroll 50s linear infinite',
+                'infinite-scroll': 'infinite-scroll 75s linear infinite',
             },
             keyframes: {
                 'infinite-scroll': {
