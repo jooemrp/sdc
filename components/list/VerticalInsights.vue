@@ -56,11 +56,11 @@ export default {
                     title: 'resource',
                     clicked: false,
                 },
-                {
-                    name: 'Updates',
-                    title: 'update',
-                    clicked: false,
-                },
+                // {
+                //     name: 'Updates',
+                //     title: 'update',
+                //     clicked: false,
+                // },
             ],
             contentIsLoading: true,
         };

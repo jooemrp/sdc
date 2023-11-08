@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div
-                    class="my-5 text-neutral-900 md:my-5 lg:my-7"
+                    class="prose my-5 text-neutral-900 md:my-5 lg:my-7"
                     v-html="content?.body"
                 ></div>
                 <SharedSocialShareButton

@@ -27,25 +27,30 @@
             <h3 class="mb-2 text-xl font-semibold text-sips-navy md:mb-0">
                 The Challenge
             </h3>
-            <p class="text-sips-navy md:col-span-2">{{ work?.challenge }}</p>
+            <p
+                class="prose text-sips-navy md:col-span-2"
+                v-html="work?.challenge"
+            />
 
             <h3
                 class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 Our Approach
             </h3>
-            <p class="text-sips-navy md:col-span-2 md:mt-10">
-                {{ work?.approach }}
-            </p>
+            <p
+                class="prose text-sips-navy md:col-span-2 md:mt-10"
+                v-html="work?.approach"
+            />
 
             <h3
                 class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 The Result
             </h3>
-            <p class="text-sips-navy md:col-span-2 md:mt-10">
-                {{ work?.result }}
-            </p>
+            <p
+                class="prose text-sips-navy md:col-span-2 md:mt-10"
+                v-html="work?.result"
+            />
         </div>
     </section>
 
