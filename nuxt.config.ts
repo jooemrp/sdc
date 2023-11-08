@@ -1,4 +1,6 @@
 import { Title } from "./.nuxt/components.d";
+import tailwindTypography from '@tailwindcss/typography';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -51,5 +53,10 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['vue-toastification']
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    }
   },
 });
