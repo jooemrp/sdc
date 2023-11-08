@@ -12,7 +12,7 @@
                 marketing strategy that maximizes benefits
             </h1>
             <p
-                class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-3xl"
+                class="w-3/4 mx-auto mt-10 mb-5 text-white xl:leading-relaxed xl:text-3xl"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"
@@ -34,7 +34,7 @@
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     HCP <br />Engagement
                 </h2>
-                <img
+                <NuxtImg
                     class="hidden mt-36 h-1/2 xl:block"
                     src="/sips-digital-hcp.webp"
                     alt="SIPS Digital HCP Service"
@@ -69,41 +69,11 @@
                     <li>Survey, polling and feedback generation</li>
                 </ul>
 
-                <h3 class="mb-8 text-2xl font-bold text-orange-500 xl:text-3xl">
-                    See how we've done it with...
+                <h3 class="mb-8 text-xl font-bold text-orange-500 xl:text-3xl hover:underline">
+                    <NuxtLink to="/works" aria-label="To Works page">
+                        See how we've done it with >>
+                    </NuxtLink>
                 </h3>
-                <div class="grid justify-around grid-cols-2 gap-5 mx-auto">
-                    <div
-                        class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
-                    >
-                        <NuxtLink
-                            to="/"
-                            target="_blank"
-                            aria-label="To homepage"
-                        >
-                            <img
-                                class="mx-auto"
-                                src="/a-04.webp"
-                                width="200"
-                                height="82"
-                                alt="Partner Genetics Indonesia"
-                            />
-                        </NuxtLink>
-                    </div>
-                    <div
-                        class="p-5 transition transform bg-white rounded-lg shadow-md hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
-                    >
-                        <NuxtLink to="/works/biofarma" aria-label="To homepage">
-                            <img
-                                class="mx-auto"
-                                src="/a-01.webp"
-                                width="200"
-                                height="82"
-                                alt="Partner Biofarma"
-                            />
-                        </NuxtLink>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -117,7 +87,7 @@
                 <h2 class="mb-12 text-4xl font-bold xl:text-6xl">
                     Brand <br />Awareness
                 </h2>
-                <img
+                <NuxtImg
                     class="hidden h-3/5 xl:block"
                     src="/sips-digital-brand-awareness.webp"
                     alt="SIPS Digital Brand Awareness Service"
@@ -160,7 +130,7 @@
                 <h2 class="text-4xl font-bold text-orange-500 xl:text-6xl">
                     Comprehensive <br />Digital Marketing <br />Support
                 </h2>
-                <img
+                <NuxtImg
                     class="hidden mt-32 h-2/4 xl:block"
                     src="/sips-digital-marketing-support.webp"
                     alt="SIPS Digital Marketing Support Service"
@@ -215,7 +185,7 @@
                     Market <br />
                     Research
                 </h2>
-                <img
+                <NuxtImg
                     class="hidden mt-28 h-1/2 xl:block"
                     src="/sips-digital-market-research.webp"
                     alt="SIPS Digital Market Research Service"
@@ -261,7 +231,7 @@
             data-aos-delay="300">
                     Technology Enhancement & Digital Content Management
                 </h2>
-                <img
+                <NuxtImg
                     class="hidden mt-28 h-2/5 xl:block"
                     src="/sips-digital-technology-digital-enhancement.webp"
                     alt="SIPS Digital Technology Enhancement & Digital Content Management Service"
@@ -297,24 +267,24 @@
             </div>
         </div>
     </section>
-    <div class="flex flex-col items-center justify-center w-full pb-8 mb-8">
-        <a
-            href="https://form.typeform.com/to/wrXbzSpp"
-            aria-label="CTA to Typeform"
-        >
-            <button
-                class="px-5 py-3 text-xl text-white bg-green-600 rounded-xl hover:bg-blue-900"
-            >
-                Talk to us
-            </button>
-        </a>
+    <div class="flex flex-col items-center justify-center py-24 mt-12 text-center bg-white">
+        <div class="container mx-auto xl:w-3/5">
+            <h2 class="mx-2 mb-12 text-3xl font-bold leading-normal xl:text-5xl xl:leading-snug text-sips-navy">
+                Unleash the power of precision marketing and achieve measurable ROI. <br>Get a free consultation.
+            </h2>
+            <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank" class="mt-12">
+                <button class="px-5 py-3 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12">
+                    Contact Us
+                </button>
+            </a>
+        </div>
     </div>
 </template>
 
 <script setup>
 useHead({
     titleTemplate: (titleChunk) => {
-        return titleChunk ? `Services | ${titleChunk}` : `Services`;
+        return titleChunk ? `Services | ${titleChunk}` : `Digital Marketing for Pharmaceutical `;
     },
     meta: [
         {

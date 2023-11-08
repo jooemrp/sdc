@@ -4,7 +4,7 @@
     >
         <div class="container text-center">
             <h1
-                class="mx-5 mb-5 text-4xl font-bold text-white xl:text-6xl xl:leading-snug"
+                class="mb-5 text-4xl font-bold text-white mx-14 xl:text-6xl xl:leading-snug"
                 data-aos="fade-up"
                 data-aos-duration="1000"
             >
@@ -12,7 +12,7 @@
                 Resources
             </h1>
             <p
-                class="w-3/4 mx-auto mt-10 mb-5 leading-relaxed text-white xl:text-2xl"
+                class="w-4/5 mx-auto mt-10 mb-5 text-white xl:leading-relaxed xl:text-2xl"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300"

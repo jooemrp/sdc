@@ -27,7 +27,7 @@
                         <li class="ml-10 hover:underline">
                             <NuxtLink
                                 to="/works"
-                                aria-label="Terms and Conditions"
+                                aria-label="List of all our works"
                                 >Works</NuxtLink
                             >
                         </li>
