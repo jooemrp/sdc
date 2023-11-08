@@ -32,10 +32,16 @@
         >
             Updates
         </h2>
-        <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div
+            class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3"
+            v-if="!contentIsLoading"
+        >
             <div v-for="content in contents">
                 <CardContentCard :content="content" />
             </div>
+        </div>
+        <div class="flex justify-center" v-else>
+            <SharedLoader />
         </div>
     </section>
 
@@ -46,10 +52,16 @@
             >
                 Case Study
             </h2>
-            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <div
+                class="grid grid-cols-1 gap-6 lg:grid-cols-2"
+                v-if="!workIsLoading"
+            >
                 <div v-for="w in works">
                     <CardWorkCard :work="w" />
                 </div>
+            </div>
+            <div class="flex justify-center" v-else>
+                <SharedLoader />
             </div>
         </div>
     </section>
@@ -60,8 +72,9 @@ export default {
     name: 'Our Works',
     data() {
         return {
-            contentIsLoading: false,
+            contentIsLoading: true,
             contents: [],
+            workIsLoading: true,
             works: [],
         };
     },
@@ -112,6 +125,8 @@ export default {
                 });
         },
         getList: async function () {
+            this.workIsLoading = true;
+
             await useFetch(`https://api.sipsedutech.id/api/works`).then(
                 (res) => {
                     console.log(res);
@@ -125,6 +140,8 @@ export default {
                     console.log(error);
                 },
             );
+
+            this.workIsLoading = false;
         },
     },
 };
