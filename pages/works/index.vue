@@ -1,9 +1,8 @@
 <template>
-    <div
-        id="h-50"
-        class="flex items-center pb-20 bg-gradient-to-br from-blue-900 to-orange-700 pt-28"
+    <section
+        class="flex items-center bg-gradient-to-br from-blue-900 to-orange-700 pb-20 pt-28"
     >
-        <div class="container p-5 mx-auto text-white xl:p-0">
+        <div class="container mx-auto p-5 text-white xl:p-0">
             <h1
                 class="max-w-4xl text-5xl font-bold xl:text-7xl"
                 data-aos="fade-up"
@@ -25,15 +24,35 @@
                 for your business.
             </p>
         </div>
-    </div>
+    </section>
 
-    <div class="container w-4/5 mx-auto mt-20">
-        <div class="grid grid-cols-1 gap-6 my-10 lg:grid-cols-2">
-            <div v-for="w in works">
-                <WorkCard :work="w" />
+    <section class="container mx-auto w-4/5 py-10 md:py-14">
+        <h2
+            class="mb-5 text-center text-4xl font-bold leading-normal text-sips-orange md:mb-10 xl:text-5xl"
+        >
+            Updates
+        </h2>
+        <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div v-for="content in contents">
+                <CardContentCard :content="content" />
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="bg-slate-100">
+        <div class="container mx-auto w-4/5 py-10 md:py-14">
+            <h2
+                class="mb-5 text-center text-4xl font-bold leading-normal text-sips-navy md:mb-10 xl:text-5xl"
+            >
+                Case Study
+            </h2>
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <div v-for="w in works">
+                    <CardWorkCard :work="w" />
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -41,6 +60,8 @@ export default {
     name: 'Our Works',
     data() {
         return {
+            contentIsLoading: false,
+            contents: [],
             works: [],
         };
     },
@@ -73,10 +94,23 @@ export default {
         });
 
         await nextTick(async () => {
+            await this.getContent();
             await this.getList();
         });
     },
     methods: {
+        getContent: async function (contentType = 'update') {
+            this.contentIsLoading = true;
+
+            await fetch(
+                `https://api.sipsedutech.id/api/content?type=${contentType}&per_page=3`,
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    this.contents = data.data;
+                    this.contentIsLoading = false;
+                });
+        },
         getList: async function () {
             await useFetch(`https://api.sipsedutech.id/api/works`).then(
                 (res) => {
