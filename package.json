@@ -19,7 +19,9 @@
     "prettier-plugin-tailwindcss": "^0.5.6"
   },
   "dependencies": {
+    "@nuxt/image": "^1.0.0",
     "@nuxtjs/robots": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.10",
     "aos": "^2.3.4",
     "flowbite": "^1.8.1",
     "gsap": "^3.12.2",

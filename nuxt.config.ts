@@ -1,4 +1,6 @@
 import { Title } from "./.nuxt/components.d";
+import tailwindTypography from '@tailwindcss/typography';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -8,7 +10,8 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     '@nuxtjs/tailwindcss',
     '@nuxtjs/robots',
-    '@nuxtseo/module'
+    '@nuxtseo/module',
+    '@nuxt/image'
   ],
   site: {
     url: 'https://digital.sipsedutech.id',
@@ -18,10 +21,11 @@ export default defineNuxtConfig({
     config: {
       page_title: "SIPS Digital Creative"
     }
-
   },
   image: {
-    dir: "assets/images",
+    // dir: "assets/images",
+    inject: true,
+    format: ['webp']
   },
   css: [
     '@/assets/css/tailwind.css',
@@ -51,5 +55,10 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['vue-toastification']
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    }
   },
 });
