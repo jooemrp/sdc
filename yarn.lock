@@ -752,7 +752,7 @@
 
 "@nuxt/image@^1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-1.0.0.tgz#3ef103f718e3064258b5a8afa982102174d51849"
+  resolved "https://registry.npmjs.org/@nuxt/image/-/image-1.0.0.tgz"
   integrity sha512-tiNyerofmMs5JKW5erSoHNE6opsftdORWvANkqLissTiQFwGJxmfskjcJo/hJDCy/LT0VurW8wcuK/2wB3JX3Q==
   dependencies:
     "@nuxt/kit" "^3.7.4"
@@ -768,7 +768,7 @@
   optionalDependencies:
     ipx "^2.0.0"
 
-"@nuxt/kit@3.8.0", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.7.1", "@nuxt/kit@^3.7.4", "@nuxt/kit@^3.8.0":
+"@nuxt/kit@^3.0.0", "@nuxt/kit@^3.5.3", "@nuxt/kit@^3.7.1", "@nuxt/kit@^3.7.4", "@nuxt/kit@^3.8.0", "@nuxt/kit@3.8.0":
   version "3.8.0"
   resolved "https://registry.npmjs.org/@nuxt/kit/-/kit-3.8.0.tgz"
   integrity sha512-oIthQxeMIVs4ESVP5FqLYn8tj0S1sLd+eYreh+dNYgnJ2pTi7+THR12ONBNHjk668jqEe7ErUJ8UlGwqBzgezg==
