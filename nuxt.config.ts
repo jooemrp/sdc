@@ -13,6 +13,19 @@ export default defineNuxtConfig({
     '@nuxtseo/module',
     '@nuxt/image'
   ],
+  // routeRules: {
+  //   '/works/**': { prerender: true},
+  //   '/insights/**': { prerender: true }
+  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/works/**',
+        '/insights/**'
+      ]
+    }
+  },
   site: {
     url: 'https://digital.sipsedutech.id',
   },

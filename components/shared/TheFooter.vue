@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-sips-navy">
-        <div class="container p-4 mx-auto md:py-8">
+        <div class="container mx-auto md:py-8">
             <div class="grid grid-cols-1 md:grid-cols-3">
                 <div
                     class="flex items-center justify-center my-6 sm:justify-start md:my-0"
@@ -13,7 +13,7 @@
                     </a>
                 </div>
 
-                <div class="flex items-center sm:hidden lg:flex">
+                <div class="flex items-center md:hidden lg:flex">
                     <ul
                         class="flex-wrap items-center hidden mb-6 text-sm font-medium text-gray-50 dark:text-gray-400 sm:mb-0 xl:flex"
                     >
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-            <span class="block text-sm text-center text-gray-50"
+            <span class="block pb-5 text-sm text-center text-gray-50"
                 ><a
                     href="https://sipsedutech.id/en/about"
                     class="hover:underline"
