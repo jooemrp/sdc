@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-0PQMW7HK6J',
     config: {
-      page_title: "SIPS Digital Creative"
+      page_title: "SIPS Digital Creative - gtag"
     }
   },
   image: {
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "SIPS Digital Creative",
+      title: "SIPS Digital Creative - @nuxtconfig",
       titleTemplate: "%s",
       htmlAttrs: {
         lang: 'en'

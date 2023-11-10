@@ -1,7 +1,7 @@
 <template>
     <div
         :class="contents.length > 1 ? 'mx-10 md:mx-0' : 'mx-none'"
-        class="grid-cols-1 rounded-2xl bg-slate-50 shadow-lg md:grid-cols-4 lg:grid"
+        class="grid-cols-1 shadow-lg rounded-2xl bg-slate-50 md:grid-cols-4 lg:grid"
     >
         <div class="p-5">
             <div v-for="item in contentItems">
@@ -13,7 +13,7 @@
                         toggleContent(item, $event);
                     "
                     :class="{ contentActive: item.clicked }"
-                    class="content-item mx-auto my-1 cursor-pointer snap-start rounded-sm p-4 text-black hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
+                    class="p-4 mx-auto my-1 text-black rounded-sm cursor-pointer content-item snap-start hover:border-r-4 hover:border-sips-orange hover:bg-slate-100"
                 >
                     {{ item.name }}
                 </div>
@@ -23,7 +23,7 @@
         <div class="col-span-1 p-5 md:col-span-3">
             <div v-if="contents.length > 0">
                 <div
-                    class="whitespace-no-wrap flex w-full snap-x overflow-x-auto scroll-smooth"
+                    class="flex w-full overflow-x-auto whitespace-no-wrap snap-x scroll-smooth"
                 >
                     <div v-for="content in contents" class="snap-start">
                         <CardContentCard :content="content" />
@@ -66,33 +66,6 @@ export default {
         };
     },
     async mounted() {
-        useHead({
-            titleTemplate: (titleChunk) => {
-                return titleChunk ? `${titleChunk}` : `Home`;
-            },
-            meta: [
-                {
-                    hid: 'title',
-                    name: 'title',
-                    content:
-                        'Pharmaceutical Marketing Agency | SIPS Digital Creative',
-                },
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content:
-                        'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
-                },
-            ],
-            link: [
-                {
-                    hid: 'canonical',
-                    rel: 'canonical',
-                    href: 'https://digital.sipsedutech.id/',
-                },
-            ],
-        });
-
         await nextTick(async () => {
             this.changeContent('article');
         });
