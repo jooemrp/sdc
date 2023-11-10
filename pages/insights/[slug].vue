@@ -7,9 +7,9 @@
         ></div>
     </section>
 
-    <section class="flex justify-center w-3/5 mx-auto" v-if="content.title">
+    <section class="mx-auto flex w-3/5 justify-center" v-if="content.title">
         <div
-            class="px-10 py-10 -mt-32 bg-white rounded-t-3xl md:w-4/6 xl:mx-8 xl:w-4/6 xl:py-10"
+            class="-mt-32 rounded-t-3xl bg-white px-10 py-10 md:w-4/6 xl:mx-8 xl:w-4/6 xl:py-10"
         >
             <div class="container mx-auto xl:p-0">
                 <SharedBreadcrumbs class="mb-2" :items="breadcrumbItems" />
@@ -23,7 +23,7 @@
                 <div class="">
                     <div class="flex">
                         <svg
-                            class="w-4 h-4 mt-3 mr-3"
+                            class="mr-3 mt-3 h-4 w-4"
                             version="1.1"
                             id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
                             </g>
                         </svg>
                         <p
-                            class="mt-2 capitalize text-md text-neutral-600 md:leading-normal"
+                            class="text-md mt-2 capitalize text-neutral-600 md:leading-normal"
                         >
                             {{ formatDate(content?.created_at) }}
                         </p>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div
-                    class="my-5 prose text-neutral-900 md:my-5 lg:my-7"
+                    class="prose my-5 text-neutral-900 md:my-5 lg:my-7"
                     v-html="content?.body"
                 ></div>
                 <SharedSocialShareButton
@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="flex items-center justify-center h-screen -mt-100" v-else>
+    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
         <SharedLoader />
     </section>
 </template>
@@ -127,7 +127,16 @@ export default {
                     this.setMeta();
 
                     this.breadcrumbItems = [
-                        { title: 'Insights', path: '/insights' },
+                        {
+                            title:
+                                this.content.type == 'update'
+                                    ? 'Works'
+                                    : 'Insights',
+                            path:
+                                this.content.type == 'update'
+                                    ? '/works'
+                                    : '/insights',
+                        },
                         { title: data.data.title, path: null },
                     ];
                 });
