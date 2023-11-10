@@ -96,31 +96,38 @@ export default {
         };
     },
     async mounted() {
-        useHead({
-            titleTemplate: (titleChunk) => {
-                return titleChunk ? `Insight | ${titleChunk} - Pharma Trends & Resources: Your Decision-Making Toolkit` : `Insight`;
-            },
-            meta: [
-                // {
-                //     hid: 'title',
-                //     name: 'title',
-                //     content:
-                //         'Insights | SIPS Digital Creative - Pharma Trends & Resources: Your Decision-Making Toolkit',
-                // },
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content:
-                        'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
-                },
-            ],
-            link: [
-                {
-                    hid: 'canonical',
-                    rel: 'canonical',
-                    href: 'https://digital.sipsedutech.id/insights',
-                },
-            ],
+        // useHead({
+        //     titleTemplate: (titleChunk) => {
+        //         return titleChunk ? `Insight | ${titleChunk} - Pharma Trends & Resources: Your Decision-Making Toolkit` : `Insight`;
+        //     },
+        //     meta: [
+        //         {
+        //             hid: 'title',
+        //             name: 'title',
+        //             content:
+        //                 'Insights | SIPS Digital Creative - Pharma Trends & Resources: Your Decision-Making Toolkit',
+        //         },
+        //         {
+        //             hid: 'description',
+        //             name: 'description',
+        //             content:
+        //                 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
+        //         },
+        //     ],
+        //     link: [
+        //         {
+        //             hid: 'canonical',
+        //             rel: 'canonical',
+        //             href: 'https://digital.sipsedutech.id/insights',
+        //         },
+        //     ],
+        // });
+        useSeoMeta({
+            title: 'Pharma Trends & Resources: Your Decision-Making Toolkit',
+            ogTitle: 'Pharma Trends & Resources: Your Decision-Making Toolkit',
+            description: 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
+            ogDescription: 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
+            canonical: 'https://digital.sipsedutech.id/insights',
         });
 
         await nextTick(async () => {

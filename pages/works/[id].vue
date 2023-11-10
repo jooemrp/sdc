@@ -188,31 +188,39 @@ export default {
     },
     methods: {
         setMeta() {
-            useHead({
-                titleTemplate: (titleChunk) => {
-                    return titleChunk
-                        ? `${this.work.title} - Our Work | ${titleChunk}`
-                        : `${this.work.title} - Our Work`;
-                },
-                meta: [
-                    {
-                        hid: 'title',
-                        name: 'title',
-                        content: this.work?.meta_title,
-                    },
-                    {
-                        hid: 'description',
-                        name: 'description',
-                        content: this.work?.meta_description,
-                    },
-                ],
-                link: [
-                    {
-                        hid: 'canonical',
-                        rel: 'canonical',
-                        href: `https://digital.sipsedutech.id/works/${this.work.slug}`,
-                    },
-                ],
+            // useHead({
+            //     titleTemplate: (titleChunk) => {
+            //         return titleChunk
+            //             ? `${this.work.title} - Our Work | ${titleChunk}`
+            //             : `${this.work.title} - Our Work`;
+            //     },
+            //     meta: [
+            //         {
+            //             hid: 'title',
+            //             name: 'title',
+            //             content: this.work?.meta_title,
+            //         },
+            //         {
+            //             hid: 'description',
+            //             name: 'description',
+            //             content: this.work?.meta_description,
+            //         },
+            //     ],
+            //     link: [
+            //         {
+            //             hid: 'canonical',
+            //             rel: 'canonical',
+            //             href: `https://digital.sipsedutech.id/works/${this.work.slug}`,
+            //         },
+            //     ],
+            // });
+            
+            useSeoMeta({
+                title: this.work?.meta_title,
+                ogTitle: this.work?.meta_title,
+                description: this.work?.meta_description,
+                ogDescription: this.work?.meta_description,
+                canonical: `https://digital.sipsedutech.id/works/${this.work.slug}`,
             });
         },
         getData: async function (id) {
