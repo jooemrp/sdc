@@ -282,32 +282,41 @@
 </template>
 
 <script setup>
-useHead({
-    titleTemplate: (titleChunk) => {
-        return titleChunk ? `Services | ${titleChunk}` : `Digital Marketing for Pharmaceutical `;
-    },
-    meta: [
-        {
-            hid: 'title',
-            name: 'title',
-            content:
-                'Services | SIPS Digital Creative - Customized Solution for Pharmaceutical Marketing',
-        },
-        {
-            hid: 'description',
-            name: 'description',
-            content:
-                'Explore our comprehensive services at SIPS Digital Creative: HCPs Engagement, Brand Awareness, Market Research, Comprehensive Digital Marketing Support, Technology Enhancement, Digital Content Management',
-        },
-    ],
-    link: [
-        {
-            hid: 'canonical',
-            rel: 'canonical',
-            href: 'https://digital.sipsedutech.id/services',
-        },
-    ],
+// useHead({
+//     titleTemplate: (titleChunk) => {
+//         return titleChunk ? `Services | ${titleChunk}` : `Digital Marketing for Pharmaceutical `;
+//     },
+//     meta: [
+//         {
+//             hid: 'title',
+//             name: 'title',
+//             content:
+//                 'Services | SIPS Digital Creative - Customized Solution for Pharmaceutical Marketing',
+//         },
+//         {
+//             hid: 'description',
+//             name: 'description',
+//             content:
+//                 'Explore our comprehensive services at SIPS Digital Creative: HCPs Engagement, Brand Awareness, Market Research, Comprehensive Digital Marketing Support, Technology Enhancement, Digital Content Management',
+//         },
+//     ],
+//     link: [
+//         {
+//             hid: 'canonical',
+//             rel: 'canonical',
+//             href: 'https://digital.sipsedutech.id/services',
+//         },
+//     ],
+// });
+
+useSeoMeta({
+    title: 'Customized Solution for Pharmaceutical Marketing',
+    ogTitle: 'Customized Solution for Pharmaceutical Marketing',
+    description: 'SIPS Digital Creative: Precision Digital Marketing Solutions for the Pharmaceutical Industry',
+    ogDescription: 'SIPS Digital Creative: Precision Digital Marketing Solutions for the Pharmaceutical Industry',
+    canonical: 'https://digital.sipsedutech.id/services',
 });
+
 </script>
 
 <style scoped>

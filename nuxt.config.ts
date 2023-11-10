@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "SIPS Digital Creative",
-      titleTemplate: "%s - SIPS Digital Creative",
+      titleTemplate: "%s",
       htmlAttrs: {
         lang: 'en'
       },

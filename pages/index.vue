@@ -627,27 +627,34 @@ export default {
             titleTemplate: (titleChunk) => {
                 return titleChunk ? `${titleChunk}` : `Home`;
             },
-            meta: [
-                {
-                    hid: 'title',
-                    name: 'title',
-                    content:
-                        'Pharmaceutical Marketing Agency'
-                },
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content:
-                        'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
-                },
-            ],
-            link: [
-                {
-                    hid: 'canonical',
-                    rel: 'canonical',
-                    href: 'https://digital.sipsedutech.id/',
-                },
-            ],
+            // meta: [
+            //     {
+            //         hid: 'title',
+            //         name: 'title',
+            //         content:
+            //             'Pharmaceutical Marketing Agency'
+            //     },
+            //     {
+            //         hid: 'description',
+            //         name: 'description',
+            //         content:
+            //             'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
+            //     },
+            // ],
+            // link: [
+            //     {
+            //         hid: 'canonical',
+            //         rel: 'canonical',
+            //         href: 'https://digital.sipsedutech.id/',
+            //     },
+            // ],
+        });
+        useSeoMeta({
+            title: 'SIPS Digital Creative - Pharmaceutical Marketing Agency',
+            ogTitle: 'SIPS Digital Creative - Pharmaceutical Marketing Agency',
+            description: 'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
+            ogDescription: 'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
+            canonical: 'https://digital.sipsedutech.id/',
         });
     },
 };
