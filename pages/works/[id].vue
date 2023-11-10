@@ -1,18 +1,11 @@
 <template>
-    <section
-        :class="
-            `flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-36 ` +
-            (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())
-        "
-    >
-        <div class="container w-4/5 py-5 mx-auto text-white xl:p-0">
+    <section :class=" `flex items-center bg-gradient-to-br pt-28 md:pb-20 md:pt-36 ` + (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())">
+        <div class="w-3/5 py-5 mx-auto text-white xl:p-0">
             <div v-if="work.title">
-                <h1 class="max-w-4xl text-4xl font-bold xl:text-5xl">
+                <h1 class="max-w-4xl text-4xl font-bold xl:leading-relaxed xl:text-5xl">
                     {{ work?.title }}
                 </h1>
-                <p
-                    class="max-w-5xl py-4 text-2xl md:py-8 md:text-3xl md:leading-normal"
-                >
+                <p class="max-w-5xl py-4 text-2xl md:py-8 md:text-3xl md:leading-normal">
                     {{ work?.category }}
                 </p>
             </div>
@@ -22,9 +15,9 @@
         </div>
     </section>
 
-    <section class="container w-4/5 m-20 mx-auto">
+    <section class="container w-3/5 m-20 mx-auto">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <h3 class="mb-2 text-xl font-semibold text-sips-navy md:mb-0">
+            <h3 class="mb-2 text-4xl font-semibold text-sips-navy md:mb-0">
                 The Challenge
             </h3>
             <p
@@ -33,7 +26,7 @@
             />
 
             <h3
-                class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 Our Approach
             </h3>
@@ -43,7 +36,7 @@
             />
 
             <h3
-                class="mb-2 text-xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 The Result
             </h3>
