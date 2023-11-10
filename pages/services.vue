@@ -240,7 +240,7 @@
                 />
             </div>
             <div class="h-auto mx-auto"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300">
                 <p class="mt-5 mb-5 leading-relaxed xl:text-xl">

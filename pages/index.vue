@@ -34,7 +34,7 @@
             </div>
             <div
                 class="col-span-1 mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1500"
             >
                 <NuxtImg
@@ -47,7 +47,7 @@
     </div>
 
     <div
-        class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover bg-texture bg-blend-color-burn"
+        class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover xl:bg-texture bg-blend-color-burn"
     >
         <div class="container px-2 xl:px-5">
             <h2
@@ -104,7 +104,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -119,7 +119,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -134,7 +134,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -149,7 +149,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -164,7 +164,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -179,7 +179,7 @@
             </div>
             <div
                 class="mx-auto"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
             >
@@ -218,15 +218,9 @@
             </p>
         </div>
 
-        <div
-            class="gap-8 px-5 py-10 mx-5 my-16 mb-10 overflow-hidden bg-white shadow-lg justify-items-center rounded-2xl xl:container xl:mx-auto xl:w-3/4"
-        >
-            <div
-                class="inline-flex w-full flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
-            >
-                <ul
-                    class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
-                >
+        <div class="gap-8 px-5 py-10 mx-5 my-16 mb-10 overflow-hidden bg-white shadow-lg justify-items-center rounded-2xl xl:container xl:mx-auto xl:w-3/4 md:w-4/5 md:mx-auto">
+            <div class="inline-flex w-full flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+                <ul class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
                     <li>
                         <NuxtImg
                             src="/a-01.webp"
@@ -492,63 +486,63 @@
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/Berdaya-Bareng.webp"
                             class="h-16"
                             alt="Partner list Berdaya Bareng"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/carenow.webp"
                             class="h-16"
                             alt="Partner list carenow"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/IABI.webp"
                             class="h-16"
                             alt="Partner list IABI"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/Jasa-Raharja.webp"
                             class="h-16"
                             alt="Partner list Jasa Raharja"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/MSU.webp"
                             class="h-16"
                             alt="Partner list MSU"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/PABI.webp"
                             class="h-16"
                             alt="Partner list PABI"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/RSOJ-Pertamina.webp"
                             class="h-16"
                             alt="Partner list RSOJ Pertamina"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/Unhas.webp"
                             class="h-16"
                             alt="Partner list Universitas Hasanuddin"
                         />
                     </li>
                     <li>
-                        <img
+                        <NuxtImg
                             src="/clients/zafyre.webp"
                             class="h-16"
                             alt="Partner list zafyre"
@@ -561,20 +555,11 @@
 
     <div class="flex justify-center py-16 my-12 text-center">
         <div class="container px-2 xl:px-5">
-            <h2
-                class="mx-auto mb-12 text-3xl font-bold leading-normal w:full text-sips-navy xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug"
-            >
-                Ready for precision marketing to transform your results? Contact
-                us today, and let's get started on your goals!
+            <h2 class="mx-auto mb-12 text-3xl font-bold leading-normal w:full text-sips-navy xl:mx-auto xl:w-3/4 xl:text-5xl xl:leading-snug">
+                Ready for precision marketing to transform your results? Contact us today, and let's get started on your goals!
             </h2>
-            <a
-                href="https://form.typeform.com/to/wrXbzSpp"
-                target="_blank"
-                class="mt-12"
-            >
-                <button
-                    class="px-5 py-3 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12"
-                >
+            <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank" class="mt-12">
+                <button class="px-5 py-3 text-xl text-white bg-orange-500 rounded-xl hover:bg-orange-600 xl:px-12">
                     Contact Us
                 </button>
             </a>
