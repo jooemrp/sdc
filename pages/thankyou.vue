@@ -1,8 +1,8 @@
 <template>
     <div id="h-50" class="flex items-center">
-        <div class="mx-auto w-2/4 justify-center text-center">
+        <div class="mx-auto xl:w-2/4 w-3/4 justify-center text-center">
             <img src="~/assets/tick.svg" class="mx-auto mb-12" />
-            <div class="mb-10 text-6xl font-bold">
+            <div class="mb-10 xl:text-6xl text-4xl font-bold">
                 <span
                     class="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent"
                 >
@@ -10,7 +10,7 @@
                 </span>
             </div>
             <div class="mb-10">
-                <p class="text-3xl leading-relaxed">
+                <p class="xl:text-3xl leading-relaxed">
                     File Anda telah terkirim ke [nama email], cek inbox dan
                     selamat menambah insight digital marketing Anda.
                 </p>
