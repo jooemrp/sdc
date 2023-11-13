@@ -191,7 +191,6 @@ export default {
 
         setTimeout(() => {
             initFlowbite();
-            console.log('initFlowbite');
         }, 1500);
     },
     methods: {
