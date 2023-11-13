@@ -13,19 +13,6 @@ export default defineNuxtConfig({
     '@nuxtseo/module',
     '@nuxt/image'
   ],
-  // routeRules: {
-  //   '/works/**': { prerender: true},
-  //   '/insights/**': { prerender: true }
-  // },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/works/**',
-        '/insights/**'
-      ]
-    }
-  },
   site: {
     url: 'https://digital.sipsedutech.id',
   },
@@ -35,6 +22,24 @@ export default defineNuxtConfig({
       page_title: "SIPS Digital Creative"
     }
   },
+  routeRules: {
+    '/works/**': { prerender: true},
+    '/insights/**': { prerender: true }
+  },
+  robots: {
+   UserAgent: '*',
+   Disallow: '/thankyou',
+   Allow: ''
+  },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //     routes: [
+  //       '/works/*',
+  //       '/insights/*'
+  //     ]
+  //   }
+  // },
   image: {
     // dir: "assets/images",
     inject: true,

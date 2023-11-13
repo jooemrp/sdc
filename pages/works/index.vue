@@ -1,8 +1,8 @@
 <template>
     <section
-        class="flex items-center pb-20 bg-gradient-to-br from-blue-900 to-orange-700 pt-28"
+        class="flex items-center bg-gradient-to-br from-blue-900 to-orange-700 pb-20 pt-28"
     >
-        <div class="container p-5 mx-auto text-white xl:p-0">
+        <div class="container mx-auto p-5 text-white xl:p-0">
             <h1
                 class="max-w-4xl text-5xl font-bold xl:text-7xl"
                 data-aos="fade-up"
@@ -26,14 +26,14 @@
         </div>
     </section>
 
-    <section class="container w-4/5 py-10 mx-auto md:py-14">
+    <section class="container mx-auto w-4/5 py-10 md:py-14">
         <h2
-            class="mb-5 text-4xl font-bold leading-normal text-center text-sips-orange md:mb-10 xl:text-5xl"
+            class="mb-5 text-center text-4xl font-bold leading-normal text-sips-orange md:mb-10 xl:text-5xl"
         >
             Updates
         </h2>
         <div
-            class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-3"
+            class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3"
             v-if="!contentIsLoading"
         >
             <div v-for="content in contents">
@@ -46,9 +46,9 @@
     </section>
 
     <section class="bg-slate-100">
-        <div class="container w-4/5 py-10 mx-auto md:py-14">
+        <div class="container mx-auto w-4/5 py-10 md:py-14">
             <h2
-                class="mb-5 text-4xl font-bold leading-normal text-center text-sips-navy md:mb-10 xl:text-5xl"
+                class="mb-5 text-center text-4xl font-bold leading-normal text-sips-navy md:mb-10 xl:text-5xl"
             >
                 Case Study
             </h2>
@@ -108,8 +108,10 @@ export default {
         useSeoMeta({
             title: 'Pharma Marketing Case Studies | Our Works',
             ogTitle: 'Pharma Marketing Case Studies | Our Works',
-            description: 'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities.',
-            ogDescription: 'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities.',
+            description:
+                'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities.',
+            ogDescription:
+                'At SIPS Digital Creative, we specialize in custom solutions that turn your pharma goals into realities.',
             canonical: 'https://digital.sipsedutech.id/works',
         });
 
@@ -136,11 +138,8 @@ export default {
 
             await useFetch(`https://api.sipsedutech.id/api/works`).then(
                 (res) => {
-                    console.log(res);
                     if (res.data.value) {
                         this.works = res.data.value.data;
-                    } else {
-                        console.log('a');
                     }
                 },
                 (error) => {
