@@ -1,11 +1,20 @@
 <template>
-    <section :class=" `flex items-center bg-gradient-to-br pt-16 pb-16 md:pt-36 ` + (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())">
-        <div class="w-4/5 py-5 mx-auto text-white xl:w-3/5 xl:p-0">
+    <section
+        :class="
+            `flex items-center bg-gradient-to-br pb-16 pt-16 md:pt-36 ` +
+            (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())
+        "
+    >
+        <div class="mx-auto w-4/5 py-5 text-white xl:w-3/5 xl:p-0">
             <div v-if="work.title">
-                <h1 class="max-w-4xl text-4xl font-bold xl:leading-relaxed xl:text-5xl">
+                <h1
+                    class="max-w-4xl text-4xl font-bold xl:text-5xl xl:leading-relaxed"
+                >
                     {{ work?.title }}
                 </h1>
-                <p class="max-w-5xl py-4 text-2xl md:py-8 md:text-3xl md:leading-normal">
+                <p
+                    class="max-w-5xl py-4 text-2xl md:py-8 md:text-3xl md:leading-normal"
+                >
                     {{ work?.category }}
                 </p>
             </div>
@@ -15,7 +24,7 @@
         </div>
     </section>
 
-    <section class="container w-4/5 m-16 mx-auto xl:w-3/5">
+    <section class="container m-16 mx-auto w-4/5 xl:w-3/5">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
             <h3 class="mb-2 text-4xl font-semibold text-sips-navy md:mb-0">
                 The Challenge
@@ -26,7 +35,7 @@
             />
 
             <h3
-                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 mt-7 text-4xl font-semibold text-sips-navy md:mb-0 md:mt-10"
             >
                 Our Approach
             </h3>
@@ -36,7 +45,7 @@
             />
 
             <h3
-                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 mt-7 text-4xl font-semibold text-sips-navy md:mb-0 md:mt-10"
             >
                 The Result
             </h3>
@@ -56,7 +65,7 @@
     >
         <div
             id="default-carousel"
-            class="container relative w-4/5 mx-auto"
+            class="container relative mx-auto w-4/5"
             data-carousel="slide"
         >
             <!-- Carousel wrapper -->
@@ -69,7 +78,7 @@
                 >
                     <NuxtImg
                         :src="item"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+                        class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                         alt="..."
                     />
                 </div>
@@ -84,11 +93,11 @@
             </div>
             <!-- Slider indicators -->
             <div
-                class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+                class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3"
             >
                 <button
                     type="button"
-                    class="w-3 h-3 rounded-full"
+                    class="h-3 w-3 rounded-full"
                     v-for="(item, index) in work.content_url"
                     aria-current="true"
                     :aria-label="`Slide ${index + 1}`"
@@ -105,14 +114,14 @@
             <!-- Slider controls -->
             <button
                 type="button"
-                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
                 data-carousel-prev
             >
                 <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
                 >
                     <svg
-                        class="w-4 h-4 text-white dark:text-gray-800"
+                        class="h-4 w-4 text-white dark:text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -131,14 +140,14 @@
             </button>
             <button
                 type="button"
-                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
                 data-carousel-next
             >
                 <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
                 >
                     <svg
-                        class="w-4 h-4 text-white dark:text-gray-800"
+                        class="h-4 w-4 text-white dark:text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -183,7 +192,6 @@ export default {
         // initialize components based on data attribute selectors
         setTimeout(() => {
             initFlowbite();
-            console.log('initFlowbite');
         }, 1500);
     },
     methods: {
@@ -214,7 +222,7 @@ export default {
             //         },
             //     ],
             // });
-            
+
             useSeoMeta({
                 title: this.work?.meta_title,
                 ogTitle: this.work?.meta_title,
@@ -227,7 +235,6 @@ export default {
             await fetch(`https://api.sipsedutech.id/api/works/${id}`)
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log('data.data', data.data);
                     this.work = data.data;
                     this.setMeta();
                 });

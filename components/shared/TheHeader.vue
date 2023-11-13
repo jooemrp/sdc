@@ -1,14 +1,14 @@
 <template>
     <div>
         <header>
-            <nav class="fixed top-0 left-0 z-20 w-full bg-black shadow-sm">
+            <nav class="fixed left-0 top-0 z-20 w-full bg-black shadow-sm">
                 <div
-                    class="container flex flex-wrap items-center justify-between p-5 mx-auto md:text-lg md:font-semibold"
+                    class="container mx-auto flex flex-wrap items-center justify-between p-5 md:text-lg md:font-semibold"
                 >
                     <NuxtLink to="/" aria-label="To homepage">
                         <img
                             src="/sips-ico.png"
-                            class="w-2/4 ml-5 md:w-2/4 xl:ml-0 xl:w-3/4"
+                            class="ml-5 w-2/4 md:w-2/4 xl:ml-0 xl:w-3/4"
                             alt="SIPS Digital Creative"
                             data-aos="flip-left"
                         />
@@ -18,13 +18,13 @@
                         data-collapse-toggle="navbar-default"
                         type="button"
                         id="hamburger-button"
-                        class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 md:hidden"
+                        class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 md:hidden"
                         aria-controls="navbar-default"
                         aria-expanded="false"
                     >
                         <span class="sr-only">Open main menu</span>
                         <svg
-                            class="w-5 h-5"
+                            class="h-5 w-5"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -44,13 +44,13 @@
                         id="navbar-default"
                     >
                         <ul
-                            class="flex flex-col p-4 mt-4 font-medium text-orange-500 md:mt-0 md:flex-row md:space-x-8 md:bg-black md:p-0 md:font-semibold md:text-slate-100"
+                            class="mt-4 flex flex-col p-4 font-medium text-orange-500 md:mt-0 md:flex-row md:space-x-8 md:bg-black md:p-0 md:font-semibold md:text-slate-100"
                         >
                             <li @click="closeNavbar()">
                                 <NuxtLink
                                     to="/"
                                     aria-label="Home Page"
-                                    class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link md:bg-transparent md:p-0 md:text-white"
+                                    class="my-link block rounded py-2 pl-3 pr-4 text-gray-200 md:bg-transparent md:p-0 md:text-white"
                                     aria-current="page"
                                     >HOME</NuxtLink
                                 >
@@ -59,21 +59,21 @@
                                 <NuxtLink
                                     to="/services"
                                     aria-label="List of company services"
-                                    class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
+                                    class="my-link block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
                                     >SERVICES</NuxtLink
                                 >
                             </li>
                             <li @click="closeNavbar()">
                                 <NuxtLink
                                     to="/works"
-                                    class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
+                                    class="my-link block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
                                     >WORKS</NuxtLink
                                 >
                             </li>
                             <li @click="closeNavbar()">
                                 <NuxtLink
                                     to="/insights"
-                                    class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
+                                    class="my-link block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
                                     >INSIGHTS</NuxtLink
                                 >
                             </li>
@@ -82,7 +82,7 @@
                                     href="https://sipsedutech.id/en/about"
                                     target="_blank"
                                     aria-label="About company"
-                                    class="block py-2 pl-3 pr-4 text-gray-200 rounded my-link hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
+                                    class="my-link block rounded py-2 pl-3 pr-4 text-gray-200 hover:bg-gray-100 md:border-0 md:p-0 md:text-white md:hover:bg-transparent md:hover:text-sips-orange"
                                     >ABOUT</a
                                 >
                             </li>
@@ -127,7 +127,6 @@ function closeNavbar() {
 onMounted(() => {
     setTimeout(() => {
         initFlowbite();
-        console.log('initFlowbite');
     }, 3000);
 });
 </script>

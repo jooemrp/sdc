@@ -61,6 +61,4 @@ interface BreadcrumbItem {
 }
 
 const { items } = defineProps<{ items: BreadcrumbItem[] }>();
-
-console.log('items', items);
 </script>
