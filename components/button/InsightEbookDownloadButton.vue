@@ -155,7 +155,16 @@ export default {
                         );
                     } else {
                         // TO DO: Redirect to thank you page
-                        Toast.success(data.message);
+                        if (data.status_code == 200) {
+                            navigateTo(
+                                `/thankyou?linkToShare=${window.location.origin}${currentURL}`,
+                            );
+                            // this.$router.push(
+                            //     `/thankyou?linkToShare=${window.location.origin}${currentURL}`,
+                            // );
+                        } else {
+                            Toast.success(data.message);
+                        }
                     }
                 },
                 (error) => {
