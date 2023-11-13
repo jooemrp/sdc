@@ -3,7 +3,7 @@
     <button
         data-modal-target="authentication-modal"
         data-modal-toggle="authentication-modal"
-        class="block rounded-sm bg-amber-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-amber-500 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        class="block rounded-lg bg-amber-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-amber-500 focus:outline-none focus:ring-4 focus:ring-blue-300"
         type="button"
     >
         Download E-book
