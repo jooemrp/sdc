@@ -59,6 +59,7 @@
                     <div v-if="content?.is_ebook_available">
                         <ButtonInsightEbookDownloadButton
                             :slug="content.slug"
+                            :link="currentURL"
                         />
                     </div>
 

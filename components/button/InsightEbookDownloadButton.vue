@@ -36,6 +36,7 @@
                     <button
                         type="button"
                         class="end-2.5 ms-auto inline-flex h-8 w-8 items-center justify-center rounded-md bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                        id="close-authentication-modal-btn"
                         data-modal-hide="authentication-modal"
                     >
                         <svg
@@ -108,12 +109,13 @@
 </template>
 
 <script>
-import { initFlowbite } from 'flowbite';
+import { initFlowbite, Modal } from 'flowbite';
 import { useToast } from 'vue-toastification';
+
 const Toast = useToast();
 
 export default {
-    props: ['slug'],
+    props: ['slug', 'link'],
     data() {
         return {
             isSaving: false,
@@ -154,18 +156,16 @@ export default {
                                 : 'Error',
                         );
                     } else {
-                        // TO DO: Redirect to thank you page
-                        Toast.success(data.message);
-                        // if (data.status_code == 200) {
-                        //     navigateTo(
-                        //         `/thankyou?linkToShare=${window.location.origin}${currentURL}`,
-                        //     );
-                        //     // this.$router.push(
-                        //     //     `/thankyou?linkToShare=${window.location.origin}${currentURL}`,
-                        //     // );
-                        // } else {
-                        //     Toast.success(data.message);
-                        // }
+                        this.closeModal();
+
+                        if (data.status_code == 200) {
+                            // TO DO: Redirect to thank you page
+                            this.$router.push(
+                                `/thankyou?linkToShare=${this.link}`,
+                            );
+                        } else {
+                            Toast.success(data.message);
+                        }
                     }
                 },
                 (error) => {
@@ -175,6 +175,22 @@ export default {
 
             this.isSaving = false;
             return;
+        },
+        closeModal: function () {
+            // const $targetEl = document.getElementById('authentication-modal');
+            // const options = {
+            //     onHide: () => {
+            //         console.log('modal is hidden');
+            //     },
+            // };
+            // const modal = new Modal($targetEl, options);
+
+            // modal.hide();
+
+            var elem = document.getElementById(
+                'close-authentication-modal-btn',
+            );
+            elem.click();
         },
     },
 };
