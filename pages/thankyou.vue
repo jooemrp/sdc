@@ -11,7 +11,7 @@
             </div>
             <div class="mb-10">
                 <p class="xl:text-3xl leading-relaxed">
-                    File Anda telah terkirim ke [nama email], cek inbox dan
+                    File e-book telah terkirim ke email Anda, cek inbox dan
                     selamat menambah insight digital marketing Anda.
                 </p>
             </div>
