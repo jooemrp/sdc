@@ -56,7 +56,7 @@
                         v-html="content?.body"
                     ></div>
 
-                    <div v-if="true">
+                    <div v-if="content?.is_ebook_available">
                         <ButtonInsightEbookDownloadButton
                             :slug="content.slug"
                         />

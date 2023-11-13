@@ -3,10 +3,10 @@
     <button
         data-modal-target="authentication-modal"
         data-modal-toggle="authentication-modal"
-        class="block rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        class="block rounded-sm bg-amber-400 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-amber-500 focus:outline-none focus:ring-4 focus:ring-blue-300"
         type="button"
     >
-        Toggle modal
+        Download E-book
     </button>
 
     <!-- Main modal -->
@@ -95,6 +95,7 @@
                         <button
                             type="submit"
                             @click.prevent="submitForm"
+                            :disabled="isSaving"
                             class="w-full rounded-lg bg-amber-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-amber-600 focus:outline-none focus:ring-4 focus:ring-blue-300"
                         >
                             {{ isSaving ? 'LOADING...' : 'DOWNLOAD SEKARANG' }}
@@ -129,29 +130,38 @@ export default {
     methods: {
         submitForm: async function () {
             this.isSaving = true;
-            console.log('input', this.input);
 
-            // await useFetch('https://api.sipsedutech.id/api/subscribe', {
-            //     method: 'POST',
-            //     body: {
-            //         email: this.inputEmailNewsletter,
-            //     },
-            // }).then(
-            //     (res) => {
-            //         const data = res.data.value;
-            //         const error = res.error.value;
+            await useFetch(
+                'https://api.sipsedutech.id/api/content/download-ebook',
+                {
+                    method: 'POST',
+                    body: {
+                        slug: this.slug,
+                        name: this.input.name,
+                        email: this.input.email,
+                        company: this.input.company,
+                    },
+                },
+            ).then(
+                (res) => {
+                    const data = res.data.value;
+                    const error = res.error.value;
 
-            //         if (error) {
-            //             Toast.error('Error');
-            //         } else {
-            //             // TO DO: Redirect to thank you page
-            //             Toast.success(data.message);
-            //         }
-            //     },
-            //     (error) => {
-            //         Toast.error('Error');
-            //     },
-            // );
+                    if (error) {
+                        Toast.error(
+                            error.statusCode == 406
+                                ? error.data.error.message
+                                : 'Error',
+                        );
+                    } else {
+                        // TO DO: Redirect to thank you page
+                        Toast.success(data.message);
+                    }
+                },
+                (error) => {
+                    Toast.error('Error');
+                },
+            );
 
             this.isSaving = false;
             return;
