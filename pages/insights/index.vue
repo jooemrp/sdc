@@ -128,6 +128,18 @@ export default {
             description: 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
             ogDescription: 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
             canonical: 'https://digital.sipsedutech.id/insights',
+            ogImage: '/insights-sips-digital.webp',
+            ogUrl: 'https://digital.sipsedutech.id/',
+            twitterTitle: 'Pharma Trends & Resources: Your Decision-Making Toolkit',
+            twitterDescription: 'Stay informed with the latest trends and resources in pharmaceuticals. Enhance your decision-making capabilities with our exclusive toolkit',
+            twitterImage: '/insights-sips-digital.webp',
+            twitterCard: "Explore our valuable resources and expert perspectives to make your decisions more informed and your industry insights more cutting-edge. Explore now and empower your journey to success",
+            ogLocale: 'id'
+        });
+        useHead ({
+            htmlAttrs: {
+                lang: 'id'
+            }
         });
 
         await nextTick(async () => {

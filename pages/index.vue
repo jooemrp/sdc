@@ -46,13 +46,9 @@
         </div>
     </div>
 
-    <div
-        class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover xl:bg-texture bg-blend-color-burn"
-    >
+    <div class="flex justify-center py-20 text-center bg-blue-900 bg-center bg-cover xl:bg-texture bg-blend-color-burn">
         <div class="container px-2 xl:px-5">
-            <h2
-                class="mx-auto mb-5 text-3xl font-bold text-white xl:w-2/3 xl:text-5xl xl:leading-snug"
-            >
+            <h2 class="mx-auto mb-5 text-3xl font-bold text-white xl:w-2/3 xl:text-5xl xl:leading-snug">
                 Transform Your Pharmacy Marketing: Digital Strategies that
                 Deliver
             </h2>
@@ -640,6 +636,12 @@ export default {
             description: 'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
             ogDescription: 'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
             canonical: 'https://digital.sipsedutech.id/',
+            ogImage: '/sips-digital.webp',
+            ogUrl: 'https://digital.sipsedutech.id/',
+            twitterTitle: 'SIPS Digital Creative - Pharmaceutical Marketing Agency',
+            twitterDescription: 'Overwhelmed by pharma marketing complexities? Time to simplify your approach. Discover streamlined solutions to unlock your success. Get started now!',
+            twitterImage: '/sips-digital.webp',
+            twitterCard: "Our precision-driven digital marketing strategies are designed to boost your brand's impact, maximize your potential, and deliver measurable results."
         });
     },
 };

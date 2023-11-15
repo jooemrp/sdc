@@ -80,7 +80,7 @@
                             <button
                                 type="submit"
                                 @click="subscribeNewsletter()"
-                                class="w-full px-5 py-3 text-sm font-medium text-center text-white border rounded-none rounded-r-lg cursor-pointer border-primary-600 hover:bg-primary-800 focus:ring-primary-300 bg-sips-orange focus:ring-4"
+                                class="w-full px-5 py-3 text-sm font-medium text-center text-white border rounded-none rounded-r-lg cursor-pointer border-primary-600 hover:bg-primary-800 focus:ring-primary-300 bg-sips-orange hover:bg-orange-600 focus:ring-4"
                                 :disabled="isSaving"
                             >
                                 {{ isSaving ? 'Loading...' : 'Subscribe' }}

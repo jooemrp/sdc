@@ -196,7 +196,7 @@ let links = {
 function copyLinkToClipboard() {
     // Create a hidden input element to copy the link to the clipboard
     const input = document.createElement('input');
-    input.value = window.location.href;
+    input.value = url ?? window.location.href;
     document.body.appendChild(input);
     input.select();
     document.execCommand('copy');

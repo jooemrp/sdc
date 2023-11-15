@@ -161,7 +161,7 @@ export default {
                         if (data.status_code == 200) {
                             // TO DO: Redirect to thank you page
                             this.$router.push(
-                                `/thankyou?linkToShare=${this.link}`,
+                                `/thankyou?linkToShare=${this.link}&email=${this.input.email}`,
                             );
                         } else {
                             Toast.success(data.message);
