@@ -10,8 +10,17 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     "@nuxtjs/robots",
     "@nuxtseo/module",
-    "@nuxt/image"
+    "@nuxt/image",
+    "@zadigetvoltaire/nuxt-gtm"
   ],
+  gtm: {
+    id: 'GTM-5MLCR7TM',
+    enabled: true,
+    debug: true,
+    loadScript: true,
+    enableRouterSync: true,
+    devtools: true,
+  },
   site: {
     url: 'https://digital.sipsedutech.id',
   },
@@ -54,15 +63,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Digital Marketing for Pharmaceutical",
+      ogSiteName: 'SIPS Digital Creative',
       titleTemplate: "%s",
       htmlAttrs: {
         lang: 'en'
       },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      meta: [
-        { name: "google-site-verification", content: "exnpYh7ierXa8KgWCehxk2fqgOjGsepiWrPZ5JCw24c" },
-      ],
+      // meta: [
+      //   { name: "google-site-verification", content: "exnpYh7ierXa8KgWCehxk2fqgOjGsepiWrPZ5JCw24c" },
+      // ],
       link: [
         {
           rel: "icon",
@@ -73,7 +83,8 @@ export default defineNuxtConfig({
   },
   plugins: [
     { src: "~/plugins/vue-toastificaton.js", mode: "client" },
-    { src: "~/plugins/aos", ssr: false, mode: "client" }
+    { src: "~/plugins/aos", ssr: false, mode: "client" },
+    { src: "~/plugins/vue-gtm.clients.ts", ssr: false, mode: "client" }
   ],
   build: {
     transpile: ['vue-toastification']
