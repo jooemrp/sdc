@@ -93,6 +93,17 @@
                                 required
                             />
                         </div>
+                        <div>
+                            <input
+                                type="text"
+                                name="phone"
+                                id="phone"
+                                v-model="input.phone"
+                                placeholder="Nomor HP"
+                                class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400"
+                                required
+                            />
+                        </div>
                         <button
                             type="submit"
                             @click.prevent="submitForm"
@@ -123,6 +134,7 @@ export default {
                 name: '',
                 email: '',
                 company: '',
+                phone: '',
             },
         };
     },
@@ -142,6 +154,7 @@ export default {
                         name: this.input.name,
                         email: this.input.email,
                         company: this.input.company,
+                        phone: this.input.phone,
                     },
                 },
             ).then(
