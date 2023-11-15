@@ -15,10 +15,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://digital.sipsedutech.id',
   },
-  sitemap: {
-    include: ['/', '/services', '/works/**', '/insights/**', '/faqs'],
-    exclude: ['/thankyou']
-  },
   gtag: {
     id: 'G-0PQMW7HK6J',
     config: {
@@ -29,11 +25,11 @@ export default defineNuxtConfig({
     '/works/**': { prerender: true},
     '/insights/**': { prerender: true }
   },
-  robots: {
+  // robots: {
   //  UserAgent: '*',
-   Disallow: '/thankyou',
+  //  Disallow: '/thankyou',
   //  Allow: ''
-  },
+  // },
   // nitro: {
   //   prerender: {
   //     crawlLinks: true,
