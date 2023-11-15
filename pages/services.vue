@@ -315,25 +315,18 @@ useSeoMeta({
     description: 'SIPS Digital Creative: Precision Digital Marketing Solutions for the Pharmaceutical Industry',
     ogDescription: 'SIPS Digital Creative: Precision Digital Marketing Solutions for the Pharmaceutical Industry',
     canonical: 'https://digital.sipsedutech.id/services',
-    ogImage: '~/assets/img/services-at-sips-digital.webp',
+    ogImage: '/services-at-sips-digital.webp',
     ogUrl: 'https://digital.sipsedutech.id/services',
     twitterTitle: 'Customized Solution for Pharmaceutical Marketing',
     twitterDescription: 'SIPS Digital Creative: Precision Digital Marketing Solutions for the Pharmaceutical Industry',
-    twitterImage: '~/assets/img/services-at-sips-digital.webp',
+    twitterImage: '/services-at-sips-digital.webp',
     twitterCard: 'Achieve your pharmaceutical goals with our proven digital marketing strategy that maximizes benefits'
 });
 
 useHead({
   htmlAttrs: {
     lang: 'en'
-  },
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/favicon.png'
-    }
-  ]
+  }
 })
 
 

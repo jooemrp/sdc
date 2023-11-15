@@ -7,9 +7,9 @@
         ></div>
     </section>
 
-    <section class="mx-auto flex w-4/5 justify-center" v-if="content.title">
+    <section class="flex justify-center w-4/5 mx-auto" v-if="content.title">
         <div
-            class="w-6/6 -mt-32 rounded-t-3xl bg-white py-10 md:w-5/6 xl:w-4/6 xl:px-5 xl:py-10"
+            class="py-10 -mt-32 bg-white w-6/6 rounded-t-3xl md:w-5/6 xl:w-4/6 xl:px-5 xl:py-10"
         >
             <div class="mx-auto md:mx-5 xl:p-0">
                 <div class="mx-5">
@@ -23,7 +23,7 @@
 
                     <div class="flex">
                         <svg
-                            class="mr-3 mt-3 h-4 w-4"
+                            class="w-4 h-4 mt-3 mr-3"
                             version="1.1"
                             id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
                             </g>
                         </svg>
                         <p
-                            class="text-md mt-2 capitalize text-neutral-600 md:leading-normal"
+                            class="mt-2 capitalize text-md text-neutral-600 md:leading-normal"
                         >
                             {{ formatDate(content?.created_at) }}
                         </p>
@@ -52,7 +52,7 @@
                         />
                     </div>
                     <div
-                        class="prose-lg my-5 text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
+                        class="my-5 prose-lg text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
                         v-html="content?.body"
                     ></div>
 
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
+    <section class="flex items-center justify-center h-screen -mt-100" v-else>
         <SharedLoader />
     </section>
 </template>
@@ -106,26 +106,6 @@ export default {
             //             ? `${this.content.title} - ${this.content.type} | ${titleChunk}`
             //             : `${this.content.title} - ${this.content.type}`;
             //     },
-            //     meta: [
-            //         {
-            //             hid: 'title',
-            //             name: 'title',
-            //             content: this.content?.meta_title,
-            //         },
-            //         {
-            //             hid: 'description',
-            //             name: 'description',
-            //             content: this.content?.meta_description,
-            //         },
-            //     ],
-            //     link: [
-            //         {
-            //             hid: 'canonical',
-            //             rel: 'canonical',
-            //             href: `https://digital.sipsedutech.id/insights/${this.content.slug}`,
-            //         },
-            //     ],
-            // });
 
             useSeoMeta({
                 title: this.content?.meta_title,
@@ -133,7 +113,19 @@ export default {
                 description: this.content?.meta_description,
                 ogDescription: this.content?.meta_description,
                 canonical: `https://digital.sipsedutech.id/${this.content.slug}`,
+                ogImage: this.content?.thumbnail,
+                ogUrl: `https://digital.sipsedutech.id/${this.content.slug}`,
+                twitterTitle: this.content?.meta_title,
+                twitterDescription: this.content?.meta_description,
+                twitterImage: this.content?.thumbnail,
+                twitterCard: this.content?.meta_description,
+                ogLocale: 'id'
             });
+            useHead({
+                htmlAttrs: {
+                    lang: 'id'
+                },
+            })
         },
         getData: async function (slug) {
             await fetch(`https://api.sipsedutech.id/api/content/${slug}`)

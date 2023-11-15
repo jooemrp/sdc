@@ -5,7 +5,7 @@
             (work?.color ? `bg-${work.color}` : 'bg-' + getRandomColor())
         "
     >
-        <div class="mx-auto w-4/5 py-5 text-white xl:w-3/5 xl:p-0">
+        <div class="w-4/5 py-5 mx-auto text-white xl:w-3/5 xl:p-0">
             <div v-if="work.title">
                 <h1
                     class="max-w-4xl text-4xl font-bold xl:text-5xl xl:leading-relaxed"
@@ -24,7 +24,7 @@
         </div>
     </section>
 
-    <section class="container m-16 mx-auto w-4/5 xl:w-3/5">
+    <section class="container w-4/5 m-16 mx-auto xl:w-3/5">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
             <h3 class="mb-2 text-4xl font-semibold text-sips-navy md:mb-0">
                 The Challenge
@@ -35,7 +35,7 @@
             />
 
             <h3
-                class="mb-2 mt-7 text-4xl font-semibold text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 Our Approach
             </h3>
@@ -45,7 +45,7 @@
             />
 
             <h3
-                class="mb-2 mt-7 text-4xl font-semibold text-sips-navy md:mb-0 md:mt-10"
+                class="mb-2 text-4xl font-semibold mt-7 text-sips-navy md:mb-0 md:mt-10"
             >
                 The Result
             </h3>
@@ -53,6 +53,19 @@
                 class="prose text-sips-navy md:col-span-2 md:mt-10"
                 v-html="work?.result"
             />
+        </div>
+    </section>
+
+    <section>
+        <div class="flex justify-center pb-20 text-center">
+
+            <a href="https://form.typeform.com/to/wrXbzSpp" target="_blank">
+                <button
+                    class="px-12 py-3 text-xl font-medium text-white bg-sips-orange rounded-xl hover:bg-orange-600"
+                >
+                    Contact Us
+                </button>
+            </a>
         </div>
     </section>
 
@@ -65,7 +78,7 @@
     >
         <div
             id="default-carousel"
-            class="container relative mx-auto w-4/5"
+            class="container relative w-4/5 mx-auto"
             data-carousel="slide"
         >
             <!-- Carousel wrapper -->
@@ -78,7 +91,7 @@
                 >
                     <NuxtImg
                         :src="item"
-                        class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
                         alt="..."
                     />
                 </div>
@@ -93,11 +106,11 @@
             </div>
             <!-- Slider indicators -->
             <div
-                class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3"
+                class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
             >
                 <button
                     type="button"
-                    class="h-3 w-3 rounded-full"
+                    class="w-3 h-3 rounded-full"
                     v-for="(item, index) in work.content_url"
                     aria-current="true"
                     :aria-label="`Slide ${index + 1}`"
@@ -114,14 +127,14 @@
             <!-- Slider controls -->
             <button
                 type="button"
-                class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev
             >
                 <span
-                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
                 >
                     <svg
-                        class="h-4 w-4 text-white dark:text-gray-800"
+                        class="w-4 h-4 text-white dark:text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -140,14 +153,14 @@
             </button>
             <button
                 type="button"
-                class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next
             >
                 <span
-                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70"
                 >
                     <svg
-                        class="h-4 w-4 text-white dark:text-gray-800"
+                        class="w-4 h-4 text-white dark:text-gray-800"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -229,6 +242,12 @@ export default {
                 description: this.work?.meta_description,
                 ogDescription: this.work?.meta_description,
                 canonical: `https://digital.sipsedutech.id/works/${this.work.slug}`,
+                ogImage: this.work?.img_url,
+                ogUrl: `https://digital.sipsedutech.id/${this.work.slug}`,
+                twitterTitle: this.work?.meta_title,
+                twitterDescription: this.work?.meta_description,
+                twitterImage: this.work?.img_url,
+                twitterCard: this.work?.meta_description,
             });
         },
         getData: async function (id) {
