@@ -182,10 +182,10 @@
 </template>
 
 <style scoped>
-#el-body >>> ul {
+:deep(#el-body ul) {
     list-style-type: disc;
 }
-#el-body >>> ol {
+:deep(#el-body ol) {
     list-style-type: decimal;
 }
 </style>
