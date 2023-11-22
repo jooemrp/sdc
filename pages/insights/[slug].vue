@@ -5,11 +5,21 @@
             :style="`height: 65vh; background-size: cover; object-fit: cover; background-image: url(${content?.thumbnail});`"
             v-if="content?.thumbnail"
         ></div>
+        <!-- <div
+            class="container md:w-5/6 md:rounded-3xl lg:w-4/6 lg:xl:mt-5 xl:pt-5"
+            :style="`height: 65vh; background-size: cover;`"
+        >
+            <NuxtImg
+                :src="content?.thumbnail"
+                alt="work image"
+                class="object-cover"
+            />
+        </div> -->
     </section>
 
-    <section class="flex justify-center w-4/5 mx-auto" v-if="content.title">
+    <section class="mx-auto flex w-4/5 justify-center" v-if="content.title">
         <div
-            class="py-10 -mt-32 bg-white w-6/6 rounded-t-3xl md:w-5/6 xl:w-4/6 xl:px-5 xl:py-10"
+            class="w-6/6 -mt-32 rounded-t-3xl bg-white py-10 md:w-5/6 xl:w-4/6 xl:px-5 xl:py-10"
         >
             <div class="mx-auto md:mx-5 xl:p-0">
                 <div class="mx-5">
@@ -23,7 +33,7 @@
 
                     <div class="flex">
                         <svg
-                            class="w-4 h-4 mt-3 mr-3"
+                            class="mr-3 mt-3 h-4 w-4"
                             version="1.1"
                             id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +49,7 @@
                             </g>
                         </svg>
                         <p
-                            class="mt-2 capitalize text-md text-neutral-600 md:leading-normal"
+                            class="text-md mt-2 capitalize text-neutral-600 md:leading-normal"
                         >
                             {{ formatDate(content?.created_at) }}
                         </p>
@@ -52,7 +62,8 @@
                         />
                     </div>
                     <div
-                        class="my-5 prose-lg text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
+                        class="prose-lg my-5 text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
+                        id="el-body"
                         v-html="content?.body"
                     ></div>
 
@@ -73,10 +84,19 @@
         </div>
     </section>
 
-    <section class="flex items-center justify-center h-screen -mt-100" v-else>
+    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
         <SharedLoader />
     </section>
 </template>
+
+<style scoped>
+:deep(#el-body ul) {
+    list-style-type: disc;
+}
+:deep(#el-body ol) {
+    list-style-type: decimal;
+}
+</style>
 
 <script>
 import { useRoute } from 'vue-router';
@@ -85,7 +105,9 @@ export default {
     name: 'Content Detail',
     data() {
         return {
-            content: {},
+            content: {
+                thumbnail: 'https://placehold.co/800x600',
+            },
             currentURL: '',
             breadcrumbItems: [],
         };
@@ -119,13 +141,13 @@ export default {
                 twitterDescription: this.content?.meta_description,
                 twitterImage: this.content?.thumbnail,
                 twitterCard: this.content?.meta_description,
-                ogLocale: 'id'
+                ogLocale: 'id',
             });
             useHead({
                 htmlAttrs: {
-                    lang: 'id'
+                    lang: 'id',
                 },
-            })
+            });
         },
         getData: async function (slug) {
             await fetch(`https://api.sipsedutech.id/api/content/${slug}`)
