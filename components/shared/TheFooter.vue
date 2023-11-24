@@ -3,13 +3,19 @@
         <div class="container mx-auto md:py-8">
             <div class="grid grid-cols-1 md:grid-cols-3">
                 <div
-                    class="flex items-center justify-center my-6 sm:justify-start md:my-0"
+                    class="flex items-center justify-center my-6 xl:justify-start md:my-0"
                 >
                     <a
                         href="https://sipsedutech.id/en/"
                         class="flex items-center sm:mb-0 xl:my-0 xl:ml-0"
                     >
-                        <img src="/sips-white.webp" class="" alt="SIPS Logo" />
+                        <NuxtPicture
+                            src="/sips-white.webp" 
+                            :imgAttrs="{
+                                class:'h-20 xl:h-full',
+                                alt:'SIPS Logo',
+                                }"
+                        />
                     </a>
                 </div>
 

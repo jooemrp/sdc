@@ -8,15 +8,15 @@
         >
             <div class="md:flex">
                 <div class="md:flex-shrink-0">
-                    <img
-                        class="h-48 w-full object-cover md:w-48"
+                    <NuxtPicture
+                        :imgAttrs="{class:'object-cover w-full h-48 md:w-48 lg:w-48'}"
                         :src="work.img_url ?? 'https://placehold.co/400'"
                         :alt="work.title"
                     />
                 </div>
-                <div class="flex h-48 flex-col justify-center p-8 md:pt-12">
+                <div class="flex flex-col justify-center h-48 p-8 md:pt-12">
                     <div
-                        class="text-sm font-semibold uppercase tracking-wide text-white"
+                        class="text-sm font-semibold tracking-wide text-white uppercase"
                     >
                         {{ truncateString(work.title, 50) }}
                     </div>

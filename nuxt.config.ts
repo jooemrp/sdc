@@ -36,26 +36,37 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/works/**': { prerender: true},
-    '/insights/**': { prerender: true }
+    '/insights/**': { prerender: true },
+    '/thankyou' : {prerender: false}
   },
   robots: {
   //  UserAgent: '*',
    Disallow: '/thankyou',
   //  Allow: ''
   },
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     routes: [
-  //       '/works/*',
-  //       '/insights/*'
-  //     ]
-  //   }
-  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/works/*',
+        '/insights/*',
+        '/sitemap.xml'
+      ]
+    }
+  },
   image: {
     // dir: "assets/images",
     inject: true,
-    format: ['webp']
+    format: ['webp'],
+    screens: {
+      'xs': 320,
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280,
+      'xxl': 1536,
+      '2xl': 1536
+    },
   },
   css: [
     '@/assets/css/tailwind.css',
