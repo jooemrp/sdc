@@ -12,13 +12,14 @@
                 :src="content?.thumbnail"
                 :alt="content?.title"
                 :imgAttrs="{class:'mx-auto w-full xl:rounded-3xl md:rounded-2xl'}"
+                loading="lazy"
             />
         </div>
     </section>
 
-    <section class="flex justify-center w-4/5 mx-auto" v-if="content.title">
+    <section class="flex justify-center mx-auto xl:w-4/5 w-12/12" v-if="content.title">
         <div
-            class="py-10 -mt-12 bg-white xl:-mt-32 w-6/6 rounded-t-3xl md:w-5/6 xl:w-4/6 xl:px-5 xl:py-10"
+            class="w-5/6 py-10 -mt-12 bg-white xl:-mt-32 rounded-t-3xl md:w-5/6 xl:w-3/5 xl:px-5 xl:py-10"
         >
             <div class="mx-auto md:mx-5 xl:p-0">
                 <div class="mx-5">

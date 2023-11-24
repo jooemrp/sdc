@@ -5,7 +5,7 @@
                 <NuxtLink
                     to="/"
                     aria-label="Home"
-                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center text-xs font-medium text-gray-700 xl:text-sm hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 >
                     <svg
                         class="mr-2.5 h-3 w-3"
@@ -24,7 +24,7 @@
             <li v-for="(item, index) in items">
                 <div class="flex items-center">
                     <svg
-                        class="mx-1 h-3 w-3 text-gray-400"
+                        class="w-3 h-3 mx-1 text-gray-400"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -42,7 +42,7 @@
                     <NuxtLink
                         :to="item.path"
                         :aria-label="item.title"
-                        class="ml-1 truncate text-sm font-medium text-gray-700 hover:cursor-pointer hover:text-gray-900 md:ml-2"
+                        class="ml-1 text-xs font-medium text-gray-700 truncate xl:text-sm hover:cursor-pointer hover:text-gray-900 md:ml-2"
                     >
                         {{ truncateString(item.title, 15) }}
                     </NuxtLink>
