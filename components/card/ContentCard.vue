@@ -1,7 +1,10 @@
 <template>
     <NuxtLink :to="`/insights/${content?.slug}`">
         <div class="flex-none max-w-md m-1 overflow-hidden rounded shadow-md">
-            <img class="w-full min-w-[200px]" :src="content?.thumbnail ?? 'https://placehold.co/600x400'" :alt="content?.title"/>
+            <NuxtPicture 
+                :src="content?.thumbnail ?? 'https://placehold.co/600x400'"
+                :imgAttrs="{class:'w-full min-w-[200px]'}"
+                :alt="content?.title"/>
             <div class="px-6 py-4">
                 <div class="mb-2 font-bold text-md">{{ content?.title }}</div>
                 <p class="text-sm text-gray-700">
