@@ -10,7 +10,7 @@
         >
             <NuxtPicture
                 :src="content?.thumbnail"
-                alt="work image"
+                :alt="content?.title"
                 :imgAttrs="{class:'mx-auto w-full xl:rounded-3xl md:rounded-2xl'}"
             />
         </div>
@@ -105,7 +105,7 @@ export default {
     data() {
         return {
             content: {
-                thumbnail: 'https://placehold.co/800x600',
+                thumbnail: 'https://placehold.co/1200x600',
             },
             currentURL: '',
             breadcrumbItems: [],

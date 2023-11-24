@@ -218,163 +218,186 @@
             <div class="inline-flex w-full flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
                 <ul class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-01.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list biofarma"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-02.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list evocare"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-03.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list fufang"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-04.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list genetics indonesia"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-01.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list adi husada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-02.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list dersada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-03.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list jec orbita"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-04.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list kemang medical care"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-05.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list mayapada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-06.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list primaya"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-07.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list ristra"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-08.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list rsgm yarsi"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-09.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list siloam"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-10.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list st caroluse"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Berdaya-Bareng.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Berdaya Bareng"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/carenow.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list carenow"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/IABI.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list IABI"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Jasa-Raharja.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Jasa Raharja"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/MSU.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list MSU"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/PABI.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list PABI"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/RSOJ-Pertamina.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list RSOJ Pertamina"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Unhas.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Universitas Hasanuddin"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/zafyre.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list zafyre"
                         />
                     </li>
@@ -384,163 +407,186 @@
                     aria-hidden="true"
                 >
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-01.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list biofarma"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-02.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list evocare"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-03.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list fufang"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/a-04.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list genetics indonesia"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-01.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list adi husada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-02.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list dersada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-03.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list jec orbita"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-04.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list kemang medical care"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-05.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list mayapada"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-06.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list primaya"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-07.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list ristra"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-08.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list rsgm yarsi"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-09.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list siloam"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/b-10.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list st caroluse"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Berdaya-Bareng.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Berdaya Bareng"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/carenow.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list carenow"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/IABI.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list IABI"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Jasa-Raharja.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Jasa Raharja"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/MSU.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list MSU"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/PABI.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list PABI"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/RSOJ-Pertamina.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list RSOJ Pertamina"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/Unhas.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list Universitas Hasanuddin"
                         />
                     </li>
                     <li>
-                        <NuxtImg
+                        <NuxtPicture
                             src="/clients/zafyre.webp"
-                            height="82px"
+                            :imgAttrs="{style:'height:82px'}"
+                            loading="lazy"
                             alt="Partner list zafyre"
                         />
                     </li>
