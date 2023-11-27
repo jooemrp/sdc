@@ -108,7 +108,6 @@
 :deep(#el-body span:has(img)) {
     width: 100% !important;
     height: auto !important;
-    background-color: aqua;
 }
 </style>
 
