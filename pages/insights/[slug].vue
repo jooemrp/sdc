@@ -11,15 +11,20 @@
             <NuxtPicture
                 :src="content?.thumbnail"
                 :alt="content?.title"
-                :imgAttrs="{class:'mx-auto w-full xl:rounded-3xl md:rounded-2xl'}"
+                :imgAttrs="{
+                    class: 'mx-auto w-full xl:rounded-3xl md:rounded-2xl',
+                }"
                 loading="lazy"
             />
         </div>
     </section>
 
-    <section class="flex justify-center mx-auto xl:w-4/5 w-12/12" v-if="content.title">
+    <section
+        class="w-12/12 mx-auto flex justify-center xl:w-4/5"
+        v-if="content.title"
+    >
         <div
-            class="w-5/6 py-10 -mt-12 bg-white xl:-mt-32 rounded-t-3xl md:w-5/6 xl:w-3/5 xl:px-5 xl:py-10"
+            class="-mt-12 w-5/6 rounded-t-3xl bg-white py-10 md:w-5/6 xl:-mt-32 xl:w-3/5 xl:px-5 xl:py-10"
         >
             <div class="mx-auto md:mx-5 xl:p-0">
                 <div class="mx-5">
@@ -33,7 +38,7 @@
 
                     <div class="flex">
                         <svg
-                            class="w-4 h-4 mt-3 mr-3"
+                            class="mr-3 mt-3 h-4 w-4"
                             version="1.1"
                             id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +54,7 @@
                             </g>
                         </svg>
                         <p
-                            class="mt-2 capitalize text-md text-neutral-600 md:leading-normal"
+                            class="text-md mt-2 capitalize text-neutral-600 md:leading-normal"
                         >
                             {{ formatDate(content?.created_at) }}
                         </p>
@@ -62,7 +67,7 @@
                         />
                     </div>
                     <div
-                        class="my-5 prose-lg text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
+                        class="prose-lg my-5 text-neutral-900 md:mx-0 md:my-5 lg:mx-0"
                         id="el-body"
                         v-html="content?.body"
                     ></div>
@@ -84,7 +89,7 @@
         </div>
     </section>
 
-    <section class="flex items-center justify-center h-screen -mt-100" v-else>
+    <section class="-mt-100 flex h-screen items-center justify-center" v-else>
         <SharedLoader />
     </section>
 </template>
@@ -95,6 +100,15 @@
 }
 :deep(#el-body ol) {
     list-style-type: decimal;
+}
+:deep(#el-body img) {
+    width: 100% !important;
+    margin-bottom: 0px !important;
+}
+:deep(#el-body span:has(img)) {
+    width: 100% !important;
+    height: auto !important;
+    background-color: aqua;
 }
 </style>
 
