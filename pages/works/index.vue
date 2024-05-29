@@ -25,7 +25,7 @@
     </div>
   </section>
 
-  <section class="container py-10 mx-auto md:py-14">
+  <section class="container w-4/5 py-10 mx-auto md:py-14">
     <h2
       class="mb-5 text-4xl font-bold leading-normal text-center text-sips-orange md:mb-10 xl:text-5xl"
     >
