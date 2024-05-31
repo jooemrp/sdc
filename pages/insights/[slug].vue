@@ -146,6 +146,7 @@ export default {
                 title: this.content?.meta_title,
                 ogTitle: this.content?.meta_title,
                 description: this.content?.meta_description,
+                keywords: this.content?.meta_keywords,
                 ogDescription: this.content?.meta_description,
                 canonical: `https://digital.sipsedutech.id/${this.content.slug}`,
                 ogImage: this.content?.thumbnail,
@@ -168,6 +169,7 @@ export default {
                 .then((data) => {
                     this.content = data.data;
                     this.setMeta();
+                    console.log('data.data', data.data);
 
                     this.breadcrumbItems = [
                         {

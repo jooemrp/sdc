@@ -249,6 +249,7 @@ export default {
                 title: this.work?.meta_title,
                 ogTitle: this.work?.meta_title,
                 description: this.work?.meta_description,
+                keywords: this.work?.meta_keywords,
                 ogDescription: this.work?.meta_description,
                 canonical: `https://digital.sipsedutech.id/works/${this.work.slug}`,
                 ogImage: this.work?.img_url,
